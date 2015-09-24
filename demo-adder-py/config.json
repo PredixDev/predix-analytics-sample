@@ -1,0 +1,14 @@
+{
+ "demoAdder": {
+     "tags" : { 
+             "analytic-root": "analytic", 
+             "analytic-testbench" : "testbench",
+             "driver-root": "driver", 
+             "driver-main": "driver/AnalyticDriver.py",
+             "mapper":"driver", 
+             "resultprovider":"sum"
+          },
+     "memory" : "1G",
+     "instances" : "1"
+ }
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2015 General Electric Company. All rights reserved.
+  ~
+  ~ The copyright to the computer software herein is the property of
+  ~ General Electric Company. The software may be used and/or copied only
+  ~ with the written permission of General Electric Company or in accordance
+  ~ with the terms and conditions stipulated in the agreement/contract
+  ~ under which the software has been supplied.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>demo-adder-matlab-r2011b-impl</artifactId>
+    <name>Demo adder matlab analytic implementation</name>
+    <packaging>jar</packaging>
+    <description>Implementation of demo matlab adder analytic service</description>
+    <version>1.5.0-SNAPSHOT</version>
+    <groupId>com.ge.predix.insight</groupId>
+
+
+    <properties>
+        <predix.insight.groupId>com.ge.predix.insight</predix.insight.groupId>
+        <predix.insight.version>1.5.0-SNAPSHOT</predix.insight.version>
+        <java.version>1.7</java.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+	</plugins>
+    </build>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ge.predix.insight</groupId>
+            <artifactId>matlabadder</artifactId>
+            <version>${predix.insight.version}</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/lib/matlabadder.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.ge.predix.insight</groupId>
+            <artifactId>javabuilder</artifactId>
+            <version>${predix.insight.version}</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/lib/javabuilder.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+            <version>2.4.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.6</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.1.4.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
+
