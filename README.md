@@ -20,4 +20,10 @@ For more information on developing analytics for use with Predix Analytics, see 
 
 **[Sample Orchestration Workflows](orchestrations)**
 
-For more information on running orchestrations in Predix Analytics, see "Using the Analytics Runtime Service" in the Predix Analytics Services documentation on Predix IO. 
+For more information on running orchestrations in Predix Analytics, see "Using the Analytics Runtime Service" in the Predix Analytics Services documentation on Predix IO.
+
+## Postman Collections
+
+**[Sample Postman Collections](postman)**
+
+Once you have created your instance of either the Analytics Catalog or Analytics Runtime service, you can use the sample Postman collections to customize your REST requests and test them out to aid in implementing your applications. 

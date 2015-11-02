@@ -1,0 +1,497 @@
+{
+	"id": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+	"name": "Analytic Catalog",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "d640a7b7-5593-254e-730f-94b5836d6fbf",
+			"name": "Analytics",
+			"description": "",
+			"order": [
+				"55b70281-7103-61fa-9483-bd3e6d7ffaa2",
+				"f37b52b9-647a-9f2e-1568-ce7b60bd7804",
+				"b5ad5f00-03fb-71fd-29ce-69e0c9c04da0",
+				"6ec19826-e2cc-6583-aeaf-051fdd61a716",
+				"272fe610-45a7-d70d-08bf-373c263097d2",
+				"99fff78c-d085-3b40-2ede-e7b100f2d3ba"
+			],
+			"owner": 0
+		},
+		{
+			"id": "623a2faa-1212-bcd9-8036-0f289676eedf",
+			"name": "Artifacts",
+			"description": "",
+			"order": [
+				"3ff5b13f-74aa-cdcf-290a-96eb264432bd",
+				"8c377d9b-812d-f1e4-6b81-b9fa62ff76bc",
+				"0d0fde5f-8a69-6c4b-304e-334fb33c79e5",
+				"fad68ce3-e08c-eaea-2a52-dbddf29a96a8",
+				"b73f11a6-2bbe-c47f-349a-ec3bb1d21539",
+				"594aa50d-9226-5dbc-d6fd-a87f5bb7a0fd"
+			],
+			"owner": 0
+		},
+		{
+			"id": "d74c826f-a0ed-17b8-ad56-057ae61c8989",
+			"name": "Execution/Validation",
+			"description": "",
+			"order": [
+				"2506c974-5207-606e-99d5-720db9e87110",
+				"5bdd1627-4808-2988-1c41-f55b56df9152",
+				"42e2bb8e-7d6a-1325-7a67-c78681404064"
+			],
+			"owner": 0
+		},
+		{
+			"id": "c7369eeb-c1c8-1fa8-bf80-51b5ce75cac0",
+			"name": "Taxonomy",
+			"description": "",
+			"order": [
+				"bb46b87e-eda9-875f-6634-4796e2925a6d",
+				"586c89db-366d-56c3-a8c3-eda83c9d3ad8"
+			],
+			"owner": 0
+		}
+	],
+	"timestamp": 1426637613528,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "0d0fde5f-8a69-6c4b-304e-334fb33c79e5",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "description",
+					"value": "demo adder python updated desc",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721657838,
+			"name": "Update Artifact",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "2506c974-5207-606e-99d5-720db9e87110",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/20b78265-5b13-4fc7-8829-147845b85f01/execution",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721685334,
+			"name": "Execute Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": [],
+			"rawModeData": "{\"number1\":2,\"number2\":4}"
+		},
+		{
+			"id": "272fe610-45a7-d70d-08bf-373c263097d2",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/377d41b4-63d8-4f6a-9115-b812a1c106e6",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721640033,
+			"name": "Delete Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"rawModeData": ""
+		},
+		{
+			"id": "3ff5b13f-74aa-cdcf-290a-96eb264432bd",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721649169,
+			"name": "Create Artifact",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "42e2bb8e-7d6a-1325-7a67-c78681404064",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721693904,
+			"name": "Retrieve Validation Result",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "55b70281-7103-61fa-9483-bd3e6d7ffaa2",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1444943372864,
+			"name": "Retrieve All Analytics",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec"
+		},
+		{
+			"id": "586c89db-366d-56c3-a8c3-eda83c9d3ad8",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/taxonomy",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721703909,
+			"name": "Load Taxonomy",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": [],
+			"rawModeData": "{\n    \"node_name\": \"reference-app\",\n    \"child_nodes\": []\n}"
+		},
+		{
+			"id": "594aa50d-9226-5dbc-d6fd-a87f5bb7a0fd",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/wrapped",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721671379,
+			"name": "Download Wrapped Executable for Analytic",
+			"description": "**POSTMAN DOES NOT CURRENTLY SUPPORT THIS REQUEST.** This is just for reference. In order to actually download the file, you will need to enter the full URL in your browser and make sure you send all of the headers in this request using a plugin such as ModHeaders for Chrome.",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "5bdd1627-4808-2988-1c41-f55b56df9152",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721689357,
+			"name": "Validate Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": [],
+			"rawModeData": "{\"number1\":1,\"number2\":2}"
+		},
+		{
+			"id": "6ec19826-e2cc-6583-aeaf-051fdd61a716",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/cd8d8676-65a7-4cb8-9c06-675e255af628",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1445624053827,
+			"name": "Update Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": [],
+			"rawModeData": "{\n    \"id\": \"c42d0d32-e845-40e2-bb67-751d059e4f0a\",\n    \"name\": \"aaa analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Python\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"test\",\n    \"description\": \"test\",\n    \"customMetadata\": \"{\\\"assetid\\\":\\\"abc\\\"}\"\n}"
+		},
+		{
+			"id": "8c377d9b-812d-f1e4-6b81-b9fa62ff76bc",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721654022,
+			"name": "Retrieve Artifacts for Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "99fff78c-d085-3b40-2ede-e7b100f2d3ba",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/ANALYTIC_NAME/versions",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721644692,
+			"name": "Delete All Versions of an Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "b5ad5f00-03fb-71fd-29ce-69e0c9c04da0",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/729a4c52-5cf0-4a42-8421-3da9d4fbbf23",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721632213,
+			"name": "Retrieve Analytic By ID",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "b73f11a6-2bbe-c47f-349a-ec3bb1d21539",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519/file",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721667732,
+			"name": "Download Artifact File",
+			"description": "**POSTMAN DOES NOT CURRENTLY SUPPORT THIS REQUEST.** This is just for reference. In order to actually download the file, you will need to enter the full URL in your browser and make sure you send all of the headers in this request using a plugin such as ModHeaders for Chrome.",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "bb46b87e-eda9-875f-6634-4796e2925a6d",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/taxonomy",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443721698489,
+			"name": "Get Taxonomy",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		},
+		{
+			"id": "f37b52b9-647a-9f2e-1568-ce7b60bd7804",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1446229440794,
+			"name": "Create Analytic",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"rawModeData": "{\n    \"name\": \"demoAdder\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Python\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"Predix Analytics team\",\n    \"description\": \"This analytic adds two numbers and returns the result.\"\n}"
+		},
+		{
+			"id": "fad68ce3-e08c-eaea-2a52-dbddf29a96a8",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/8a979364-151a-4601-a7f2-26830e94de59",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1443723807325,
+			"name": "Delete Artifact",
+			"description": "",
+			"collectionId": "c455bb8a-874f-f18a-aa85-e599aca718ec",
+			"responses": []
+		}
+	]
+}
