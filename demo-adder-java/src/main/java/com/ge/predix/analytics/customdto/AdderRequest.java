@@ -1,15 +1,6 @@
-/*
- * Copyright (c) 2015 General Electric Company. All rights reserved.
- *
- * The copyright to the computer software herein is the property of
- * General Electric Company. The software may be used and/or copied only
- * with the written permission of General Electric Company or in accordance
- * with the terms and conditions stipulated in the agreement/contract
- * under which the software has been supplied.
- */
-package com.ge.predix.demo;
+package com.ge.predix.analytics.customdto;
 
-public class DemoAnalyticRequest {
+public class AdderRequest {
 
 	protected long number1;
 	protected long number2;
@@ -47,10 +38,33 @@ public class DemoAnalyticRequest {
 	}
 
 	@Override public String toString() {
-		return "DemoAnalyticRequest{" +
+		return "AdderInput{" +
 			"number1=" + number1 +
 			", number2=" + number2 +
 			'}';
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
+
+		AdderRequest that = (AdderRequest) o;
+
+		if (number1 != that.number1)
+			return false;
+		if (number2 != that.number2)
+			return false;
+
+		return true;
+	}
+
+	@Override
+	public int hashCode() {
+		int result = (int) (number1 ^ (number1 >>> 32));
+		result = 31 * result + (int) (number2 ^ (number2 >>> 32));
+		return result;
+	}
 }
