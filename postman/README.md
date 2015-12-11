@@ -11,6 +11,7 @@ These files contain sample requests that can be imported directly into Postman t
 * [Analytic Catalog](./Analytic_Catalog.json.postman_collection) 
 * [Orchestration Configuration](./Orchestration_Configuration.json.postman_collection) 
 * [Orchestration Execution](./Orchestration_Execution.json.postman_collection) 
+* [Analytics Scheduler Service](./Scheduler_Service.json.postman_collection) 
 
 
 ### Environment Variables
