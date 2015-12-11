@@ -22,6 +22,7 @@ The collections above assume that you have the following set of variables define
 * **catalog_host** : The hostname of the instance of Analytics Catalog (obtained from the VCAP environment in your Analytics Catalog service instance)
 * **config_host** : The hostname of the instance of Orchestration Configuration (obtained from the VCAP environment in your Analytics Runtime service instance)
 * **exec_host** : The hostname of the instance of Orchestration Execution (obtained from the VCAP environment in your Analytics Runtime service instance)
+* **scheduler_host** : The hostname of the instance of Analytics Scheduler Service (obtained from the VCAP environment in your Analytics Runtime service instance)
 * **catalog_tenant** : The Predix Zone ID of your Analytics Catalog instance (obtained from the VCAP environment in your Analytics Catalog service instance)
 * **runtime_tenant** : The Predix Zone ID of your Analytics Runtime instance (obtained from the VCAP environment in your Analytics Runtime service instance)
 
