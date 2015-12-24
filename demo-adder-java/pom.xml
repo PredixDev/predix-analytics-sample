@@ -10,12 +10,6 @@
     <description>Implementation of java demo analytic service</description>
     <version>1.0.0</version>
 
-    <parent>
-        <groupId>com.ge.predix.insight</groupId>
-        <artifactId>analytics-catalog-service-parent</artifactId>
-        <relativePath>../../</relativePath>
-        <version>1.5.0-SNAPSHOT</version>
-    </parent>
     <dependencies>
 
         <dependency>
