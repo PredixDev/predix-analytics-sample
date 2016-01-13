@@ -2,7 +2,7 @@
 
 
 ### API Reference
-These request collections conform to the Analytics Catalog and Analytics Runtime API set, which is documented at [predix.io/api](https://www.predix.io/api). User guides for the API, which cover common use cases and workflows, can be found on the full [Analytics Catalog](https://www.predix.io/docs/#hcwYlgq4) and [Analytics Runtime](https://www.predix.io/docs/#pM5fe0l) documentation sites.
+These request collections conform to the Analytics Catalog and Analytics Runtime API set, which is documented at [predix.io/api](https://www.predix.io/api). User guides for the API, which cover common use cases and workflows, can be found on the full [Analytics Catalog](https://www.predix.io/docs/#A5cFZF2V) and [Analytics Runtime](https://www.predix.io/docs/#h6rTgHDW) documentation sites.
 
 
 ### Request Collections
