@@ -13,6 +13,8 @@ These files contain sample requests that can be imported directly into Postman t
 * [Orchestration Execution](./Orchestration_Execution.json.postman_collection) 
 * [Analytics Scheduler Service](./Scheduler_Service.json.postman_collection) 
 
+If you have trouble importing Postman files using this method, you can try directly pasting the contents of the Postman files using the "Raw Text" tab within the Import window.
+
 
 ### Environment Variables
 Postman allows you to create "Environments" which can have a set of variables. That way, you can use the same Postman request for multiple environments. Variables are referenced using double curly bracket notation (ex: {{token}}) anywhere in the request (URL, params, header, body).
@@ -34,5 +36,4 @@ To manage your environment, use the drop down menu to the left of the circled "x
 
 This will bring up a popup from which you add/import environments and edit environment variables (including global variables):
 
-![Postman Environemtns Popup](./images/PostmanEnvironmentsPopup.png)
-
+![Postman Environments Popup](./images/PostmanEnvironmentsPopup.png)
