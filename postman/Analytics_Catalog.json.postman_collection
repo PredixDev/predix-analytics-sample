@@ -1,6 +1,6 @@
 {
 	"id": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
-	"name": "Analytic Catalog",
+	"name": "Analytics Catalog",
 	"description": "",
 	"order": [],
 	"folders": [
@@ -35,6 +35,16 @@
 			"owner": 0
 		},
 		{
+			"id": "95226879-2305-86e4-579a-e5484d09cef2",
+			"name": "Taxonomy",
+			"description": "",
+			"order": [
+				"fa84ee58-bebb-57ec-83e1-48de27ac27f4",
+				"55f6397e-3fca-b49d-9b02-588c7ecda272"
+			],
+			"owner": 0
+		},
+		{
 			"id": "927cdeb7-e4ee-af89-21d9-1189082e1c97",
 			"name": "Validation/Deployment/Execution",
 			"description": "",
@@ -47,16 +57,6 @@
 			],
 			"owner": 0,
 			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734"
-		},
-		{
-			"id": "95226879-2305-86e4-579a-e5484d09cef2",
-			"name": "Taxonomy",
-			"description": "",
-			"order": [
-				"fa84ee58-bebb-57ec-83e1-48de27ac27f4",
-				"55f6397e-3fca-b49d-9b02-588c7ecda272"
-			],
-			"owner": 0
 		}
 	],
 	"timestamp": 1426637613528,
@@ -67,7 +67,7 @@
 		{
 			"id": "14d81501-522a-cfd3-1544-f465a73f5a4e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -88,7 +88,7 @@
 		{
 			"id": "1bdeda15-7ab0-139f-0a13-8b905aa5374b",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/wrapped",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/wrapped",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -108,7 +108,7 @@
 		{
 			"id": "298126e1-4619-ff70-7568-28f6fe0175b2",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/artifacts",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/artifacts",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -153,7 +153,7 @@
 		{
 			"id": "2fb12a7a-a98b-e769-53c2-49061b9f6c69",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/63fec285-8a85-494f-8232-54ea116fdf52",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/63fec285-8a85-494f-8232-54ea116fdf52",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -172,7 +172,7 @@
 		{
 			"id": "52b7b275-c307-e81a-0cd3-748572adb464",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519/file",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519/file",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -192,7 +192,7 @@
 		{
 			"id": "55f6397e-3fca-b49d-9b02-588c7ecda272",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/taxonomy",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/taxonomy",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -213,7 +213,7 @@
 		{
 			"id": "58fda9c4-a2b3-099e-82a7-d067da33ed3f",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -258,7 +258,7 @@
 		{
 			"id": "5d2a9342-6bfd-bd39-0233-17f96399a856",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -279,7 +279,7 @@
 		{
 			"id": "65ae6b92-40b5-695e-0c31-c00b8a14016d",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/377d41b4-63d8-4f6a-9115-b812a1c106e6",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/377d41b4-63d8-4f6a-9115-b812a1c106e6",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -299,7 +299,7 @@
 		{
 			"id": "67196403-e7a7-4f45-2d61-1b7d0a32150c",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -318,7 +318,7 @@
 		{
 			"id": "7b8b4521-dc2b-6f7e-98b6-80e0ca435e3e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/versions?name=java-demo-adder",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/versions?name=java-demo-adder",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -337,7 +337,7 @@
 		{
 			"id": "845d6e57-57cc-a003-ab71-bc936854fff9",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/ANALYTIC_NAME/versions",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/ANALYTIC_NAME/versions",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -358,7 +358,7 @@
 		{
 			"id": "90d3ed0e-d7db-e351-0e30-772ab3f3e532",
 			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -403,7 +403,7 @@
 		{
 			"id": "92a3b06e-0b9b-8f24-5ca9-2dff97105587",
 			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
@@ -430,7 +430,7 @@
 		{
 			"id": "ccc4c5f3-b8bf-d287-92d5-8f71b0f3a1e0",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -450,7 +450,7 @@
 		{
 			"id": "d391a5d5-b9ba-d78b-d2d2-3d88da708d0d",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/20b78265-5b13-4fc7-8829-147845b85f01/execution",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/20b78265-5b13-4fc7-8829-147845b85f01/execution",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -471,7 +471,7 @@
 		{
 			"id": "e1b053ba-1403-8253-b72b-9a547a7cb3bd",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/8a979364-151a-4601-a7f2-26830e94de59",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts/8a979364-151a-4601-a7f2-26830e94de59",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -491,7 +491,7 @@
 		{
 			"id": "edc24059-3da7-3976-05aa-fadbada8d333",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -506,12 +506,110 @@
 			"description": "",
 			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
 			"rawModeData": "{\n    \"name\": \"aaa analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Python\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"test\",\n    \"description\": \"test\",\n    \"customMetadata\": \"{\\\"assetid\\\":\\\"abc\\\"}\"\n}",
-			"folder": "0ae85123-720a-d29e-d343-52bbe87910c0"
+			"folder": "0ae85123-720a-d29e-d343-52bbe87910c0",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 502,
+						"name": "Bad Gateway",
+						"detail": "The server was acting as a gateway or proxy and received an invalid response from the upstream server."
+					},
+					"time": 26358,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "67",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 17 Dec 2015 23:16:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "X-Cf-Requestid",
+							"key": "X-Cf-Requestid",
+							"value": "dd72f88f-66b5-4515-7e80-f8a54051a458",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Cf-Routererror",
+							"key": "X-Cf-Routererror",
+							"value": "endpoint_failure",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "502 Bad Gateway: Registered endpoint failed to handle the request.\n",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "2532c818-948b-0cc6-c9f2-f57f6e20554a",
+					"name": "502 error",
+					"request": {
+						"url": "https://predix-analytics-catalog-release.run.aws-usw02-pr.ice.predix.io/api/v1/catalog/analytics",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"name": "Content-Type",
+								"enabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiI0OTJkMWExYy1jNjVlLTRmODgtODc1Mi1kZDJlZjI5ODE1ZDkiLCJzdWIiOiI4MzM1MTBiZS05NmJiLTQxYzgtOTIyMC0xMzk2ZWUxMDdhZWMiLCJzY29wZSI6WyJhbmFseXRpY3Muem9uZXMuY2IxZjVjMjktMjVlYS00YmZhLTgxNmYtNjRlOTQ4Y2M2MzQ0LnVzZXIiLCJhbmFseXRpY3Muem9uZXMuYjNlMTkzNGUtMWVhZi00MjcxLTlmZDItY2ZmZjdkNDUxZDIxLnVzZXIiXSwiY2xpZW50X2lkIjoiYWRtaW4iLCJjaWQiOiJhZG1pbiIsImF6cCI6ImFkbWluIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjgzMzUxMGJlLTk2YmItNDFjOC05MjIwLTEzOTZlZTEwN2FlYyIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6ImFsbGVuLmNodUBnZS5jb20iLCJlbWFpbCI6ImFsbGVuLmNodUBnZS5jb20iLCJhdXRoX3RpbWUiOjE0NTAzOTMxODcsInJldl9zaWciOiI0YTIzOGRjZiIsImlhdCI6MTQ1MDM5MzE4NywiZXhwIjoxNDUwNDM2Mzg3LCJpc3MiOiJodHRwczovLzg3OTk1YzUzLWJiZTctNDRhOC1hZTIwLWFmMDA3OGVkZTM5NS5wcmVkaXgtdWFhLnJ1bi5hd3MtdXN3MDItcHIuaWNlLnByZWRpeC5pby9vYXV0aC90b2tlbiIsInppZCI6Ijg3OTk1YzUzLWJiZTctNDRhOC1hZTIwLWFmMDA3OGVkZTM5NSIsImF1ZCI6WyJhZG1pbiIsImFuYWx5dGljcy56b25lcy5jYjFmNWMyOS0yNWVhLTRiZmEtODE2Zi02NGU5NDhjYzYzNDQiLCJhbmFseXRpY3Muem9uZXMuYjNlMTkzNGUtMWVhZi00MjcxLTlmZDItY2ZmZjdkNDUxZDIxIl19.n-VAjTsUHsxXkz_b79RNRrpmXgPs0D8GlCqoXPh23fKilzviRyLz27lrpuQ5NDho_53Lo5R7DRb80XZM5XBjrUomT1Byp5xIZgRdJteMyfWblJZ7W_tsj6Irf4JTt9R3kYamPRjSVmMLW4BwomSpMIL6-umgUH9j7aTOR8R6StbjUkIAydvtrXWlWFgHLmWsX0cLms7lI3mOaRI2XGr-Q0EGzsXHs7fibH3NZ-BvdwRraM2dTr94RdlyuH2jAClYSHLzvJnwtuvSO1Dze8OcsfJgwqyCFQ02Hd2lTbVxRq0vk3neQxdE9jHgxPRbYSTr00yxs3o6mfu7CQasdS9pWA",
+								"name": "Authorization",
+								"enabled": true
+							},
+							{
+								"key": "Predix-Zone-Id",
+								"value": "cb1f5c29-25ea-4bfa-816f-64e948cc6344",
+								"name": "Predix-Zone-Id",
+								"enabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "59b1f823-49b6-b478-6fd7-0a089e357b88"
+							}
+						],
+						"data": "{\n    \"name\": \"matlab analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Matlab\",\n    \"taxonomyLocation\": \"/demo-analytics/matlab-test\",\n    \"author\": \"Allen Chu\",\n    \"description\": \"test matlab adder\"\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			]
 		},
 		{
 			"id": "f45ac8fb-4113-5f75-142d-1399474b299e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/cd8d8676-65a7-4cb8-9c06-675e255af628",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/cd8d8676-65a7-4cb8-9c06-675e255af628",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
@@ -532,7 +630,7 @@
 		{
 			"id": "fa84ee58-bebb-57ec-83e1-48de27ac27f4",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "https://{{catalog_host}}/api/v1/catalog/taxonomy",
+			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/taxonomy",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

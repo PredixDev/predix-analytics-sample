@@ -8,10 +8,8 @@ These request collections conform to the Analytics Catalog and Analytics Runtime
 ### Request Collections
 These files contain sample requests that can be imported directly into Postman through the "Import" link near the top-center of the window. You can then customize and test out your REST requests to aid in implementing your applications.
 
-* [Analytic Catalog](./Analytic_Catalog.json.postman_collection) 
-* [Orchestration Configuration](./Orchestration_Configuration.json.postman_collection) 
-* [Orchestration Execution](./Orchestration_Execution.json.postman_collection) 
-* [Analytics Scheduler Service](./Scheduler_Service.json.postman_collection) 
+* [Analytics Catalog](./Analytics_Catalog.json.postman_collection) 
+* [Analytics Runtime](./Analytics_Runtime.json.postman_collection) 
 
 If you have trouble importing Postman files using this method, you can try directly pasting the contents of the Postman files using the "Raw Text" tab within the Import window.
 
