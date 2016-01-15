@@ -252,13 +252,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1447114548009,
+			"time": 1452819748754,
 			"name": "Update Job",
 			"description": "",
 			"collectionId": "05dd3949-94fb-b59c-da04-f7ae3cbe51c8",
 			"responses": [],
-			"rawModeData": "{\n  \"name\": \"test1\",\n  \"id\": \"01f72c90-3915-4c30-97ae-cb11a9ea58e7\",\n  \"description\": \"test description\",\n  \"state\": \"Active\",\n  \"cron\": {\n    \"seconds\": \"0/3\",\n    \"minutes\": \"*\",\n    \"hours\": \"*\",\n    \"dayOfMonth\": \"*\",\n    \"months\": \"*\",\n    \"dayOfWeek\": \"?\",\n    \"years\": \"*\",\n    \"timeZoneId\": \"UTC\"\n  },\n  \"executionRequest\": {\n    \"url\": \"http://some.url\",\n    \"httpMethod\": \"GET\",\n    \"httpHeaders\": [\n      {\n        \"name\": \"Content-Type\",\n        \"value\": \"application/json\"\n      },\n      {\n          \"name\": \"Predix-Zone-Id\",\n          \"value\": \"{{runtime_tenant}}\"\n      }\n    ],\n    \"inputData\": \"{\\\"number1\\\":1,\\\"number2\\\":2}\"\n  }\n}",
-			"folder": "a459fcad-0d8c-5fac-27a2-6dee5b2b0cb8"
+			"rawModeData": "{\n  \"name\": \"test1\",\n  \"id\": \"01f72c90-3915-4c30-97ae-cb11a9ea58e7\",\n  \"description\": \"test description\",\n  \"state\": \"Active\",\n  \"cron\": {\n    \"seconds\": \"0\",\n    \"minutes\": \"0/2\",\n    \"hours\": \"*\",\n    \"dayOfMonth\": \"*\",\n    \"months\": \"*\",\n    \"dayOfWeek\": \"?\",\n    \"years\": \"*\",\n    \"timeZoneId\": \"UTC\"\n  },\n  \"executionRequest\": {\n    \"url\": \"http://www.google.com\",\n    \"httpMethod\": \"GET\",\n    \"httpHeaders\": [\n      {\n        \"name\": \"Content-Type\",\n        \"value\": \"application/json\"\n      },\n      {\n          \"name\": \"Predix-Zone-Id\",\n          \"value\": \"{{runtime_tenant}}\"\n      }\n    ],\n    \"inputData\": \"{\\\"number1\\\":1,\\\"number2\\\":2}\"\n  }\n}"
 		},
 		{
 			"id": "98d23220-73cb-5104-0793-8974c9edb7a6",
@@ -406,13 +405,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1447114531836,
+			"time": 1452819735470,
 			"name": "Create Job",
 			"description": "",
 			"collectionId": "05dd3949-94fb-b59c-da04-f7ae3cbe51c8",
 			"responses": [],
-			"rawModeData": "{\n  \"name\": \"test1\",\n  \"description\": \"test description\",\n  \"state\": \"Active\",\n  \"cron\": {\n    \"seconds\": \"0/5\",\n    \"minutes\": \"*\",\n    \"hours\": \"*\",\n    \"dayOfMonth\": \"*\",\n    \"months\": \"*\",\n    \"dayOfWeek\": \"?\",\n    \"years\": \"*\",\n    \"timeZoneId\": \"UTC\"\n  },\n  \"executionRequest\": {\n    \"url\": \"http://some.url\",\n    \"httpMethod\": \"GET\",\n    \"httpHeaders\": [\n      {\n        \"name\": \"Content-Type\",\n        \"value\": \"application/json\"\n      },\n      {\n          \"name\": \"Predix-Zone-Id\",\n          \"value\": \"{{runtime_tenant}}\"\n      }\n    ],\n    \"inputData\": \"{\\\"number1\\\":1,\\\"number2\\\":2}\"\n  }\n}",
-			"folder": "a459fcad-0d8c-5fac-27a2-6dee5b2b0cb8"
+			"rawModeData": "{\n  \"name\": \"test1\",\n  \"description\": \"test description\",\n  \"state\": \"Active\",\n  \"cron\": {\n    \"seconds\": \"0\",\n    \"minutes\": \"0/1\",\n    \"hours\": \"*\",\n    \"dayOfMonth\": \"*\",\n    \"months\": \"*\",\n    \"dayOfWeek\": \"?\",\n    \"years\": \"*\",\n    \"timeZoneId\": \"UTC\"\n  },\n  \"executionRequest\": {\n    \"url\": \"http://www.google.com\",\n    \"httpMethod\": \"GET\",\n    \"httpHeaders\": [\n      {\n        \"name\": \"Content-Type\",\n        \"value\": \"application/json\"\n      },\n      {\n          \"name\": \"Predix-Zone-Id\",\n          \"value\": \"{{runtime_tenant}}\"\n      }\n    ],\n    \"inputData\": \"{\\\"number1\\\":1,\\\"number2\\\":2}\"\n  }\n}"
 		},
 		{
 			"id": "ff5fcd79-a63f-e199-f37a-387c7044e4c2",
