@@ -34,8 +34,7 @@
 			"name": "Orchestration Execution",
 			"description": "",
 			"order": [
-				"75b39adb-8c7b-2974-ae7e-798b6bbb8dca",
-				"d0b8352d-60c2-adfd-0b54-05f6d6d2bbdf"
+				"75b39adb-8c7b-2974-ae7e-798b6bbb8dca"
 			],
 			"owner": 0
 		},
@@ -278,33 +277,6 @@
 			"collectionId": "05dd3949-94fb-b59c-da04-f7ae3cbe51c8",
 			"responses": [],
 			"folder": "a459fcad-0d8c-5fac-27a2-6dee5b2b0cb8"
-		},
-		{
-			"id": "d0b8352d-60c2-adfd-0b54-05f6d6d2bbdf",
-			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{exec_host}}/api/v1/execution/validation",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [
-				{
-					"key": "file",
-					"value": "OrchestrationWithOneAnalytic.xml",
-					"type": "file",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1452721942157,
-			"name": "Validate Orchestration",
-			"description": "",
-			"collectionId": "05dd3949-94fb-b59c-da04-f7ae3cbe51c8",
-			"responses": [],
-			"folder": "0e9bdfda-cfb0-9b35-67e9-86d13064480f"
 		},
 		{
 			"id": "e2f04274-8447-52ca-f330-b56618bbf442",

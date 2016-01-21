@@ -29,8 +29,7 @@
 				"298126e1-4619-ff70-7568-28f6fe0175b2",
 				"92a3b06e-0b9b-8f24-5ca9-2dff97105587",
 				"e1b053ba-1403-8253-b72b-9a547a7cb3bd",
-				"52b7b275-c307-e81a-0cd3-748572adb464",
-				"1bdeda15-7ab0-139f-0a13-8b905aa5374b"
+				"52b7b275-c307-e81a-0cd3-748572adb464"
 			],
 			"owner": 0
 		},
@@ -84,26 +83,6 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "927cdeb7-e4ee-af89-21d9-1189082e1c97"
-		},
-		{
-			"id": "1bdeda15-7ab0-139f-0a13-8b905aa5374b",
-			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/wrapped",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1443721671379,
-			"name": "Download Wrapped Executable for Analytic",
-			"description": "**POSTMAN DOES NOT CURRENTLY SUPPORT THIS REQUEST.** This is just for reference. In order to actually download the file, you will need to enter the full URL in your browser and make sure you send all of the headers in this request using a plugin such as ModHeaders for Chrome.",
-			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
-			"responses": [],
-			"folder": "f27530e1-c962-618e-f66b-3ed0212b13c2"
 		},
 		{
 			"id": "298126e1-4619-ff70-7568-28f6fe0175b2",
