@@ -3,7 +3,7 @@
 A java-based sample analytic for the Predix Analytics platform.
 
 ## Compiled binaries
-Refer to the Releases page for compiled binaries you can upload directly to Predix Analytics.
+Refer to the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page for compiled binaries you can upload directly to Predix Analytics.
 
 ## Pre-requisites
 To build and run this analytic, you will need to have the following:
@@ -39,4 +39,4 @@ Requests made to this generated URI will be passed to the entry point method.
 
 
 
-For more information, see "Analytic Development" in the Predix Analytics Services documentation on Predix IO.
+For more information, see [Java Analytic Development](https://www.predix.io/docs#S1Wl9PHG) in the Predix Analytics Services documentation on Predix IO.

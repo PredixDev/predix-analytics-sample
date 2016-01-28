@@ -66,7 +66,7 @@
 		{
 			"id": "14d81501-522a-cfd3-1544-f465a73f5a4e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -87,7 +87,7 @@
 		{
 			"id": "298126e1-4619-ff70-7568-28f6fe0175b2",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/artifacts",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/artifacts",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -132,7 +132,7 @@
 		{
 			"id": "2fb12a7a-a98b-e769-53c2-49061b9f6c69",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/63fec285-8a85-494f-8232-54ea116fdf52",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/63fec285-8a85-494f-8232-54ea116fdf52",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -151,7 +151,7 @@
 		{
 			"id": "52b7b275-c307-e81a-0cd3-748572adb464",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519/file",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519/file",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -171,7 +171,7 @@
 		{
 			"id": "55f6397e-3fca-b49d-9b02-588c7ecda272",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/taxonomy",
+			"url": "https://{{catalog_host}}/api/v1/catalog/taxonomy",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -192,7 +192,7 @@
 		{
 			"id": "58fda9c4-a2b3-099e-82a7-d067da33ed3f",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -237,7 +237,7 @@
 		{
 			"id": "5d2a9342-6bfd-bd39-0233-17f96399a856",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -258,7 +258,7 @@
 		{
 			"id": "65ae6b92-40b5-695e-0c31-c00b8a14016d",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/377d41b4-63d8-4f6a-9115-b812a1c106e6",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/377d41b4-63d8-4f6a-9115-b812a1c106e6",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -278,7 +278,7 @@
 		{
 			"id": "67196403-e7a7-4f45-2d61-1b7d0a32150c",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -297,7 +297,7 @@
 		{
 			"id": "7b8b4521-dc2b-6f7e-98b6-80e0ca435e3e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/versions?name=java-demo-adder",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/versions?name=java-demo-adder",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -316,7 +316,7 @@
 		{
 			"id": "845d6e57-57cc-a003-ab71-bc936854fff9",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/ANALYTIC_NAME/versions",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/ANALYTIC_NAME/versions",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -337,7 +337,7 @@
 		{
 			"id": "90d3ed0e-d7db-e351-0e30-772ab3f3e532",
 			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -382,7 +382,7 @@
 		{
 			"id": "92a3b06e-0b9b-8f24-5ca9-2dff97105587",
 			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
@@ -409,7 +409,7 @@
 		{
 			"id": "ccc4c5f3-b8bf-d287-92d5-8f71b0f3a1e0",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -429,7 +429,7 @@
 		{
 			"id": "d391a5d5-b9ba-d78b-d2d2-3d88da708d0d",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/20b78265-5b13-4fc7-8829-147845b85f01/execution",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/20b78265-5b13-4fc7-8829-147845b85f01/execution",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -450,7 +450,7 @@
 		{
 			"id": "e1b053ba-1403-8253-b72b-9a547a7cb3bd",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/artifacts/8a979364-151a-4601-a7f2-26830e94de59",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts/8a979364-151a-4601-a7f2-26830e94de59",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -470,7 +470,7 @@
 		{
 			"id": "edc24059-3da7-3976-05aa-fadbada8d333",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -588,7 +588,7 @@
 		{
 			"id": "f45ac8fb-4113-5f75-142d-1399474b299e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/analytics/cd8d8676-65a7-4cb8-9c06-675e255af628",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/cd8d8676-65a7-4cb8-9c06-675e255af628",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
@@ -609,7 +609,7 @@
 		{
 			"id": "fa84ee58-bebb-57ec-83e1-48de27ac27f4",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
-			"url": "{{protocol}}://{{catalog_host}}/api/v1/catalog/taxonomy",
+			"url": "https://{{catalog_host}}/api/v1/catalog/taxonomy",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",

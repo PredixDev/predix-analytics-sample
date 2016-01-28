@@ -61,7 +61,7 @@
 		{
 			"id": "07298cd1-a9c6-3dd1-e483-134b0b18599f",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/orchestrations/08a5cc58-017d-432a-b951-227a3f9bfe1",
+			"url": "https://{{config_host}}/api/v1/config/orchestrations/08a5cc58-017d-432a-b951-227a3f9bfe1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -81,7 +81,7 @@
 		{
 			"id": "17604dca-af3a-3c52-8771-292637973834",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/orchestrations/08a5cc58-017d-432a-b951-227a3f9bfe1",
+			"url": "https://{{config_host}}/api/v1/config/orchestrations/08a5cc58-017d-432a-b951-227a3f9bfe1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -100,7 +100,7 @@
 		{
 			"id": "48952937-d39a-1382-2813-6f8827765763",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{scheduler_tenant}}\n",
-			"url": "{{protocol}}://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
+			"url": "https://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -120,7 +120,7 @@
 		{
 			"id": "5220420a-32e4-4823-9f0a-26246739fafc",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{scheduler_tenant}}\n",
-			"url": "{{protocol}}://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
+			"url": "https://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -140,7 +140,7 @@
 		{
 			"id": "5f82cb76-cafa-cb65-3b3d-5a2b90c671e2",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/analytics/08a5cc58-017d-432a-b951-227a3f9bfe1",
+			"url": "https://{{config_host}}/api/v1/config/analytics/08a5cc58-017d-432a-b951-227a3f9bfe1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "DELETE",
@@ -160,7 +160,7 @@
 		{
 			"id": "6da3bd80-8b29-35c0-bec9-ff27813ec2d6",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/orchestrations",
+			"url": "https://{{config_host}}/api/v1/config/orchestrations",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -180,7 +180,7 @@
 		{
 			"id": "71659510-8c12-44be-a42d-ec3fea3c4ec6",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{scheduler_tenant}}\n",
-			"url": "{{protocol}}://{{scheduler_host}}/api/v1/scheduler/jobs",
+			"url": "https://{{scheduler_host}}/api/v1/scheduler/jobs",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -200,7 +200,7 @@
 		{
 			"id": "75b39adb-8c7b-2974-ae7e-798b6bbb8dca",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{exec_host}}/api/v1/execution",
+			"url": "https://{{exec_host}}/api/v1/execution",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -220,7 +220,7 @@
 		{
 			"id": "763e0193-ffb2-8aea-f2e4-dc2fb904d44b",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/analytics/08a5cc58-017d-432a-b951-227a3f9bfe1",
+			"url": "https://{{config_host}}/api/v1/config/analytics/08a5cc58-017d-432a-b951-227a3f9bfe1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
@@ -241,7 +241,7 @@
 		{
 			"id": "90ba2efb-f9ab-1666-c884-46e131d88e50",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{scheduler_tenant}}\n",
-			"url": "{{protocol}}://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
+			"url": "https://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
@@ -261,7 +261,7 @@
 		{
 			"id": "98d23220-73cb-5104-0793-8974c9edb7a6",
 			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{scheduler_tenant}}\n",
-			"url": "{{protocol}}://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7/history",
+			"url": "https://{{scheduler_host}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7/history",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -281,7 +281,7 @@
 		{
 			"id": "e2f04274-8447-52ca-f330-b56618bbf442",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/orchestrations/",
+			"url": "https://{{config_host}}/api/v1/config/orchestrations/",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -301,7 +301,7 @@
 		{
 			"id": "e4a6b9d3-c991-756d-7a4a-e81af8d0093a",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/analytics",
+			"url": "https://{{config_host}}/api/v1/config/analytics",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -322,7 +322,7 @@
 		{
 			"id": "ed20de27-5ffe-f042-62c4-4a512ffa0dde",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/analytics/08a5cc58-017d-432a-b951-227a3f9bfe1",
+			"url": "https://{{config_host}}/api/v1/config/analytics/08a5cc58-017d-432a-b951-227a3f9bfe1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -367,7 +367,7 @@
 		{
 			"id": "f328a996-2559-90e6-311a-5d097d6038d8",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{scheduler_tenant}}\n",
-			"url": "{{protocol}}://{{scheduler_host}}/api/v1/scheduler/jobs",
+			"url": "https://{{scheduler_host}}/api/v1/scheduler/jobs",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -387,7 +387,7 @@
 		{
 			"id": "ff5fcd79-a63f-e199-f37a-387c7044e4c2",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{protocol}}://{{config_host}}/api/v1/config/orchestrations/08a5cc58-017d-432a-b951-227a3f9bfe1",
+			"url": "https://{{config_host}}/api/v1/config/orchestrations/08a5cc58-017d-432a-b951-227a3f9bfe1",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "PUT",
