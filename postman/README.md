@@ -2,16 +2,16 @@
 
 
 ### API Reference
-These request collections conform to the Analytics Catalog and Analytics Runtime API set, which is documented at [predix.io/api](https://www.predix.io/api). User guides for the API, which cover common use cases and workflows, can be found on the full [Analytics Catalog](https://www.predix.io/docs/#hcwYlgq4) and [Analytics Runtime](https://www.predix.io/docs/#pM5fe0l) documentation sites.
+These request collections conform to the Analytics Catalog and Analytics Runtime API set, which is documented at [predix.io/api](https://www.predix.io/api). User guides for the API, which cover common use cases and workflows, can be found on the full [Analytics Catalog](https://www.predix.io/docs/#A5cFZF2V) and [Analytics Runtime](https://www.predix.io/docs/#h6rTgHDW) documentation sites.
 
 
 ### Request Collections
 These files contain sample requests that can be imported directly into Postman through the "Import" link near the top-center of the window. You can then customize and test out your REST requests to aid in implementing your applications.
 
-* [Analytic Catalog](./Analytic_Catalog.json.postman_collection) 
-* [Orchestration Configuration](./Orchestration_Configuration.json.postman_collection) 
-* [Orchestration Execution](./Orchestration_Execution.json.postman_collection) 
-* [Analytics Scheduler Service](./Scheduler_Service.json.postman_collection) 
+* [Analytics Catalog](./Analytics_Catalog.json.postman_collection) 
+* [Analytics Runtime](./Analytics_Runtime.json.postman_collection) 
+
+If you have trouble importing Postman files using this method, you can try directly pasting the contents of the Postman files using the "Raw Text" tab within the Import window.
 
 
 ### Environment Variables
@@ -34,5 +34,4 @@ To manage your environment, use the drop down menu to the left of the circled "x
 
 This will bring up a popup from which you add/import environments and edit environment variables (including global variables):
 
-![Postman Environemtns Popup](./images/PostmanEnvironmentsPopup.png)
-
+![Postman Environments Popup](./images/PostmanEnvironmentsPopup.png)

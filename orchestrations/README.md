@@ -8,4 +8,4 @@ A collection of sample orchestration workflows for use with Predix Analytics.
 
 A Catalog analytic is one that has been uploaded to the Analytic Catalog and deployed into Cloud Foundry.
 
-For more information on running orchestrations in Predix Analytics, see "Using the Analytics Runtime Service" in the Predix Analytics Services documentation on Predix IO. 
+For more information on running orchestrations in Predix Analytics, see [Using the Analytics Runtime Service](https://www.predix.io/docs/#pM5fe0l) on Predix IO. 
