@@ -11,7 +11,7 @@ To run this analytic locally, you will need to have the following:
 - Flask 0.10+
 
 ## Building, deploying and running the analytic
-1. Zip the demo-analytics/demo-adder-py directory, or just get the latest demo-adder-py binary from the Releases page.
+1. Zip the demo-analytics/demo-adder-py directory, or just get the latest demo-adder-py binary from the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page.
 2. Create an analytic in Analytics Catalog with the name "demo-adder-py" and the version "v1".
 3. Upload the zip file and attach it to the created analytic.
 4. Deploy and test the analytic on Predix Analytics platform.
