@@ -12,6 +12,13 @@ checkstatus(){
   fi
 }
 
+while getopts "u:" opt; do
+  case $opt in
+    u)
+      PREDIX_UAA_DOMAIN=$OPTARG
+  esac
+done
+
 # --------------------------------------------------------------------------------
 
 selectUAA () {
@@ -34,7 +41,7 @@ selectUAA () {
       echo "You chose an invalid selection ($REPLY). Please choose one of the numbers from the list"
       continue
     else
-      UAA_INSTANCE_ID=`cf service ${UAA} --guid`
+      UAA_INSTANCE_ID=`cf service "${UAA}" --guid`
       echo "You picked $UAA ($REPLY), this is its GUID: ${UAA_INSTANCE_ID}"
       break
     fi
@@ -63,7 +70,7 @@ selectCatalog () {
       echo "You chose an invalid selection ($REPLY). Please choose one of the numbers from the list"
       continue
     else
-      CATALOG_INSTANCE_ID=`cf service ${CATALOG} --guid`
+      CATALOG_INSTANCE_ID=`cf service "${CATALOG}" --guid`
       echo "You picked $CATALOG ($REPLY), this is its GUID: ${CATALOG_INSTANCE_ID}"
       break
     fi
@@ -92,7 +99,7 @@ selectRuntime () {
       echo "You chose an invalid selection ($REPLY). Please choose one of the numbers from the list"
       continue
     else
-      RUNTIME_INSTANCE_ID=`cf service ${RUNTIME} --guid`
+      RUNTIME_INSTANCE_ID=`cf service "${RUNTIME}" --guid`
       echo "You picked $RUNTIME ($REPLY), this is its GUID: ${RUNTIME_INSTANCE_ID}"
       break
     fi
@@ -110,7 +117,7 @@ logInToUAA () {
   done
   ${UAAC} target https://${UAA_INSTANCE_ID}.${PREDIX_UAA_DOMAIN}
   checkstatus
-  ${UAAC} token client get admin -s ${CLIENT_SECRET_1}
+  ${UAAC} token client get admin -s "${CLIENT_SECRET_1}"
   checkstatus
 }
 
