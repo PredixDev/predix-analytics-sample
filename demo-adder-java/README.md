@@ -12,7 +12,7 @@ To build and run this analytic, you will need to have the following:
 - Maven 3+
 
 ## Building, deploying and running the analytic
-1. From the demo-analytics/demo-adder-java directory, run the `mvn clean install` command to build and perform the component test.
+1. From the demo-analytics/demo-adder-java directory, run the `mvn clean package` command to build and perform the component test.
 2. Create an analytic in Analytics Catalog with the name "Demo Adder Java" and the version "v1".
 3. Upload the jar file demo-adder-java-1.0.0.jar from the demo-adder-java/target directory and attach it to the created analytic entry.
 4. Deploy and test the analytic on Predix Analytics platform.

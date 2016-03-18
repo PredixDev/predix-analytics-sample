@@ -15,15 +15,15 @@ If you have trouble importing Postman files using this method, you can try direc
 
 
 ### Environment Variables
-Postman allows you to create "Environments" which can have a set of variables. That way, you can use the same Postman request for multiple environments. Variables are referenced using double curly bracket notation (ex: {{token}}) anywhere in the request (URL, params, header, body).
+Postman allows you to create "Environments" which can have a set of variables. That way, you can use the same Postman request for multiple environments. Variables are referenced using double curly bracket notation (ex: {{token}}) anywhere in the request (URL, params, header, body). 
 
-The collections above assume that you have the following set of variables defined, either for a single environment, or at a global level.
+The collections above assume that you have the following set of variables defined, either for a single environment, or at a global level. You can import the [Template Environment](./Template.postman_environment) and fill out the values of the following environment variables.
 
 * **token** : The full token obtained from your UAA service
-* **catalog_host** : The hostname of the instance of Analytics Catalog (obtained from the VCAP environment in your Analytics Catalog service instance)
-* **config_host** : The hostname of the instance of Orchestration Configuration (obtained from the VCAP environment in your Analytics Runtime service instance)
-* **exec_host** : The hostname of the instance of Orchestration Execution (obtained from the VCAP environment in your Analytics Runtime service instance)
-* **scheduler_host** : The hostname of the instance of Analytics Scheduler Service (obtained from the VCAP environment in your Analytics Runtime service instance)
+* **catalog_uri** : The hostname of the instance of Analytics Catalog (obtained from the VCAP environment in your Analytics Catalog service instance)
+* **config_uri** : The hostname of the instance of Orchestration Configuration (obtained from the VCAP environment in your Analytics Runtime service instance)
+* **execution_uri** : The hostname of the instance of Orchestration Execution (obtained from the VCAP environment in your Analytics Runtime service instance)
+* **scheduler_uri** : The hostname of the instance of Analytics Scheduler Service (obtained from the VCAP environment in your Analytics Runtime service instance)
 * **catalog_tenant** : The Predix Zone ID of your Analytics Catalog instance (obtained from the VCAP environment in your Analytics Catalog service instance)
 * **runtime_tenant** : The Predix Zone ID of your Analytics Runtime instance (obtained from the VCAP environment in your Analytics Runtime service instance)
 

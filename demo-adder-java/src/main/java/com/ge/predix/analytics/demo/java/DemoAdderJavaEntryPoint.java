@@ -10,6 +10,7 @@
 
 package com.ge.predix.analytics.demo.java;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 import org.slf4j.Logger;
@@ -23,23 +24,17 @@ public class DemoAdderJavaEntryPoint {
 	Logger logger = LoggerFactory.getLogger(DemoAdderJavaEntryPoint.class);
 	ObjectMapper mapper = new ObjectMapper();
 
-	public String add2Numbers(String jsonStr) {
+	public String add2Numbers(String jsonStr) throws IOException {
 
-		try {
-			HashMap<String, Integer> jsonDataMap = mapper.readValue(jsonStr, HashMap.class);
-			long number1 = jsonDataMap.get("number1");
-			long number2 = jsonDataMap.get("number2");
+		HashMap<String, Integer> jsonDataMap = mapper.readValue(jsonStr, HashMap.class);
+		long number1 = jsonDataMap.get("number1");
+		long number2 = jsonDataMap.get("number2");
 
-			AdderResponse output = null;
-			output = new AdderResponse();
-			output.setResult(number1 + number2);
+		AdderResponse output = null;
+		output = new AdderResponse();
+		output.setResult(number1 + number2);
 
-			return mapper.writeValueAsString(output);
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+		return mapper.writeValueAsString(output);
 
 	}
 
