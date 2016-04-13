@@ -10,6 +10,7 @@ These files contain sample requests that can be imported directly into Postman t
 
 * [Analytics Catalog](./Analytics_Catalog.json.postman_collection) 
 * [Analytics Runtime](./Analytics_Runtime.json.postman_collection) 
+* [UAA Token for Analytics Services](./UAA_Token_for_Analytics_Services.json.postman_collection): Use these templates to retrieve the tokens needed to call Analytics APIs
 
 If you have trouble importing Postman files using this method, you can try directly pasting the contents of the Postman files using the "Raw Text" tab within the Import window.
 

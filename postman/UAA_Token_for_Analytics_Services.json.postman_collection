@@ -1,0 +1,113 @@
+{
+	"id": "8aaeb071-d9c8-43d5-ae85-dc7a6f90220b",
+	"name": "UAA Token for Analytics Services",
+	"description": "This collection contains templates for making UAA calls to obtain OAuth2 tokens.",
+	"order": [
+		"b9cbe74d-05c5-a3c9-f672-60080c279293",
+		"2986877b-4bcb-b12b-9694-ee7b7cf5698d",
+		"6d0c3628-fe05-cefc-bcc3-0284adf8708d"
+	],
+	"folders": [],
+	"timestamp": 1460582882228,
+	"owner": "",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "2986877b-4bcb-b12b-9694-ee7b7cf5698d",
+			"headers": "Accept: application/json, application/x-www-form-urlencoded\nAuthorization: Basic <Base64(client_id:client_secret)>\n",
+			"url": "<UAA Issuer Id>",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "<username>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "<password>",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1460584958011,
+			"name": "Get Token Using Password Grant Type",
+			"description": "This request is configured to retrieve a token from your UAA instance using the Password grant type. You must 1) Put your UAA's issuer ID ({UAA URI}/oauth/token) in the request endpoint; 2) Fill out the Authorization header, either manually in the Headers tab, or by choosing \"Basic\" and entering your client credentials in the Authorization tab; and 3) Fill out your username and password in the request body.",
+			"collectionId": "8aaeb071-d9c8-43d5-ae85-dc7a6f90220b",
+			"responses": []
+		},
+		{
+			"id": "6d0c3628-fe05-cefc-bcc3-0284adf8708d",
+			"headers": "Accept: application/json, application/x-www-form-urlencoded\nAuthorization: Basic <Base64(client_id:client_secret)>\n",
+			"url": "<UAA Issuer Id>",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "refresh_token",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refresh_token",
+					"value": "<Refresh Token>",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1460585412654,
+			"name": "Get Token Using Refresh Token Grant Type",
+			"description": "This request is configured to retrieve a token from your UAA instance using the Refresh Token grant type. You must 1) Put your UAA's issuer ID ({UAA URI}/oauth/token) in the request endpoint; 2) Fill out the Authorization header, either manually in the Headers tab, or by choosing \"Basic\" and entering your client credentials in the Authorization tab; and 3) Add the refresh token (which can only be obtained from a UAA token request using the Password grant type) in the request body",
+			"collectionId": "8aaeb071-d9c8-43d5-ae85-dc7a6f90220b",
+			"responses": []
+		},
+		{
+			"id": "b9cbe74d-05c5-a3c9-f672-60080c279293",
+			"headers": "Accept: application/json, application/x-www-form-urlencoded\nAuthorization: Basic <Base64(client_id:client_secret)>\n",
+			"url": "<UAA Issuer Id>",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "client_credentials",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1460585056268,
+			"name": "Get Token Using Client Credentials Grant Type",
+			"description": "This request is configured to retrieve a token from your UAA instance using the Client Credentials grant type. You must 1) Put your UAA's issuer ID ({UAA URI}/oauth/token) in the request endpoint; and 2) Fill out the Authorization header, either manually in the Headers tab, or by choosing \"Basic\" and entering your client credentials in the Authorization tab",
+			"collectionId": "8aaeb071-d9c8-43d5-ae85-dc7a6f90220b",
+			"responses": []
+		}
+	]
+}
