@@ -67,7 +67,7 @@ The JSON output format from the analytic is as follows:
 ## Developing a Java-based analytic
 1. Create an entry-point method which takes in the input data as a String and returns the output as a String.
 2. Create the JSON configuration file `src/main/resources/config.json` containing the className and MethodName definitions to designate as an entry point method.  (See `Deploying the analytic to the Predix Cloud` for the details on how `config.json` is used.)
-3. Build and prepare the analytic jar file including `config.json` file and dependent jar files. See [sample pom.xml](demo-timeseries-adder-java/pom.xml) for reference.
+3. Build and prepare the analytic jar file including `config.json` file and dependent jar files. See [sample pom.xml](pom.xml) for reference.
 
 In this example, the entry-point is `add2NumberArrays` in the [DemoJavaAdderWithTimeseriesEntryPoint](src/main/java/com/ge/predix/analytics/demo/java/DemoJavaAdderWithTimeseriesEntryPoint.java ) class.
 [config.json](src/main/resources/config.json) properly maps the entry point to the `add2NumberArrays` method of the `DemoJavaAdderWithTimeseriesEntryPoint` class.
