@@ -14,6 +14,36 @@ The expected JSON input data format is as follows:
 
 `{"number1": 123, "number2": 456}`
 
+The following analytic is an implementation of adding two timeseries array.
+
+1. **[demo-timeseries-adder-java](demo-timeseries-adder-java)** - sample timeseries adder analytic in Java.
+
+The expected JSON input data format for timeseries adder is as follows:
+
+```json
+{
+  "data": {
+    "time_series": {
+      "numberArray1": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "numberArray2": [
+        100.0,
+        200.0,
+        300.0
+      ],
+      "time_stamp": [
+        "1455733669601",
+        "1455733669602",
+        "1455733669603"
+      ]
+    }
+  }
+}
+```
+
 For more information on developing analytics for use with Predix Analytics, see [Analytic Development](https://www.predix.io/docs/#Qd2kPYb7) on Predix IO. 
 
 ## Sample Orchestration Workflows
