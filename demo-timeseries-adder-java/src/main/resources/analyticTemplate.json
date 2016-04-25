@@ -1,0 +1,60 @@
+{
+  "analyticName": "java-timeseries-demo-adder",
+  "analyticVersion": "1.0",
+  "inputPortDefinitions": [
+    {
+      "portType": "COMPOSITE",
+      "portName": "data",
+      "variable": false,
+      "childrenPorts": [
+        {
+          "portName": "time_series",
+          "portType": "TIMESERIES_ARRAY",
+          "required": true,
+          "variable": false,
+          "columns": [
+            {
+              "portName": "numberArray1",
+              "portType": "FIELD",
+              "variable": false,
+              "dataType": "DOUBLE_ARRAY",
+              "required": true
+            },
+            {
+              "portName": "numberArray2",
+              "portType": "FIELD",
+              "variable": false,
+              "dataType": "DOUBLE_ARRAY",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outputPortDefinitions": [
+    {
+      "portName": "data",
+      "portType": "COMPOSITE",
+      "required": true,
+      "variable": false,
+      "childrenPorts": [
+        {
+          "portName": "time_series",
+          "portType": "TIMESERIES_ARRAY",
+          "required": true,
+          "variable": false,
+          "columns": [
+            {
+              "portName": "sum",
+              "portType": "FIELD",
+              "variable": false,
+              "dataType": "DOUBLE_ARRAY",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
