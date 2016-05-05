@@ -1,0 +1,29 @@
+{
+  "analyticName": "demo adder",
+  "analyticVersion": "v1",
+  "inputPortDefinitions": [
+    {
+      "portType": "FIELD",
+      "portName": "number1",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    },
+    {
+      "portType": "FIELD",
+      "portName": "number2",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    }
+  ],
+  "outputPortDefinitions": [
+    {
+      "portType": "FIELD",
+      "portName": "result",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    }
+  ]
+}
