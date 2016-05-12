@@ -1,6 +1,6 @@
 #demo-adder-java
 
-A java-based sample analytic for the Predix Analytics platform.
+A Java-based sample analytic for the Predix Analytics platform.
 
 ## Compiled binaries
 Refer to the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page for compiled binaries you can upload directly to Predix Analytics.
@@ -12,10 +12,13 @@ To build and run this analytic, you will need to have the following:
 - Maven 3+
 
 ## Building, deploying and running the analytic
-1. From the demo-analytics/demo-adder-java directory, run the `mvn clean package` command to build and perform the component test.
-2. Create an analytic in Analytics Catalog with the name "Demo Adder Java" and the version "v1".
+1. From this directory, run the `mvn clean package` command to build and perform the component test, or just get the latest demo-adder-java-1.0.0.jar binary from the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page.
+2. Create an analytic in the Analytics Catalog with the name "Demo Adder Java" and the version "v1".
 3. Upload the jar file demo-adder-java-1.0.0.jar from the demo-adder-java/target directory and attach it to the created analytic entry.
 4. Deploy and test the analytic on Predix Analytics platform.
+
+## Analytic template
+This analytic takes in 2 numbers and returns their sum. This structure is outlined in this [analytic template](../demo-adder-template.json).
 
 ## Input format
 The expected JSON input data format is as follows:

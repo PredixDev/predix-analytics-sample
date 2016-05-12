@@ -12,14 +12,17 @@ To build and run this analytic, you will need to have the following:
 - Maven 3+
 
 ## Building, deploying and running the analytic
-1. From the demo-timeseries-adder-java directory, run the `mvn clean package` command to build and perform the component test.
+1. From the demo-timeseries-adder-java directory, run the `mvn clean package` command to build and perform the component test, or just get the latest demo-timeseries-adder-java-1.0.0.jar binary from the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page.
 2. Create an analytic in Analytics Catalog with the name "Demo Timeseries Adder Java", the supported language "Java" and the version "v1".
 3. Upload the jar file demo-timeseries-adder-java-1.0.0.jar from the demo-timeseries-adder-java/target directory and attach it to the created analytic entry.
 4. Deploy and test the analytic on Predix Analytics platform.
 
+## Analytic template
+This analytic takes in timeseries arrays and returns a timeseries array containing the sums of each datapoint. This structure is outlined in this [analytic template](demo-timeseries-adder-template.json).
+
 ## Input format
 The expected JSON input data format is as follows:
-```json
+```
 {
   "data": {
     "time_series": {
@@ -45,7 +48,7 @@ The expected JSON input data format is as follows:
 
 ## Output format
 The JSON output format from the analytic is as follows:
-```json
+```
 {
   "data": {
     "time_series": {

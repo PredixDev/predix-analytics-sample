@@ -11,10 +11,13 @@ To run this analytic locally, you will need to have the following:
 - Flask 0.10+
 
 ## Building, deploying and running the analytic
-1. Zip the demo-analytics/demo-adder-py directory, or just get the latest demo-adder-py binary from the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page.
+1. Zip the contents of this directory, or just get the latest demo-adder-py binary from the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page.
 2. Create an analytic in Analytics Catalog with the name "demo-adder-py" and the version "v1".
 3. Upload the zip file and attach it to the created analytic.
 4. Deploy and test the analytic on Predix Analytics platform.
+
+## Analytic template
+This analytic takes in 2 numbers and returns their sum. This structure is outlined in this [analytic template](../demo-adder-template.json).
 
 ## Input format
 The expected JSON input data format is as follows:

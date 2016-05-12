@@ -4,45 +4,10 @@ A collection of samples for use with [Predix Analytics](https://www.predix.io/do
 
 ## Sample Analytics
 
-These analytics are implementations of the same logic (adding 2 numbers together and returning the result) developed in different languages.
+These are the sample analytics written for Predix Analytics:
 
-1. **[demo-adder-java](demo-adder-java)** - sample adder analytic in Java
-2. **[demo-adder-matlab](demo-adder-matlab)** - sample adder analytic in Matlab 
-3. **[demo-adder-py](demo-adder-py)** - sample adder analytic in Python 
-
-The expected JSON input data format is as follows:
-
-`{"number1": 123, "number2": 456}`
-
-The following analytic is an implementation of adding two timeseries array.
-
-1. **[demo-timeseries-adder-java](demo-timeseries-adder-java)** - sample timeseries adder analytic in Java.
-
-The expected JSON input data format for timeseries adder is as follows:
-
-```json
-{
-  "data": {
-    "time_series": {
-      "numberArray1": [
-        1.0,
-        2.0,
-        3.0
-      ],
-      "numberArray2": [
-        100.0,
-        200.0,
-        300.0
-      ],
-      "time_stamp": [
-        "1455733669601",
-        "1455733669602",
-        "1455733669603"
-      ]
-    }
-  }
-}
-```
+- **[demo-adder](analytics/demo-adder):** A simple analytic that takes 2 numbers as input and returns their sum. It has been implemented in Java, Matlab (r2011b), and Python.
+- **[demo-timeseries-adder](analytics/demo-timeseries-adder-java):** Takes 2 arrays of timeseries data and returns a timeseries array that contains the sums at each timestamp. Currently available in Java.
 
 For more information on developing analytics for use with Predix Analytics, see [Analytic Development](https://www.predix.io/docs/#Qd2kPYb7) on Predix IO. 
 
