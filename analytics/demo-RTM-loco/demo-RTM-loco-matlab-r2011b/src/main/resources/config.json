@@ -1,0 +1,5 @@
+{
+"className":"com.ge.predix.insight.analytic.demo.matlab.LocoRegDemo",
+"methodName":"locoRegression",
+"matlabVersion":"r2011b"
+}

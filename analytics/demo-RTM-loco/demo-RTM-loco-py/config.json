@@ -1,0 +1,18 @@
+{
+  "locomotive": {
+    "tags": {
+      "analytic-root": "analytic",
+      "analytic-testbench": "testbench",
+      "driver-root": "driver",
+      "driver-main": "driver/AnalyticDriver.py",
+      "mapper": "mapper",
+      "resultprovider": "results"
+    },
+    "conda-libs": [
+      "numpy",
+      "scikit-learn",
+      "scipy",
+      "pandas"
+    ]
+  }
+}

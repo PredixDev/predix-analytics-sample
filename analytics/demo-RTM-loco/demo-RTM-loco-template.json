@@ -1,0 +1,80 @@
+{
+  "analyticName": "Demo RTM Analytic",
+  "analyticVersion": "v1",
+  "inputPortDefinitions": [
+    {
+      "portType": "COMPOSITE",
+      "portName": "test",
+      "variable": false,
+      "required": true,
+      "childrenPorts": [
+        {
+          "portName": "wind_speed",
+          "portType": "FIELD",
+          "variable": false,
+          "required": true,
+          "dataType": "INTEGER_ARRAY"
+        },
+        {
+          "portName": "RTM",
+          "portType": "FIELD",
+          "variable": false,
+          "required": true,
+          "dataType": "DOUBLE_ARRAY"
+        },
+        {
+          "portName": "loco_speed",
+          "portType": "FIELD",
+          "variable": false,
+          "required": true,
+          "dataType": "DOUBLE_ARRAY"
+        }
+      ]
+    },
+    {
+      "portType": "COMPOSITE",
+      "portName": "train",
+      "variable": false,
+      "required": true,
+      "childrenPorts": [
+        {
+          "portName": "wind_speed",
+          "portType": "FIELD",
+          "variable": false,
+          "required": true,
+          "dataType": "INTEGER_ARRAY"
+        },
+        {
+          "portName": "RTM",
+          "portType": "FIELD",
+          "variable": false,
+          "required": true,
+          "dataType": "DOUBLE_ARRAY"
+        },
+        {
+          "portName": "loco_speed",
+          "portType": "FIELD",
+          "variable": false,
+          "required": true,
+          "dataType": "DOUBLE_ARRAY"
+        }
+      ]
+    }
+  ],
+  "outputPortDefinitions": [
+    {
+      "portName": "Prediction",
+      "portType": "FIELD",
+      "variable": false,
+      "required": true,
+      "dataType": "DOUBLE_ARRAY"
+    },
+    {
+      "portName": "R2",
+      "portType": "FIELD",
+      "variable": false,
+      "required": true,
+      "dataType": "DOUBLE_ARRAY"
+    }
+  ]
+}
