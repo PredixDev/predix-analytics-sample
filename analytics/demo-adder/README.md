@@ -4,7 +4,7 @@
 Specific details on how to package these analytics can be found within the implementation folders:
 
 - **[demo-adder-java](demo-adder-java):** A Java implementation of the demo-adder
-- **[demo-adder-matlab-2011b](demo-adder-matlab-r2011b-impl):** A Matlab (r2011b) implementation of the demo-adder
+- **[demo-adder-matlab-2011b](demo-adder-matlab-r2011b):** A Matlab (r2011b) implementation of the demo-adder
 - **[demo-adder-py](demo-adder-py):** A Python implementation of the demo-adder
 
 ## Analytic template
