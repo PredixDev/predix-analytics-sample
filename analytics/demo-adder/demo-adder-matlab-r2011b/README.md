@@ -10,7 +10,7 @@ To build and run this analytic, you will need to have the following:
 - Maven 3+
 
 ## Building, deploying and running the analytic
-1. Obtain the javabuilder.jar file corresponding to Matlab version r2011b and place it in the [libs directory](src/main/resources/libs).
+1. Obtain the javabuilder.jar file corresponding to Matlab version r2011b and place it in the libs directory (`src/main/resources/libs`).
 2. From the demo-adder-matlab-r2011b directory, run the `mvn clean package` command to build the analytic jar file.
 3. Create an analytic in Analytics Catalog with the name "Demo Adder Matlab" and the version "v1".
 4. Upload the generated jar file from the demo-adder-matlab-r2011b/target directory and attach it to the created analytic entry.

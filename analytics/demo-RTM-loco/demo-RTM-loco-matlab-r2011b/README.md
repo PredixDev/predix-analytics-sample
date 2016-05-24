@@ -12,7 +12,7 @@ To build and run this analytic, you will need to have the following:
 - Maven 3+
 
 ## Building, deploying and running the analytic
-1. Obtain the javabuilder.jar file corresponding to Matlab version r2011b and place it in the [libs directory](src/main/resources/libs).
+1. Obtain the javabuilder.jar file corresponding to Matlab version r2011b and place it in the libs directory (`src/main/resources/libs`).
 1. From the demo-RTM-loco-matlab-r2011b directory, run the `mvn clean package` command to build and perform the component test.
 2. Create an analytic in Analytics Catalog with the name "Demo RTM matlab" and the version "v1".
 3. Upload the jar file demo-RTM-loco-matlab-r2011b-1.0.0-SNAPSHOT.jar from the demo-RTM-loco-matlab-r2011b/target directory and attach it to the created analytic entry.
