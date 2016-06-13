@@ -24,14 +24,14 @@ The expected JSON input data format is as follows:
 
 ## Developing a Matlab-based analytic
 1. Implement the Matlab analytic, preferably such that it takes in data as a JSON string.
-2. Generate the Java JAR for the Matlab analytic using the instructions in the document [Matlab Builder for Java](http://soliton.ae.gatech.edu/classes/ae6382/documents/matlab/mathworks/javabuilder.pdf). Note the package, class name, and method name entered.
-3. Create a Java module that consumes your Matlab analytic as a library.
+2. Generate the Java JAR for the Matlab analytic using the instructions in the document Matlab Builder for Java found at [http://soliton.ae.gatech.edu/classes/ae6382/documents/matlab/mathworks/javabuilder.pdf](http://soliton.ae.gatech.edu/classes/ae6382/documents/matlab/mathworks/javabuilder.pdf). Note the package, class name, and method name entered.
+3. Create a Java module that consumes your Matlab analytic as a library. If you are using Maven, this means including the analytic JAR file as a dependency in the `pom.xml` file. 
 4. Obtain the javabuilder.jar file corresponding to the Matlab version in which your analytic was developed and configure the Java module to consume it as a library.
 5. Create a Java entry-point method which takes in the input data as a string, calls your Matlab algorithm, and returns the output as a string. If your Matlab method does not accept a JSON string as input, this Java entry point method will need to do the JSON parsing and call your Matlab method with the correctly formatted parameters.
 6. Create the JSON configuration file `src/main/resources/config.json` containing the className, MethodName, and matlabVersion definitions that instruct the generated wrapper code to call your designated entry point method with the request payload.
-7. Create a JAR package out of the Java module using either Maven or other tools.
+7. Create a JAR package out of the Java module using either Maven (`mvn clean package`) or other tools.
 
-In this example, the POM file consumes the **(3)** Java JAR for the Matlab analytic (matlabadder.jar) and **(4)** the javabuilder.jar for Matlab r2011b (which you will need to provide), which need to be located in the [lib directory](src/main/resources/lib). The entry-point is **(5)** `add2Numbers` in the [DemoAdderJavaEntryPoint](src/main/java/com/ge/predix/insight/analytic/demo/matlab/DemoMatlabAdderEntryPoint.java) class.
+In this example, the POM file consumes the **(3)** Java JAR for the Matlab analytic (matlabadder.jar) and **(4)** the javabuilder.jar for Matlab r2011b (which you will need to provide), which need to be located in the libs directory (`src/main/resources/libs`). The entry-point is **(5)** `add2Numbers` in the [DemoAdderJavaEntryPoint](src/main/java/com/ge/predix/insight/analytic/demo/matlab/DemoMatlabAdderEntryPoint.java) class.
 **(6)** [config.json](src/main/resources/config.json) properly maps the entry point to the `add2Numbers` method of the `DemoMatlabAdderEntryPoint` class. 
 
 ## Deploying the analytic to the Predix Cloud

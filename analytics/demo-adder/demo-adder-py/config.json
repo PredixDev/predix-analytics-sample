@@ -1,13 +1,6 @@
 {
-  "demoAdder": {
-    "tags": {
-      "analytic-root": "analytic",
-      "driver-root": "driver",
-      "driver-main": "driver/AnalyticDriver.py",
-      "mapper": "driver",
-      "resultprovider": "sum"
-    }
-  },
+  "main-module": "driver/AnalyticDriver.py",
+  "main-function": "driver",
   "libs": [
     "boto"
   ],
