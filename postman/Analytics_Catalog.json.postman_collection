@@ -5,6 +5,18 @@
 	"order": [],
 	"folders": [
 		{
+			"id": "7fb563e4-25fa-d151-8fae-0089c902caa9",
+			"name": "Analytic Execution",
+			"description": "",
+			"order": [
+				"ee0c74eb-1f6a-f6d3-8941-3e09d1fb42bf",
+				"70d0f01f-6799-7ce0-8db1-0a98b5fa5612",
+				"3fe9d81a-cc7e-dbe7-be6c-225925bf538d",
+				"31e62c6e-91e9-299b-200d-5258cbe02f40"
+			],
+			"owner": 0
+		},
+		{
 			"id": "0ae85123-720a-d29e-d343-52bbe87910c0",
 			"name": "Analytics",
 			"description": "",
@@ -113,7 +125,7 @@
 			"data": [
 				{
 					"key": "file",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				},
@@ -165,6 +177,50 @@
 			"description": "",
 			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
 			"responses": []
+		},
+		{
+			"id": "31e62c6e-91e9-299b-200d-5258cbe02f40",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "<analytic_uri>/api/v1/analytic/execution/async/<requestId>/result",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Retrieve Async Execution Result",
+			"description": "Retrieve the result of the requested asynchronous analytic execution. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"descriptionFormat": "html",
+			"time": 1466548189907,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "7fb563e4-25fa-d151-8fae-0089c902caa9",
+			"rawModeData": ""
+		},
+		{
+			"id": "3fe9d81a-cc7e-dbe7-be6c-225925bf538d",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "<analytic_uri>/api/v1/analytic/execution/async/<requestId>/status",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Retrieve Async Execution Status",
+			"description": "Retrieve the status of the requested asynchronous analytic execution. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"descriptionFormat": "html",
+			"time": 1466548150509,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "7fb563e4-25fa-d151-8fae-0089c902caa9",
+			"rawModeData": ""
 		},
 		{
 			"id": "52b7b275-c307-e81a-0cd3-748572adb464",
@@ -282,6 +338,26 @@
 			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734"
 		},
 		{
+			"id": "70d0f01f-6799-7ce0-8db1-0a98b5fa5612",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "<analytic_uri>/api/v1/analytic/execution/async",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1466548164705,
+			"name": "Trigger Asynchronous Execution",
+			"description": "Trigger the analytic to execute asynchronously. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
+			"responses": [],
+			"rawModeData": "{\"number1\":2,\"number2\":4}"
+		},
+		{
 			"id": "7b8b4521-dc2b-6f7e-98b6-80e0ca435e3e",
 			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
 			"url": "{{catalog_uri}}/api/v1/catalog/analytics/versions?name=java-demo-adder",
@@ -350,7 +426,7 @@
 			"data": [
 				{
 					"key": "file",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				},
@@ -585,6 +661,25 @@
 				}
 			],
 			"rawModeData": "{\n    \"name\": \"aaa analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Python\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"test\",\n    \"description\": \"test\",\n    \"customMetadata\": \"{\\\"assetid\\\":\\\"abc\\\"}\"\n}"
+		},
+		{
+			"id": "ee0c74eb-1f6a-f6d3-8941-3e09d1fb42bf",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{catalog_tenant}}\n",
+			"url": "<analytic_uri>/api/v1/analytic/execution",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1466548160393,
+			"name": "Synchronous Execution",
+			"description": "Execute the analytic synchronously. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"collectionId": "86abc24c-69b4-d8cc-0cbc-1c6d08576734",
+			"responses": [],
+			"rawModeData": "{\"number1\":2,\"number2\":4}"
 		},
 		{
 			"id": "f45ac8fb-4113-5f75-142d-1399474b299e",
