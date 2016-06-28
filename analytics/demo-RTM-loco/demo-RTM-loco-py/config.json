@@ -1,6 +1,6 @@
 {
   "main-module": "driver/AnalyticDriver.py",
-  "main-function": "driver",
+  "main-function": "mapper",
   "conda-libs": [
     "numpy",
     "scikit-learn",
