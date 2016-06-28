@@ -1,11 +1,10 @@
 {
-    "main-module": "driver/AnalyticDriver.py",
-    "main-function": "driver",
-    "conda-libs": [
-      "numpy",
-      "scikit-learn",
-      "scipy",
-      "pandas"
-    ]
-  }
+  "main-module": "driver/AnalyticDriver.py",
+  "main-function": "driver",
+  "conda-libs": [
+    "numpy",
+    "scikit-learn",
+    "scipy",
+    "pandas"
+  ]
 }
