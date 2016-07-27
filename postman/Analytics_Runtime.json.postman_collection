@@ -100,8 +100,8 @@
 	],
 	"timestamp": 1429047848333,
 	"owner": 0,
-	"remoteLink": "",
 	"public": false,
+	"published": false,
 	"requests": [
 		{
 			"id": "07298cd1-a9c6-3dd1-e483-134b0b18599f",
@@ -154,12 +154,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1462407658590,
+			"time": 1469646143027,
 			"name": "Run Orchestration (v2)",
 			"description": "",
 			"collectionId": "05dd3949-94fb-b59c-da04-f7ae3cbe51c8",
 			"responses": [],
-			"rawModeData": "{\n  \"orchestrationConfigurationId\": \"string\",\n  \"assetId\": \"string\",\n  \"assetDataFieldsMap\": {\n    \"mapEntries\": [\n      {\n        \"fieldId\": \"string\",\n        \"tagName\": \"string\"\n      }\n    ]\n  },\n  \"assetGroup\": {\n      \"dataSourceId\": \"string\",\n      \"assetSelectionFilter\": \"string\"\n  }\n}"
+			"rawModeData": "{\n  \"orchestrationConfigurationId\": \"string\",\n  \"assetId\": \"string\",\n  \"assetDataFieldsMap\": {\n    \"<fieldId>\": \"<tagName>\"\n  },\n  \"assetGroup\": {\n      \"dataSourceId\": \"string\",\n      \"assetSelectionFilter\": \"string\"\n  }\n}"
 		},
 		{
 			"id": "17604dca-af3a-3c52-8771-292637973834",
@@ -405,13 +405,13 @@
 			"data": [
 				{
 					"key": "bpmn",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				},
 				{
 					"key": "input",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				}
@@ -533,7 +533,7 @@
 			"data": [
 				{
 					"key": "file",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				},
@@ -738,7 +738,7 @@
 			"data": [
 				{
 					"key": "file",
-					"value": null,
+					"value": "",
 					"type": "file",
 					"enabled": true
 				}
