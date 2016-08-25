@@ -1,31 +1,71 @@
-#demo-adder-py
+#demo-timeseries-adder-with-model-py
 
-A python-based sample analytic for Predix Analytics.
+A python-based sample analytic that adds two timeseries arrays using a trained model for the Predix Analytics platform.
 
 ## Compiled binaries
 Refer to the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page for compiled binaries you can upload directly to Predix Analytics.
 
 ## Pre-requisites
 To run this analytic locally, you will need to have the following:
+
 - Python 2.7+
 - Flask 0.10+
 
 ## Building, deploying and running the analytic
 1. Zip the contents of this directory, or just get the latest demo-adder-py binary from the [Releases](https://github.com/PredixDev/predix-analytics-sample/releases) page.
-2. Create an analytic in Analytics Catalog with the name "demo-adder-py" and the version "v1".
+2. Create an analytic in Analytics Catalog with the name "demo-timeseries-adder-with-model-py" and the version "v1".
 3. Upload the zip file and attach it to the created analytic.
 4. Deploy and test the analytic on Predix Analytics platform.
 
 ## Analytic template
-This analytic takes in 2 numbers and returns their sum. This structure is outlined in this [analytic template](../demo-adder-template.json).
+This analytic takes in 2 timeseries arrays and returns their sum, augmented by a "threshold" model. This structure is outlined in this [analytic template](../demo-timeseries-adder-with-model-template.json).
 
 ## Input format
 The expected JSON input data format is as follows:
-`{"number1": 123, "number2": 456}`
+```json
+{
+  "data": {
+    "time_series": {
+      "numberArray1": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "numberArray2": [
+        100.0,
+        200.0,
+        300.0
+      ],
+      "time_stamp": [
+        "1455733669601",
+        "1455733669602",
+        "1455733669603"
+      ]
+    }
+  }
+}
+```
 
 ## Output format
 The JSON output format from the analytic is as follows:
-`{"result":579}`
+```json
+{
+  "data": {
+    "time_series": {
+      "time_stamp": [
+        "1455733669601",
+        "1455733669602",
+        "1455733669603"
+      ],
+      "sum": [
+        101.0,
+        202.0,
+        303.0
+      ]
+    }
+  }
+}
+```
 
 ## Developing a Python-based analytic
 1. Implement the analytic (and test functions) according to your development guidelines.

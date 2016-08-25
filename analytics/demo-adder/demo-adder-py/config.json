@@ -1,7 +1,6 @@
 {
-  "main-module": "driver/AnalyticDriver.py",
-  "main-function": "driver",
-  "libs": [
+  "entry-method": "analytic.demoAdder.add",
+  "non-conda-libs": [
     "boto"
   ],
   "conda-libs": [

@@ -1,10 +1,28 @@
-from sklearn.linear_model import LinearRegression
+import json
 import logging
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
 
 class LocomotiveRegression:
-
     def __init__(self):
         print "Locomotive Linear Regression"
+
+    def driver(self, data):
+        data_json = json.loads(data)
+
+        # extract training and test data
+        training_df = pd.DataFrame(data_json["train"])
+        testing_df = pd.DataFrame(data_json["test"])
+
+        # get the predictions from the analytic
+        predictions, score = self.train_and_predict(training_df, testing_df)
+
+        # package results into a dictionary to pass them on to
+        # analytic framework
+        result = {"Prediction": predictions, "R2": score}
+
+        return result
 
     def train_and_predict(self, training_df, testing_df):
         """
@@ -22,11 +40,11 @@ class LocomotiveRegression:
 
         # do feature transformation and
         # add locomotive speed squared as a non linear feature
-        training_df["loco_speed_sqr"] = training_df["loco_speed"]**2
-        testing_df["loco_speed_sqr"] = testing_df["loco_speed"]**2
+        training_df["loco_speed_sqr"] = training_df["loco_speed"] ** 2
+        testing_df["loco_speed_sqr"] = testing_df["loco_speed"] ** 2
 
         # dependent variables
-        feature_columns = ['loco_speed','wind_speed', "loco_speed_sqr"]
+        feature_columns = ['loco_speed', 'wind_speed', "loco_speed_sqr"]
         # target and prediction variable
         label_column = 'RTM'
 
@@ -49,10 +67,10 @@ class LocomotiveRegression:
         # import pdb; pdb.set_trace()
         test_pred = model.predict(test_feats).tolist()
         logging.info("R^2: " + str(test_pred))
-        
+
         # prediction scores in terms of R^2 (unused)
         score = [model.score(test_feats, test_targets.T)]
         logging.info("Predictions: " + str(score))
-        
+
         # return predicted labels as a list
         return (test_pred, score)

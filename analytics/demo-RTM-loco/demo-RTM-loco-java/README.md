@@ -71,6 +71,18 @@ Requests made to this generated URI will be passed to the entry point method.
 ### Additional Information
 We are oversimplifying the problem of creating analytics that model instantaneous operational efficiency of a diesel locomotive. The purpose of this sample analytic is to get you started on building and deploying your analytic in Predix Analytics Services.  
 
-For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://www.predix.io/docs#Qd2kPYb7)** section of the Predix Analytics Services documentation on predix.io. 
+## Developing a java-based analytic
+1. Implement the analytic (and test functions) according to your development guidelines.
+2. Create an entry-point method.  The entry method signature must be in one of the following two formats:
+ * For analytics that do not use trained models, use the following signature for your entry method:
+  `public String entry_method(String inputJson)`
+ * For analytics that use trained models, use the following signature for your entry method:
+  `public String entry_method(String inputJson, Map<String, byte[]> inputModels)`
+ * In either case, the `entry_method` can be any method name. `inputJson` is the JSON string input that will be passed to the analytic. The output of this method must also be a JSON string.
+ * `inputModels` contains a map of trained models as defined in the port-to-field map. The entry method should properly handle the case of an empty map.
+3. Create the JSON configuration file `src/main/resources/config.json` containing the className and MethodName definitions that instruct the generated wrapper code to call your designated entry point method with the request payload.
+4. Build and prepare the analytic jar file including `config.json` file and dependent jar files. See [sample pom.xml](pom.xml) for reference.
+
+For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://www.predix.io/docs#Qd2kPYb7)** section of the Predix Analytics Services documentation on predix.io.
 
 

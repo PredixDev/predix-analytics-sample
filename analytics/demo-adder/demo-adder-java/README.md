@@ -29,8 +29,16 @@ The JSON output format from the analytic is as follows:
 `{"result":579}`
 
 ## Developing a java-based analytic
-1. Create an entry-point method which takes in the input data as a String and returns the output as a String.
-2. Create the JSON configuration file `src/main/resources/config.json` containing the className and MethodName definitions that instruct the generated wrapper code to call your designated entry point method with the request payload.
+1. Implement the analytic (and test functions) according to your development guidelines.
+2. Create an entry-point method.  The entry method signature must be in one of the following two formats:
+ * For analytics that do not use trained models, use the following signature for your entry method:
+  `public String entry_method(String inputJson)`
+ * For analytics that use trained models, use the following signature for your entry method:
+  `public String entry_method(String inputJson, Map<String, byte[]> inputModels)`
+ * In either case, the `entry_method` can be any method name. `inputJson` is the JSON string input that will be passed to the analytic. The output of this method must also be a JSON string.
+ * `inputModels` contains a map of trained models as defined in the port-to-field map. The entry method should properly handle the case of an empty map.
+3. Create the JSON configuration file `src/main/resources/config.json` containing the className and MethodName definitions that instruct the generated wrapper code to call your designated entry point method with the request payload.
+4. Build and prepare the analytic jar file including `config.json` file and dependent jar files. See [sample pom.xml](pom.xml) for reference.
 
 In this example, the entry-point is `add2Numbers` in the [DemoAdderJavaEntryPoint](src/main/java/com/ge/predix/analytics/demo/java/DemoAdderJavaEntryPoint.java) class.
 [config.json](src/main/resources/config.json) properly maps the entry point to the `add2Numbers` method of the `DemoAdderJavaEntryPoint` class. 

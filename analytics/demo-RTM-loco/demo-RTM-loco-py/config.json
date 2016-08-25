@@ -1,6 +1,5 @@
 {
-  "main-module": "driver/AnalyticDriver.py",
-  "main-function": "mapper",
+  "entry-method": "rtm.LocomotiveRegression.driver",
   "conda-libs": [
     "numpy",
     "scikit-learn",
