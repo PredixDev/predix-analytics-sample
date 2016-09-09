@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath" id="sid-81430087-7a44-4be3-8517-914faf923256"
+             targetNamespace="DSP-PM" typeLanguage="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="OrchestrationWithOneAnalytic" isExecutable="true">
+
+        <startEvent id="startEvent"
+                    name="">
+            <outgoing>start-to-demoTimeseriesAdder</outgoing>
+        </startEvent>
+
+        <serviceTask completionQuantity="1"
+                     id="demoTimeseriesAdder"
+                     isForCompensation="false"
+                     name="68f35dbc-b8e0-4aa0-8773-44def13542b7::Demo Timeseries Adder::v1"
+                     startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>start-to-demoTimeseriesAdder</incoming>
+            <outgoing>demoTimeseriesAdder-to-end</outgoing>
+        </serviceTask>
+
+        <endEvent id="endEvent" name="">
+            <incoming>demoTimeseriesAdder-to-end</incoming>
+        </endEvent>
+
+
+        <sequenceFlow id="start-to-demoTimeseriesAdder"
+                      name="" sourceRef="startEvent"
+                      targetRef="demoTimeseriesAdder"/>
+
+        <sequenceFlow id="demoTimeseriesAdder-to-end"
+                      name="" sourceRef="demoTimeseriesAdder" targetRef="endEvent"/>
+
+    </process>
+
+</definitions>
