@@ -1,0 +1,956 @@
+{
+	"id": "b8cab280-7759-a42c-5fca-c0bda1360999",
+	"name": "Two Step Orchestration Demo",
+	"description": "",
+	"order": [
+		"50e0b99e-8ec4-df42-ff02-5b8c2ebb88f8",
+		"24e47d5a-41b7-7af7-99c7-8007a122417d",
+		"4dc43229-f356-7ace-3a05-e44e1d0eaf1c",
+		"c6338e3f-19e4-c959-7faa-dffce5cc5113",
+		"286d9717-d758-3a12-176f-dfea591b0fdb"
+	],
+	"folders": [
+		{
+			"id": "7c95a6e9-0041-4538-2a89-ac0f47444659",
+			"name": "addAnalytics",
+			"description": "",
+			"order": [
+				"43bd7442-a9e3-a914-b1e3-99928c836596",
+				"59b16977-0705-b268-0789-5498be842d5f",
+				"a32e4cfb-b6f4-f5a0-816b-6b23ac3ad027",
+				"1459e125-45f8-3678-0098-130553566473",
+				"9b9a11b5-e4b7-d767-9344-860ffe9be0b8",
+				"1c156b50-3ebe-21c8-41d0-9fa1e50cb1e3",
+				"82b67864-adf1-b161-d32b-1b74f18df37c",
+				"c3e985f6-d87d-2908-25dd-f389ca9cdc45"
+			],
+			"owner": 0
+		},
+		{
+			"id": "972418e0-692d-fd91-9bf0-ad71da867b00",
+			"name": "addOrchestrationConfiguration",
+			"description": "",
+			"order": [
+				"85070f94-d12c-1723-6f87-4653353023b2",
+				"abcc2357-8bec-1f54-a0b5-fabe20674c05",
+				"1f23321d-836b-404a-3b78-6ddc5f055e84",
+				"f582aea0-53cc-54dc-2765-76c2d4b2562d",
+				"8326973a-f972-2a5d-d4cd-e3efd44428af",
+				"871e02df-a33e-13d3-6711-852e29070530",
+				"2221ae28-ac05-8c6b-381a-21a9972786a6",
+				"a8d60a58-4a47-b186-704e-c865ccf3f732"
+			],
+			"owner": 0
+		},
+		{
+			"id": "83e1795a-21a8-8082-73c0-1a40bf9a03d2",
+			"name": "assetData",
+			"description": "",
+			"order": [
+				"8226693e-2c54-85ef-6768-e32219b37240",
+				"9e8b49d4-16da-1cf3-4d67-e63a9cad873b"
+			],
+			"owner": 0
+		},
+		{
+			"id": "8dd0f075-f1ef-3384-bc29-430dbbdf282e",
+			"name": "validateDataLoaded",
+			"description": "",
+			"order": [
+				"4cf42047-a9bd-9d9a-e685-89ff6de84817",
+				"18ecfdd3-3f18-f6b6-4d74-d2c654218824",
+				"c9ee417e-9074-fd5c-ee39-1487f338660a",
+				"1ef565c4-2675-e470-52b5-ebcca58fa982",
+				"6bbebc1c-d149-ed77-6b9f-d97bf2d8042b"
+			],
+			"owner": 0,
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999"
+		}
+	],
+	"timestamp": 1470772500034,
+	"owner": 0,
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "1459e125-45f8-3678-0098-130553566473",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{user_token}}\nAccept: application/json\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "<catalogEntryId>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder for timeseries",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471283611434,
+			"name": "Create Artifact",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "18ecfdd3-3f18-f6b6-4d74-d2c654218824",
+			"headers": "Authorization: {{user_token}}\nPredix-Zone-Id: {{timeseries-zone-id}}\n",
+			"url": "https://{{timeseries_query_host}}/v1/datapoints",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1470860913869,
+			"name": "timeseries tag values",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\r\n    \"start\": 0,\r\n    \"end\": -1,\r\n    \"tags\": [\r\n       {\r\n            \"name\": [\r\n                \"32_bearing_temperature_36-UUID\"\r\n            ]\r\n        }\r\n    ]\r\n    \r\n}"
+		},
+		{
+			"id": "1c156b50-3ebe-21c8-41d0-9fa1e50cb1e3",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/<analyticEntryId>/deployment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471469176491,
+			"name": "Deploy Miners Rule",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\n    \"memory\":512,\n    \"diskQuota\":1024,\n    \"instances\":1\n}"
+		},
+		{
+			"id": "1ef565c4-2675-e470-52b5-ebcca58fa982",
+			"headers": "Authorization: {{user_token}}\nPredix-Zone-Id: {{timeseries_zone_id}}\n",
+			"url": "https://{{timeseries_query_host}}/v1/datapoints",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471466883727,
+			"name": "get timeseries tag values",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\r\n    \"start\": 0,\r\n    \"end\": -1,\r\n    \"tags\": [\r\n       {\r\n            \"name\": [\r\n                \"32_bearing_temperature_36-UUID\"\r\n            ]\r\n        }\r\n    ]\r\n    \r\n}"
+		},
+		{
+			"id": "1f23321d-836b-404a-3b78-6ddc5f055e84",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "MinersRulePortToFieldMap.json",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "orchestrationEntryId",
+					"value": "<orchestration entry id>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "TwoStepOrchestration",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "bpmn",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471372708274,
+			"name": "Create Orchestration BPMN Artifact",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "2221ae28-ac05-8c6b-381a-21a9972786a6",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/models",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "MinersRulePortToFieldMap.json",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "modelKey",
+					"value": "<modelKey>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelName",
+					"value": "CDMStressLimits",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelVersion",
+					"value": "v1.0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "trained model",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471444941373,
+			"name": "Upload Miners Rule Model",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "24e47d5a-41b7-7af7-99c7-8007a122417d",
+			"headers": "Authorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\nContent-Type: application/json\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/defaulttagquery",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471469343290,
+			"name": "create default tag map query",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"defaultTagNameQuery\":\"assets?filter=classification=/classifications/timeseries_tag:asset_id=${ASSET_ID}\",\r\n    \"fieldNameSpecifier\" : \"name\",\r\n    \"tagNameSpecifier\" : \"timeseries_tag_id\",\r\n    \"author\": \"Demo\",\r\n    \"description\": \"default tag query for two step orchestration example\"\r\n}"
+		},
+		{
+			"id": "286d9717-d758-3a12-176f-dfea591b0fdb",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{monitoring_host}}/api/v1/monitoring/orchestrations/<orchestrationRequestId>",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471468713323,
+			"name": "Orchestration Status",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "<body from instructions>"
+		},
+		{
+			"id": "43bd7442-a9e3-a914-b1e3-99928c836596",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics?size=99",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471286889542,
+			"name": "Retrieve All Analytics",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999"
+		},
+		{
+			"id": "4cf42047-a9bd-9d9a-e685-89ff6de84817",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{asset_zone_id}}\n",
+			"url": "https://{{asset_host}}/assets?filter=uri=/assets/minersRuleOrch*-UUID",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1470856798903,
+			"name": "asset query for 2 step orchestration asset model",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "4dc43229-f356-7ace-3a05-e44e1d0eaf1c",
+			"headers": "Authorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/defaulttagquery",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471372038030,
+			"name": "Get Default Tag Query",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "50e0b99e-8ec4-df42-ff02-5b8c2ebb88f8",
+			"headers": "Accept: application/json, application/x-www-form-urlencoded\nAuthorization: Basic {{uaa_authorization_id}}\n",
+			"url": "https://{{uaa_host}}/oauth/token",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "{{userId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{userPassword}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "response_type",
+					"value": "token",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "{{uaa_client_id}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Request user token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1470772537870,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "59b16977-0705-b268-0789-5498be842d5f",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471280971586,
+			"name": "Create Analytic Entry",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 502,
+						"name": "Bad Gateway",
+						"detail": "The server was acting as a gateway or proxy and received an invalid response from the upstream server."
+					},
+					"time": 26358,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "67",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 17 Dec 2015 23:16:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "X-Cf-Requestid",
+							"key": "X-Cf-Requestid",
+							"value": "dd72f88f-66b5-4515-7e80-f8a54051a458",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Cf-Routererror",
+							"key": "X-Cf-Routererror",
+							"value": "endpoint_failure",
+							"description": "Custom header"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "502 Bad Gateway: Registered endpoint failed to handle the request.\n",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "cb6ba408-9a73-52b1-adaa-58294905b775",
+					"name": "502 error",
+					"request": {
+						"url": "https://predix-analytics-catalog-release.run.aws-usw02-pr.ice.predix.io/api/v1/catalog/analytics",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"name": "Content-Type",
+								"enabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiI0OTJkMWExYy1jNjVlLTRmODgtODc1Mi1kZDJlZjI5ODE1ZDkiLCJzdWIiOiI4MzM1MTBiZS05NmJiLTQxYzgtOTIyMC0xMzk2ZWUxMDdhZWMiLCJzY29wZSI6WyJhbmFseXRpY3Muem9uZXMuY2IxZjVjMjktMjVlYS00YmZhLTgxNmYtNjRlOTQ4Y2M2MzQ0LnVzZXIiLCJhbmFseXRpY3Muem9uZXMuYjNlMTkzNGUtMWVhZi00MjcxLTlmZDItY2ZmZjdkNDUxZDIxLnVzZXIiXSwiY2xpZW50X2lkIjoiYWRtaW4iLCJjaWQiOiJhZG1pbiIsImF6cCI6ImFkbWluIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjgzMzUxMGJlLTk2YmItNDFjOC05MjIwLTEzOTZlZTEwN2FlYyIsIm9yaWdpbiI6InVhYSIsInVzZXJfbmFtZSI6ImFsbGVuLmNodUBnZS5jb20iLCJlbWFpbCI6ImFsbGVuLmNodUBnZS5jb20iLCJhdXRoX3RpbWUiOjE0NTAzOTMxODcsInJldl9zaWciOiI0YTIzOGRjZiIsImlhdCI6MTQ1MDM5MzE4NywiZXhwIjoxNDUwNDM2Mzg3LCJpc3MiOiJodHRwczovLzg3OTk1YzUzLWJiZTctNDRhOC1hZTIwLWFmMDA3OGVkZTM5NS5wcmVkaXgtdWFhLnJ1bi5hd3MtdXN3MDItcHIuaWNlLnByZWRpeC5pby9vYXV0aC90b2tlbiIsInppZCI6Ijg3OTk1YzUzLWJiZTctNDRhOC1hZTIwLWFmMDA3OGVkZTM5NSIsImF1ZCI6WyJhZG1pbiIsImFuYWx5dGljcy56b25lcy5jYjFmNWMyOS0yNWVhLTRiZmEtODE2Zi02NGU5NDhjYzYzNDQiLCJhbmFseXRpY3Muem9uZXMuYjNlMTkzNGUtMWVhZi00MjcxLTlmZDItY2ZmZjdkNDUxZDIxIl19.n-VAjTsUHsxXkz_b79RNRrpmXgPs0D8GlCqoXPh23fKilzviRyLz27lrpuQ5NDho_53Lo5R7DRb80XZM5XBjrUomT1Byp5xIZgRdJteMyfWblJZ7W_tsj6Irf4JTt9R3kYamPRjSVmMLW4BwomSpMIL6-umgUH9j7aTOR8R6StbjUkIAydvtrXWlWFgHLmWsX0cLms7lI3mOaRI2XGr-Q0EGzsXHs7fibH3NZ-BvdwRraM2dTr94RdlyuH2jAClYSHLzvJnwtuvSO1Dze8OcsfJgwqyCFQ02Hd2lTbVxRq0vk3neQxdE9jHgxPRbYSTr00yxs3o6mfu7CQasdS9pWA",
+								"name": "Authorization",
+								"enabled": true
+							},
+							{
+								"key": "Predix-Zone-Id",
+								"value": "cb1f5c29-25ea-4bfa-816f-64e948cc6344",
+								"name": "Predix-Zone-Id",
+								"enabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "59b1f823-49b6-b478-6fd7-0a089e357b88"
+							}
+						],
+						"data": "{\n    \"name\": \"matlab analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Matlab\",\n    \"taxonomyLocation\": \"/demo-analytics/matlab-test\",\n    \"author\": \"Allen Chu\",\n    \"description\": \"test matlab adder\"\n}",
+						"method": "POST",
+						"dataMode": "raw"
+					},
+					"owner": 0
+				}
+			],
+			"rawModeData": "{\n    \"name\": \"Timeseries Demo Adder\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Java\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"demo\"\n}"
+		},
+		{
+			"id": "6bbebc1c-d149-ed77-6b9f-d97bf2d8042b",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{asset_zone_id}}\n",
+			"url": "https://{{asset_host}}/assets?filter=classification=/classifications/timeseries_tag:asset_id=/assets/minersRuleOrch38-UUID&fields=name,timeseries_tag_id",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1470856408312,
+			"name": "asset tag map query validation",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"folder": "8dd0f075-f1ef-3384-bc29-430dbbdf282e"
+		},
+		{
+			"id": "8226693e-2c54-85ef-6768-e32219b37240",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{asset_zone_id}}\n",
+			"url": "https://{{asset_host}}/assets",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1470854981607,
+			"name": "add asset data",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"folder": "83e1795a-21a8-8082-73c0-1a40bf9a03d2",
+			"rawModeData": "[\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch1-UUID\",\r\n    \"name\": \"Africa\",\r\n    \"classification\": \"/classifications/location\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch5-UUID\",\r\n    \"name\": \"North America\",\r\n    \"classification\": \"/classifications/location\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch4-UUID\",\r\n    \"name\": \"Europe\",\r\n    \"classification\": \"/classifications/location\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch6-UUID\",\r\n    \"classification\": \"/classifications/model_name\",\r\n    \"name\": \"99942 Apophis\",\r\n    \"model_name_abbr\": \"Apophis\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch7-UUID\",\r\n    \"classification\": \"/classifications/model_name\",\r\n    \"name\": \"4 Vesta\",\r\n    \"model_name_abbr\": \"Vesta\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch8-UUID\",\r\n    \"classification\": \"/classifications/mfg_site\",\r\n    \"name\": \"Very Deep Ravine\",\r\n    \"ips_cms\": \"null\",\r\n    \"air_density\": null,\r\n    \"time_zone_name\": \"Europe/Berlin\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch9-UUID\",\r\n    \"classification\": \"/classifications/mfg_site\",\r\n    \"name\": \"Breezy Plateau\",\r\n    \"ips_cms\": \"null\",\r\n    \"air_density\": null,\r\n    \"time_zone_name\": \"Europe/Berlin\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch10-UUID\",\r\n    \"classification\": \"/classifications/mfg_site\",\r\n    \"name\": \"Nasty Big Mountain\",\r\n    \"time_zone_name\": \"Europe/Berlin\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch11-UUID\",\r\n    \"classification\": \"/classifications/subModelSeries\",\r\n    \"names\": \"1.5/1.6/1.7-70.5/77/82.5/87/91\",\r\n    \"subModelSeries_abbr\": \"1X\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch12-UUID\",\r\n    \"classification\": \"/classifications/customer\",\r\n    \"name\": \"Mindful Financial, Corp\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch13-UUID\",\r\n    \"classification\": \"/classifications/customer\",\r\n    \"name\": \"Green Energy, Corp\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch17-UUID\",\r\n    \"classification\": \"/classifications/controller_type\",\r\n    \"name\": \"BetterThanOthers\",\r\n    \"controller_type_abbr\": \"BTO\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch18-UUID\",\r\n    \"classification\": \"/classifications/generator_type\",\r\n    \"name\": \"High Power Generator\",\r\n    \"generator_type_abbr\": \"HPG\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch19-UUID\",\r\n    \"classification\": \"/classifications/generator_type\",\r\n    \"name\": \"Low Power Generator\",\r\n    \"generator_type_abbr\": \"LPG\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch15-UUID\",\r\n    \"classification\": \"/classifications/turbine_type\",\r\n    \"name\": \"1.5s\",\r\n    \"rated_capacity\": 1500.0,\r\n    \"turbine_model\": \"/assets/minersRuleOrch11-UUID\",\r\n    \"model_name\": \"/assets/minersRuleOrch6-UUID\",\r\n    \"controller_type\": \"/assets/minersRuleOrch17-UUID\",\r\n    \"generator_type\": \"/assets/minersRuleOrch18-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch16-UUID\",\r\n    \"classification\": \"/classifications/turbine_type\",\r\n    \"name\": \"15sl-UUID\",\r\n    \"rated_capacity\": 1585.0,\r\n    \"turbine_model\": \"/assets/minersRuleOrch11-UUID\",\r\n    \"model_name\": \"/assets/minersRuleOrch7-UUID\",\r\n    \"controller_type\": \"/assets/minersRuleOrch17-UUID\",\r\n    \"generator_type\": \"/assets/minersRuleOrch18-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch20-UUID\",\r\n    \"classification\": \"/classifications/country\",\r\n    \"name\": \"Germany\",\r\n    \"country_code\": \"DE\",\r\n    \"location\": \"/assets/minersRuleOrch4-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch28-UUID\",\r\n    \"classification\": \"/classifications/country\",\r\n    \"name\": \"United States\",\r\n    \"country_code\": \"US\",\r\n    \"location\": \"/assets/minersRuleOrch5-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch27-UUID\",\r\n    \"classification\": \"/classifications/division\",\r\n    \"name\": \"Copernicus\",\r\n    \"division_code\": \"Coper\",\r\n    \"country\": \"/assets/minersRuleOrch28-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"classification\": \"/classifications/turbine\",\r\n    \"name\": \"Very Deep Ravine  Turbine 1\",\r\n    \"system_number\": 4610,\r\n    \"serial_number\": 8974,\r\n    \"weight\": 65.7,\r\n    \"commission_date\": \"2004-08-08\",\r\n    \"turbine_type\": \"/assets/minersRuleOrch16-UUID\",\r\n    \"mfg_site\": \"/assets/minersRuleOrch10-UUID\",\r\n    \"country\": \"/assets/minersRuleOrch20-UUID\",\r\n    \"division\": \"/assets/minersRuleOrch27-UUID\",\r\n    \"customer\": \"/assets/minersRuleOrch14-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"classification\": \"/classifications/turbine\",\r\n    \"name\": \"Very Deep Ravine Turbine 2\",\r\n    \"system_number\": 4610,\r\n    \"serial_number\": 8975,\r\n    \"weight\": 64.7,\r\n    \"commission_date\": \"2010-08-01\",\r\n    \"turbine_type\": \"/assets/minersRuleOrch16-UUID\",\r\n    \"mfg_site\": \"/assets/minersRuleOrch10-UUID\",\r\n    \"country\": \"/assets/minersRuleOrch20-UUID\",\r\n    \"division\": \"/assets/minersRuleOrch27-UUID\",\r\n    \"customer\": \"/assets/minersRuleOrch14-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"classification\": \"/classifications/turbine\",\r\n    \"name\": \"Very Deep Ravine Turbine 2\",\r\n    \"system_number\": 4610,\r\n    \"serial_number\": 8990,\r\n    \"weight\": 64.7,\r\n    \"commission_date\": \"2010-08-01\",\r\n    \"turbine_type\": \"/assets/minersRuleOrch16-UUID\",\r\n    \"mfg_site\": \"/assets/minersRuleOrch10-UUID\",\r\n    \"country\": \"/assets/minersRuleOrch20-UUID\",\r\n    \"division\": \"/assets/minersRuleOrch27-UUID\",\r\n    \"customer\": \"/assets/minersRuleOrch14-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch33-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"KW\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"kw\",\r\n    \"asset_id\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"timeseries_tag_id\": \"32_KW_33-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch34-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"vibration\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"vibe units\",\r\n    \"asset_id\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"timeseries_tag_id\": \"32_vibration_34-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch35-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"local Rh\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"%\",\r\n    \"asset_id\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"timeseries_tag_id\": \"32_local_rh_35-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch36-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"bearing temperature\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"C\",\r\n    \"asset_id\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"timeseries_tag_id\": \"32_bearing_temperature_36-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"KW\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"kw\",\r\n    \"asset_id\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"timeseries_tag_id\": \"37_KW_38-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch39-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"vibration\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"vibe units\",\r\n    \"asset_id\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"timeseries_tag_id\": \"37_vibration_39-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch40-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"local Rh\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"%\",\r\n    \"asset_id\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"timeseries_tag_id\": \"37_local_rh_40-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch41-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"bearing temperature\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"C\",\r\n    \"asset_id\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"timeseries_tag_id\": \"37_bearing_temperature_41-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch42-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"vibration1\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"vibe units\",\r\n    \"asset_id\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"timeseries_tag_id\": \"32_vibration1_42-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch43-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"vibration1\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"vibe units\",\r\n    \"asset_id\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"timeseries_tag_id\": \"37_vibration1_43-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch44-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"currentCDM\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"%\",\r\n    \"asset_id\": \"/assets/minersRuleOrch32-UUID\",\r\n    \"timeseries_tag_id\": \"32_CDM_44-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch45-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"currentCDM\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"%\",\r\n    \"asset_id\": \"/assets/minersRuleOrch37-UUID\",\r\n    \"timeseries_tag_id\": \"37_CDM_45-UUID\"\r\n  },\r\n    {\r\n    \"uri\": \"/assets/minersRuleOrch50-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"KW\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"kw\",\r\n    \"asset_id\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"timeseries_tag_id\": \"38_KW_50-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch51-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"vibration\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"vibe units\",\r\n    \"asset_id\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"timeseries_tag_id\": \"38_vibration_51-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch52-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"local Rh\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"%\",\r\n    \"asset_id\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"timeseries_tag_id\": \"38_local_rh_52-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch53-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"bearing temperature\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"C\",\r\n    \"asset_id\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"timeseries_tag_id\": \"38_bearing_temperature_53-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch54-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"currentCDM\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"%\",\r\n    \"asset_id\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"timeseries_tag_id\": \"38_CDM_54-UUID\"\r\n  },\r\n  {\r\n    \"uri\": \"/assets/minersRuleOrch55-UUID\",\r\n    \"classification\": \"/classifications/timeseries_tag\",\r\n    \"name\": \"vibration1\",\r\n    \"tag_type\": \"sensor\",\r\n    \"units\": \"vibe units\",\r\n    \"asset_id\": \"/assets/minersRuleOrch38-UUID\",\r\n    \"timeseries_tag_id\": \"38_vibration1_55-UUID\"\r\n  }]"
+		},
+		{
+			"id": "82b67864-adf1-b161-d32b-1b74f18df37c",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/<analyticEntryId>/validation/<validationRequestId>",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471293409142,
+			"name": "Retrieve Analytic Validation Status",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "8326973a-f972-2a5d-d4cd-e3efd44428af",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/<orchestration entry id>/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471441758916,
+			"name": "Get Artifact Metadata for an Orchestration Configuration",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "85070f94-d12c-1723-6f87-4653353023b2",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471372413481,
+			"name": "Create Orchestration Configuration Entry",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"TwoStepOrchestration\",\n    \"author\": \"Demo\",\n    \"description\": \"sample 2 step orchestration\"\n}"
+		},
+		{
+			"id": "871e02df-a33e-13d3-6711-852e29070530",
+			"headers": "//Accept: application/octet-stream\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations?size=999",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471442090268,
+			"name": "Retrieve All Orchestration Configurations",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "9b9a11b5-e4b7-d767-9344-860ffe9be0b8",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/<analyticEntryId>/validation",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471293092871,
+			"name": "Validate Analytic",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\n  \"data\": {\n    \"time_series\": {\n      \"numberArray1\": [\n        1.0,\n        2.0,\n        3.0,\n        4.0,\n        5.0,\n        6.0,\n        7.0,\n        8.0,\n        9.0,\n        10.0\n      ],\n      \"numberArray2\": [\n        100.0,\n        200.0,\n        300.0,\n        400.0,\n        500.0,\n        600.0,\n        700.0,\n        800.0,\n        900.0,\n        1000.0\n      ],\n      \"time_stamp\": [\n        \"1455733669601\",\n        \"1455733669602\",\n        \"1455733669603\",\n        \"1455733669604\",\n        \"1455733669605\",\n        \"1455733669606\",\n        \"1455733669607\",\n        \"1455733669608\",\n        \"1455733669609\",\n        \"1455733669610\"\n      ]\n    }\n  }\n}"
+		},
+		{
+			"id": "9e8b49d4-16da-1cf3-4d67-e63a9cad873b",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{asset_zone_id}}\n",
+			"url": "https://{{asset_host}}/assets?filter=classification=/classifications/turbine:uri=/assets/minersRuleOrch*&fields=uri",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1470856622969,
+			"name": "asset group query",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"folder": "83e1795a-21a8-8082-73c0-1a40bf9a03d2"
+		},
+		{
+			"id": "a32e4cfb-b6f4-f5a0-816b-6b23ac3ad027",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/<analyticEntryId>/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471280582923,
+			"name": "Retrieve Artifacts for Analytic",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "a8d60a58-4a47-b186-704e-c865ccf3f732",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/models",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"data": [
+				{
+					"key": "file",
+					"value": "MinersRulePortToFieldMap.json",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "modelKey",
+					"value": "<modelKey>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelName",
+					"value": "CDMStressLimits",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelVersion",
+					"value": "v1.0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "trained model",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Get Orchestration Models",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1471444978460,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "972418e0-692d-fd91-9bf0-ad71da867b00"
+		},
+		{
+			"id": "abcc2357-8bec-1f54-a0b5-fabe20674c05",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{config_host}}/api/v2/config/orchestrations/artifacts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "orchestrationEntryId",
+					"value": "<orchestration entry id>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "portToFieldMap",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "<step name>",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "port to field map",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471442534129,
+			"name": "Create Orchestration Port to Field Map Artifact",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		},
+		{
+			"id": "c3e985f6-d87d-2908-25dd-f389ca9cdc45",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{catalog_zone_id}}\n",
+			"url": "https://{{catalog_host}}/api/v1/catalog/analytics/<analyticEntryId>",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471370508982,
+			"name": "Delete Analytic",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"rawModeData": ""
+		},
+		{
+			"id": "c6338e3f-19e4-c959-7faa-dffce5cc5113",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{execution_host}}/api/v2/execution/async",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471445987851,
+			"name": "Run Orchestration",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "<body from instructions>"
+		},
+		{
+			"id": "c9ee417e-9074-fd5c-ee39-1487f338660a",
+			"headers": "Authorization: {{user_token}}\nPredix-Zone-Id: {{timeseries_zone_id}}\nContent-Type: application/json\n",
+			"url": "https://{{timeseries_query_host}}/v1/tags",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471466849440,
+			"name": "get timeseries tags",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": [],
+			"rawModeData": "{\r\n    \"start\": 0,\r\n    \"end\": -1,\r\n    \"tags\": [\r\n       {\r\n            \"name\": [\r\n                \"32_bearing_temperature_36-UUID\"\r\n            ]\r\n        }\r\n    ]\r\n    \r\n}"
+		},
+		{
+			"id": "f582aea0-53cc-54dc-2765-76c2d4b2562d",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
+			"url": "https://{{execution_host}}/api/v2/execution/validation",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "MinersRuleOrchestration.bpmn20.xml",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1471373066151,
+			"name": "Validate Orchestration",
+			"description": "",
+			"collectionId": "b8cab280-7759-a42c-5fca-c0bda1360999",
+			"responses": []
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+  "analyticName": "MinersRule",
+  "analyticVersion": "v1",
+  "inputPortDefinitions": [
+    {
+      "portName": "current_cdm",
+      "portType": "TIMESERIES_ARRAY",
+      "variable": false,
+      "columns": [
+        {
+          "portName": "cdm_values",
+          "portType": "FIELD",
+          "variable": false,
+          "dataType": "DOUBLE_ARRAY"
+        }
+      ]
+    },
+    {
+      "portName": "recentStresses",
+      "portType": "TIMESERIES_ARRAY",
+      "variable": false,
+      "columns": [
+        {
+          "portName": "stresses",
+          "portType": "FIELD",
+          "variable": true,
+          "dataType": "DOUBLE_ARRAY"
+        }
+      ]
+    }
+  ],
+  "inputModelDefinitions" : [
+    {
+     "comment": ["the order of the stress limits in this model must match the order of the stress values in the analytic input."],
+	 "modelPortName": "Stress Limits"
+	 }
+  ],
+  "outputPortDefinitions": [
+    {
+      "portName": "updatedCDM",
+      "portType": "TIMESERIES_ARRAY",
+      "variable": false,
+      "columns": [
+        {
+          "portName": "cdm_values",
+          "portType": "FIELD",
+          "variable": false,
+          "dataType": "DOUBLE_ARRAY"
+        }
+      ]
+    }
+  ]
+}

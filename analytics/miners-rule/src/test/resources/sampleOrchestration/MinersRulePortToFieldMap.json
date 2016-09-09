@@ -1,0 +1,85 @@
+{
+  "analyticName": "MinersRule",
+  "analyticVersion": "v1",
+  "iterations": [
+    {
+      "inputMaps": [
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "current_cdm.cdm_values",
+          "fieldId": "inputCDM",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "recentStresses.stresses.0",
+          "fieldId": "sensor1Stress",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "recentStresses.stresses.1",
+          "fieldId": "sensor2Stress",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "recentStresses.stresses.2",
+          "fieldId": "sensor3Stress",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        }
+      ],
+      "outputMaps": [
+        {
+          "fullyQualifiedPortName": "updatedCDM.cdm_values",
+          "fieldId": "outputCDM",
+          "dataSourceId": "PredixTimeSeries"
+        }
+      ]
+    }
+  ]
+}

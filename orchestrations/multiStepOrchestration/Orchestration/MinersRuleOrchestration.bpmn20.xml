@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath" id="sid-81430087-7a44-4be3-8517-914faf923256"
+             targetNamespace="DSP-PM" typeLanguage="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="TwoStepOrchestration" isExecutable="true">
+
+        <startEvent id="start"
+                    name="">
+            <outgoing>start-to-demoAdder</outgoing>
+        </startEvent>
+
+        <serviceTask completionQuantity="1" id="demoAdder"
+                     isForCompensation="false" name="<analyticInstanceId>::<analyticName>::<analyticVersion>" startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>start-to-demoAdder</incoming>
+            <outgoing>demoAdder-to-minersRule</outgoing>
+        </serviceTask>
+        <serviceTask completionQuantity="1" id="minersRule"
+                     isForCompensation="false" name="<analyticInstanceId>::<analyticName>::<analyticVersion>" startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>demoAdder-to-minersRule</incoming>
+            <outgoing>minersRule-to-end</outgoing>
+        </serviceTask>
+
+        <endEvent id="end" name="">
+            <incoming>minersRule-to-end</incoming>
+        </endEvent>
+
+
+        <sequenceFlow id="start-to-demoAdder"
+                      name="" sourceRef="start"
+                      targetRef="demoAdder"/>
+					  
+        <sequenceFlow id="demoAdder-to-minersRule"
+                      name="" sourceRef="demoAdder"
+                      targetRef="minersRule"/>
+
+        <sequenceFlow id="minersRule-to-end"
+                      name="" sourceRef="minersRule" targetRef="end"/>
+
+    </process>
+
+</definitions>

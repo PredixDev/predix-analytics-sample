@@ -1,0 +1,51 @@
+{
+  "analyticName": "Timeseries Demo Adder",
+  "analyticVersion": "v1",
+  "iterations": [
+    {
+      "inputMaps": [
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "data.time_series.numberArray1",
+          "fieldId": "vibration",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "data.time_series.numberArray2",
+          "fieldId": "vibration1",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        }
+      ],
+      "outputMaps": [
+        {
+          "fullyQualifiedPortName": "data.time_series.sum",
+          "fieldId": "vibeSum",
+          "dataSourceId": "Temporary"
+        }
+      ]
+    }
+  ]
+}

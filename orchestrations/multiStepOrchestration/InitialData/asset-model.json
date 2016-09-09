@@ -1,0 +1,329 @@
+[
+  {
+    "uri": "/assets/minersRuleOrch1-UUID",
+    "name": "Africa",
+    "classification": "/classifications/location"
+  },
+  {
+    "uri": "/assets/minersRuleOrch5-UUID",
+    "name": "North America",
+    "classification": "/classifications/location"
+  },
+  {
+    "uri": "/assets/minersRuleOrch4-UUID",
+    "name": "Europe",
+    "classification": "/classifications/location"
+  },
+  {
+    "uri": "/assets/minersRuleOrch6-UUID",
+    "classification": "/classifications/model_name",
+    "name": "99942 Apophis",
+    "model_name_abbr": "Apophis"
+  },
+  {
+    "uri": "/assets/minersRuleOrch7-UUID",
+    "classification": "/classifications/model_name",
+    "name": "4 Vesta",
+    "model_name_abbr": "Vesta"
+  },
+  {
+    "uri": "/assets/minersRuleOrch8-UUID",
+    "classification": "/classifications/mfg_site",
+    "name": "Very Deep Ravine",
+    "ips_cms": "null",
+    "air_density": null,
+    "time_zone_name": "Europe/Berlin"
+  },
+  {
+    "uri": "/assets/minersRuleOrch9-UUID",
+    "classification": "/classifications/mfg_site",
+    "name": "Breezy Plateau",
+    "ips_cms": "null",
+    "air_density": null,
+    "time_zone_name": "Europe/Berlin"
+  },
+  {
+    "uri": "/assets/minersRuleOrch10-UUID",
+    "classification": "/classifications/mfg_site",
+    "name": "Nasty Big Mountain",
+    "time_zone_name": "Europe/Berlin"
+  },
+  {
+    "uri": "/assets/minersRuleOrch11-UUID",
+    "classification": "/classifications/subModelSeries",
+    "names": "1.5/1.6/1.7-70.5/77/82.5/87/91",
+    "subModelSeries_abbr": "1X"
+  },
+  {
+    "uri": "/assets/minersRuleOrch12-UUID",
+    "classification": "/classifications/customer",
+    "name": "Mindful Financial, Corp"
+  },
+  {
+    "uri": "/assets/minersRuleOrch13-UUID",
+    "classification": "/classifications/customer",
+    "name": "Green Energy, Corp"
+  },
+  {
+    "uri": "/assets/minersRuleOrch17-UUID",
+    "classification": "/classifications/controller_type",
+    "name": "BetterThanOthers",
+    "controller_type_abbr": "BTO"
+  },
+  {
+    "uri": "/assets/minersRuleOrch18-UUID",
+    "classification": "/classifications/generator_type",
+    "name": "High Power Generator",
+    "generator_type_abbr": "HPG"
+  },
+  {
+    "uri": "/assets/minersRuleOrch19-UUID",
+    "classification": "/classifications/generator_type",
+    "name": "Low Power Generator",
+    "generator_type_abbr": "LPG"
+  },
+  {
+    "uri": "/assets/minersRuleOrch15-UUID",
+    "classification": "/classifications/turbine_type",
+    "name": "1.5s",
+    "rated_capacity": 1500.0,
+    "turbine_model": "/assets/minersRuleOrch11-UUID",
+    "model_name": "/assets/minersRuleOrch6-UUID",
+    "controller_type": "/assets/minersRuleOrch17-UUID",
+    "generator_type": "/assets/minersRuleOrch18-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch16-UUID",
+    "classification": "/classifications/turbine_type",
+    "name": "15sl-UUID",
+    "rated_capacity": 1585.0,
+    "turbine_model": "/assets/minersRuleOrch11-UUID",
+    "model_name": "/assets/minersRuleOrch7-UUID",
+    "controller_type": "/assets/minersRuleOrch17-UUID",
+    "generator_type": "/assets/minersRuleOrch18-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch20-UUID",
+    "classification": "/classifications/country",
+    "name": "Germany",
+    "country_code": "DE",
+    "location": "/assets/minersRuleOrch4-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch28-UUID",
+    "classification": "/classifications/country",
+    "name": "United States",
+    "country_code": "US",
+    "location": "/assets/minersRuleOrch5-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch27-UUID",
+    "classification": "/classifications/division",
+    "name": "Copernicus",
+    "division_code": "Coper",
+    "country": "/assets/minersRuleOrch28-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch32-UUID",
+    "classification": "/classifications/turbine",
+    "name": "Very Deep Ravine  Turbine 1",
+    "system_number": 4610,
+    "serial_number": 8974,
+    "weight": 65.7,
+    "commission_date": "2004-08-08",
+    "turbine_type": "/assets/minersRuleOrch16-UUID",
+    "mfg_site": "/assets/minersRuleOrch10-UUID",
+    "country": "/assets/minersRuleOrch20-UUID",
+    "division": "/assets/minersRuleOrch27-UUID",
+    "customer": "/assets/minersRuleOrch14-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch37-UUID",
+    "classification": "/classifications/turbine",
+    "name": "Very Deep Ravine Turbine 2",
+    "system_number": 4610,
+    "serial_number": 8975,
+    "weight": 64.7,
+    "commission_date": "2010-08-01",
+    "turbine_type": "/assets/minersRuleOrch16-UUID",
+    "mfg_site": "/assets/minersRuleOrch10-UUID",
+    "country": "/assets/minersRuleOrch20-UUID",
+    "division": "/assets/minersRuleOrch27-UUID",
+    "customer": "/assets/minersRuleOrch14-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch38-UUID",
+    "classification": "/classifications/turbine",
+    "name": "Very Deep Ravine Turbine 2",
+    "system_number": 4610,
+    "serial_number": 8990,
+    "weight": 64.7,
+    "commission_date": "2010-08-01",
+    "turbine_type": "/assets/minersRuleOrch16-UUID",
+    "mfg_site": "/assets/minersRuleOrch10-UUID",
+    "country": "/assets/minersRuleOrch20-UUID",
+    "division": "/assets/minersRuleOrch27-UUID",
+    "customer": "/assets/minersRuleOrch14-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch33-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "KW",
+    "tag_type": "sensor",
+    "units": "kw",
+    "asset_id": "/assets/minersRuleOrch32-UUID",
+    "timeseries_tag_id": "32_KW_33-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch34-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "vibration",
+    "tag_type": "sensor",
+    "units": "vibe units",
+    "asset_id": "/assets/minersRuleOrch32-UUID",
+    "timeseries_tag_id": "32_vibration_34-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch35-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "local Rh",
+    "tag_type": "sensor",
+    "units": "%",
+    "asset_id": "/assets/minersRuleOrch32-UUID",
+    "timeseries_tag_id": "32_local_rh_35-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch36-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "bearing temperature",
+    "tag_type": "sensor",
+    "units": "C",
+    "asset_id": "/assets/minersRuleOrch32-UUID",
+    "timeseries_tag_id": "32_bearing_temperature_36-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch57-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "KW",
+    "tag_type": "sensor",
+    "units": "kw",
+    "asset_id": "/assets/minersRuleOrch37-UUID",
+    "timeseries_tag_id": "37_KW_57-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch39-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "vibration",
+    "tag_type": "sensor",
+    "units": "vibe units",
+    "asset_id": "/assets/minersRuleOrch37-UUID",
+    "timeseries_tag_id": "37_vibration_39-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch40-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "local Rh",
+    "tag_type": "sensor",
+    "units": "%",
+    "asset_id": "/assets/minersRuleOrch37-UUID",
+    "timeseries_tag_id": "37_local_rh_40-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch41-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "bearing temperature",
+    "tag_type": "sensor",
+    "units": "C",
+    "asset_id": "/assets/minersRuleOrch37-UUID",
+    "timeseries_tag_id": "37_bearing_temperature_41-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch42-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "vibration1",
+    "tag_type": "sensor",
+    "units": "vibe units",
+    "asset_id": "/assets/minersRuleOrch32-UUID",
+    "timeseries_tag_id": "32_vibration1_42-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch43-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "vibration1",
+    "tag_type": "sensor",
+    "units": "vibe units",
+    "asset_id": "/assets/minersRuleOrch37-UUID",
+    "timeseries_tag_id": "37_vibration1_43-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch44-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "currentCDM",
+    "tag_type": "sensor",
+    "units": "%",
+    "asset_id": "/assets/minersRuleOrch32-UUID",
+    "timeseries_tag_id": "32_CDM_44-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch45-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "currentCDM",
+    "tag_type": "sensor",
+    "units": "%",
+    "asset_id": "/assets/minersRuleOrch37-UUID",
+    "timeseries_tag_id": "37_CDM_45-UUID"
+  },
+    {
+    "uri": "/assets/minersRuleOrch50-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "KW",
+    "tag_type": "sensor",
+    "units": "kw",
+    "asset_id": "/assets/minersRuleOrch38-UUID",
+    "timeseries_tag_id": "38_KW_50-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch51-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "vibration",
+    "tag_type": "sensor",
+    "units": "vibe units",
+    "asset_id": "/assets/minersRuleOrch38-UUID",
+    "timeseries_tag_id": "38_vibration_51-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch52-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "local Rh",
+    "tag_type": "sensor",
+    "units": "%",
+    "asset_id": "/assets/minersRuleOrch38-UUID",
+    "timeseries_tag_id": "38_local_rh_52-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch53-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "bearing temperature",
+    "tag_type": "sensor",
+    "units": "C",
+    "asset_id": "/assets/minersRuleOrch38-UUID",
+    "timeseries_tag_id": "38_bearing_temperature_53-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch54-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "currentCDM",
+    "tag_type": "sensor",
+    "units": "%",
+    "asset_id": "/assets/minersRuleOrch38-UUID",
+    "timeseries_tag_id": "38_CDM_54-UUID"
+  },
+  {
+    "uri": "/assets/minersRuleOrch55-UUID",
+    "classification": "/classifications/timeseries_tag",
+    "name": "vibration1",
+    "tag_type": "sensor",
+    "units": "vibe units",
+    "asset_id": "/assets/minersRuleOrch38-UUID",
+    "timeseries_tag_id": "38_vibration1_55-UUID"
+  }]

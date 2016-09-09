@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath" id="sid-81430087-7a44-4be3-8517-914faf923256"
+             targetNamespace="DSP-PM" typeLanguage="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="MinersRuleOrchestration" isExecutable="true">
+
+        <startEvent id="sid-start-event"
+                    name="">
+            <outgoing>sid-miners-rule-in</outgoing>
+        </startEvent>
+
+        <serviceTask completionQuantity="1" id="sid-miners-rule"
+                     isForCompensation="false" name="25039947-fe8c-466d-86ad-cbe60961f246::Miners Rule::v2" startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>sid-miners-rule-in</incoming>
+            <outgoing>sid-end-in</outgoing>
+        </serviceTask>
+
+        <endEvent id="sid-end-event" name="">
+            <incoming>sid-end-in</incoming>
+        </endEvent>
+
+
+        <sequenceFlow id="sid-miners-rule-in"
+                      name="" sourceRef="sid-start-event"
+                      targetRef="sid-miners-rule"/>
+
+        <sequenceFlow id="sid-end-in"
+                      name="" sourceRef="sid-miners-rule" targetRef="sid-end-event"/>
+
+    </process>
+
+</definitions>

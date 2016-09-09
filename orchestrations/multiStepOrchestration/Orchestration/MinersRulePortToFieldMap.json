@@ -1,0 +1,80 @@
+{
+  "analyticName": "Miners Rule",
+  "analyticVersion": "v2",
+  "iterations": [
+    {
+      "inputMaps": [
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "current_cdm.cdm_values",
+          "fieldId": "currentCDM",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "recentStresses.stresses.0",
+          "fieldId": "KW",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "recentStresses.stresses.1",
+          "fieldId": "bearing temperature",
+          "queryCriteria": {
+            "start": 0,
+            "end": -1,
+            "tags": [{
+              "limit": 10,
+              "order": "asc"
+            }
+            ]
+          },
+          "engUnit": null,
+          "required": true,
+          "dataSourceId": "PredixTimeSeries"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "recentStresses.stresses.2",
+          "fieldId": "vibeSum",
+          "dataSourceId": "Temporary"
+        }
+      ],
+	  "inputModelMaps":[
+		{"modelPortName": "Stress Limits",
+		 "modelName" : "CDMStressLimits",
+		 "modelVersion":"v1.0"
+		 }
+	  ],
+      "outputMaps": [
+        {
+          "fullyQualifiedPortName": "updatedCDM.cdm_values",
+          "fieldId": "currentCDM",
+          "dataSourceId": "PredixTimeSeries"
+        }
+      ]
+    }
+  ]
+}

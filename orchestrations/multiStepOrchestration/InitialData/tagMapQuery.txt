@@ -1,0 +1,10 @@
+/assets/?filter=classification=/classifications/timeseries_tag&asset_id=${assetId}?fields=name,timeseries_tag_id
+
+PAYLOAD BODY FOR DEFAULT TAG MAP QUERY
+{
+	"defaultTagNameQuery":"assets?filter=classification=/classifications/timeseries_tag:asset_id=${ASSET_ID}",
+    "fieldNameSpecifier" : "name",
+    "tagNameSpecifier" : "timeseries_tag_id",
+    "author": "Jeanette",
+    "description": "default tag query for miners rule multi-step orchestration example"
+}
