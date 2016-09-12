@@ -1,0 +1,50 @@
+{
+  "analyticName": "java-timeseries-demo-adder",
+  "analyticVersion": "1.0",
+  "orchestrationStepId": "sid-10002",
+  "iterations": [
+    {
+      "inputMaps": [
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "data.time_series.numberArray1",
+          "fieldId": "bearing_temperature",
+          "queryCriteria": {
+            "start": 1455733669601,
+            "end": 1455733669610
+          },
+          "engUnit": "Celsius",
+          "required": true,
+          "dataSourceId": "Predix Time Series"
+        },
+        {
+          "valueSourceType": "DATA_CONNECTOR",
+          "fullyQualifiedPortName": "data.time_series.numberArray2",
+          "fieldId": "vibration",
+          "queryCriteria": {
+            "start": 1455733669601,
+            "end": 1455733669610
+          },
+          "engUnit": "hertz",
+          "required": true,
+          "dataSourceId": "Predix Time Series"
+        }
+      ],
+      "inputModelMaps": [
+        {
+          "modelPortName": "threshold",
+          "modelName": "model-name",
+          "modelVersion": "v1"
+        }
+      ],
+      "outputMaps": [
+        {
+          "fullyQualifiedPortName": "data.time_series.sum",
+          "fieldId": "bearing_temperature_final",
+          "engUnit": "Celsius",
+          "dataSourceId": "Predix Time Series"
+        }
+      ]
+    }
+  ]
+}

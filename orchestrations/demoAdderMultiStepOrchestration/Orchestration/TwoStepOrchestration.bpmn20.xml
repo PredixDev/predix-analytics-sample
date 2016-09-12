@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             expressionLanguage="http://www.w3.org/1999/XPath" id="sid-81430087-7a44-4be3-8517-914faf923256"
+             targetNamespace="DSP-PM" typeLanguage="http://www.w3.org/2001/XMLSchema"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="DemoAdderWorklow" isExecutable="true">
+
+        <startEvent id="sid-start"
+                    name="">
+            <outgoing>sid-flow1</outgoing>
+        </startEvent>
+
+        <serviceTask completionQuantity="1" id="sid-10001"
+                     isForCompensation="false" name="<ANALYTIC_ID>::<ANALYTIC_NAME>::<ANALYTIC_VERSION>" startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}"
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>sid-flow1</incoming>
+            <outgoing>sid-flow2</outgoing>
+        </serviceTask>
+
+        <serviceTask completionQuantity="1" id="sid-10002"
+                     isForCompensation="false" name="<ANALYTIC_ID>::<ANALYTIC_NAME>::<ANALYTIC_VERSION>" startQuantity="1"
+                     activiti:delegateExpression="${javaDelegate}" 
+                     xmlns:activiti="http://activiti.org/bpmn">
+            <incoming>sid-flow2</incoming>
+            <outgoing>sid-flow3</outgoing>
+        </serviceTask>
+
+
+        <endEvent id="sid-end" name="">
+            <incoming>sid-flow3</incoming>
+        </endEvent>
+
+
+        <sequenceFlow id="sid-flow1"
+                      name="" sourceRef="sid-start"
+                      targetRef="sid-10001"/>
+
+        <sequenceFlow id="sid-flow2"
+                      name="" sourceRef="sid-10001" targetRef="sid-10002"/>
+
+        <sequenceFlow id="sid-flow3"
+                      name="" sourceRef="sid-10002" targetRef="sid-end"/>
+
+    </process>
+
+</definitions>

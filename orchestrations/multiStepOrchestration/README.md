@@ -94,7 +94,7 @@
 	 	*  update  analyticInstanceId, analyticName, and analyticVersion in the demoAdder serviceTask with the catalog entry instance id, entry name and version
 	 5. test the analytic (this will deploy it) (see Predix IO Analytics Catalog docs for instructions on deploying an analytic) (sample data for testing the analytic is included in the analytic's github repository)
 7. load the Miners Rule v2 analytic to the catalog
-	1. get Miners Rule v2 from ???github link???
+	1. get Miners Rule v2 from https://github.com/PredixDev/predix-analytics-sample/tree/master/analytics/miners-rule
 	2. build it (mvn clean install)
 	3. use requests from addAnalytics folder in the postman collection or the UI to create the catalog entry and upload the jar and template file (see instructions for adding an analytic to the catalog)
 	4. update Orchestration/MinersRuleOrchestration.bpmn20.xml to reference this analytic
@@ -112,7 +112,7 @@
     "http://anlayticId.grc-apps.svc.ice.ge.com/api/v1/analytic/execution": "200",
     "http://analyticId.grc-apps.svc.ice.ge.com/api/v1/analytic/execution": "200"
   },
-  "id": "8cede08a-6480-11e6-92be-fac19b3e939e"
+  "id": "<responseId>"
 }
 </pre>
 	2. upload the bpmn using Create Orchestration BPMN Artifact request in the addOrchestrationConfiguration postman folder
@@ -140,7 +140,7 @@
 		* put the following json in the request body.  Updating the orchestrationEntryId with the orchestration entry id from step 8.i above.
 <pre>
 {
-     "orchestrationConfigurationId": "orchestrationEntryId",
+     "orchestrationConfigurationId": "<orchestrationEntryId>",
      "assetGroup": {
          "dataSourceId": "PredixAsset",
          "assetSelectionFilter": "/assets?filter=classification=/classifications/turbine:uri=/assets/minersRuleOrch*&fields=uri"
