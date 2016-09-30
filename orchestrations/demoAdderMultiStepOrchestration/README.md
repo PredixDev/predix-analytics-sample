@@ -67,7 +67,7 @@
 
 4. Run the orchestration
 	* use the postman Run Orchestration request in the postman folder after updating the request as follows:
-		* put the following json in the request body.  Updating the orchestrationEntryId with the orchestration entry id from step 8.i above.
+		* put the following json in the request body.  Updating the orchestrationEntryId with the orchestration entry id from step 3.i above.
 <pre>
 {
      "orchestrationConfigurationId": "<orchestrationEntryId>",

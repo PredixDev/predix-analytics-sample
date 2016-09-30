@@ -1,312 +1,402 @@
 {
-	"id": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-	"name": "Single Step Orchestration Demo Using Tag Map",
-	"description": "",
-	"order": [
-		"a0c4eace-057e-3013-90a4-39313b48c0b8",
-		"794516a8-c86c-83c0-2215-bb26c4e2149d",
-		"092e1cc0-301f-2217-e284-dbd875510567",
-		"16a37d33-0e56-7b6f-574d-17f93bce33bd",
-		"9762cf6c-a4da-46bd-f41a-5c1f24bca42a",
-		"92dff282-53f0-e760-34f5-9a5d308a9388"
-	],
-	"folders": [
+	"variables": [],
+	"info": {
+		"name": "Single Step Orchestration Demo Using Tag Map",
+		"_postman_id": "728e03b3-a7c3-7ad5-9336-dec19405d487",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "8fe63715-ff20-4c01-d3b4-a1cd7aa75d86",
 			"name": "ValidationRequests",
 			"description": "",
-			"order": [
-				"a07c4e9a-cfa4-c75f-9675-27f76aca93d9",
-				"6786702d-58a7-071f-24aa-2b62154f33c0",
-				"8e490fad-9b99-d677-b579-09887ef42239",
-				"9bd87b92-fa75-a7cf-e1f0-fb09b0bf1ecc"
-			],
-			"owner": 0
-		}
-	],
-	"timestamp": 1469742278595,
-	"owner": 0,
-	"public": false,
-	"published": false,
-	"requests": [
-		{
-			"id": "092e1cc0-301f-2217-e284-dbd875510567",
-			"headers": "Authorization: bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\nAccept: application/json\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations/artifacts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [
+			"item": [
 				{
-					"key": "file",
-					"value": "orchestration-workflow.xml",
-					"type": "file",
-					"enabled": true
+					"name": "Retrieve All Orchestration Configurations",
+					"request": {
+						"url": "{{config_uri}}/api/v2/config/orchestrations",
+						"method": "GET",
+						"header": [
+							{
+								"key": "//Accept",
+								"value": "application/octet-stream",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							},
+							{
+								"key": "Predix-Zone-Id",
+								"value": "{{runtime_tenant}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
 				},
 				{
-					"key": "orchestrationEntryId",
-					"value": "<orchestration entry id>",
-					"type": "text",
-					"enabled": true
+					"name": "Get Artifact Metadata for an Orchestration Configuration",
+					"request": {
+						"url": "{{config_uri}}/api/v2/config/orchestrations/3bc1425d-373c-49d6-8c81-a9fabcbb8d7e/artifacts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							},
+							{
+								"key": "Predix-Zone-Id",
+								"value": "{{runtime_tenant}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
 				},
 				{
-					"key": "type",
-					"value": "bpmn",
-					"type": "text",
-					"enabled": true
+					"name": "Retrieve bpmn configuration artifact",
+					"request": {
+						"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts/2000690a-6b06-4947-b10c-eed55adf75f4/file",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							},
+							{
+								"key": "Predix-Zone-Id",
+								"value": "{{runtime_tenant}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
 				},
 				{
-					"key": "name",
-					"value": "orchestration workflow file",
-					"type": "text",
-					"enabled": true
+					"name": "Retrieve port-to-field-map configuration artifact",
+					"request": {
+						"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts/694059be-3700-41bf-b4e7-fd86627d4d94/file",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"description": ""
+							},
+							{
+								"key": "Predix-Zone-Id",
+								"value": "{{runtime_tenant}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
 				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470086962152,
-			"name": "Upload Orchestration Workflow File",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
+			]
 		},
 		{
-			"id": "16a37d33-0e56-7b6f-574d-17f93bce33bd",
-			"headers": "Authorization: bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\nAccept: application/json\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations/artifacts",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [
-				{
-					"key": "file",
-					"value": "port-to-field-map-for-demoTimeseriesAdder.json",
-					"type": "file",
-					"enabled": true
-				},
-				{
-					"key": "orchestrationEntryId",
-					"value": "<orchestration entry id>",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "type",
-					"value": "portToFieldMap",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "name",
-					"value": "demoTimeseriesAdder",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470086951425,
-			"name": "Upload port-to-field Map For Orchestration Step",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
-		},
-		{
-			"id": "6786702d-58a7-071f-24aa-2b62154f33c0",
-			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations/3bc1425d-373c-49d6-8c81-a9fabcbb8d7e/artifacts",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470172744270,
-			"name": "Get Artifact Metadata for an Orchestration Configuration",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
-		},
-		{
-			"id": "794516a8-c86c-83c0-2215-bb26c4e2149d",
-			"headers": "Authorization: bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\nContent-Type: application/json\nAccept: application/json\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470081411499,
-			"name": "Create Orchestration Configuration Entry",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": [],
-			"rawModeData": "{\n\"name\": \"OrchestrationWithOneAnalytic\",\n\"author\": \"Predix Analytics team\",\n\"description\": \"This workflow demonstrates one orchestration step with timeseries adder analytic\"\n}"
-		},
-		{
-			"id": "8e490fad-9b99-d677-b579-09887ef42239",
-			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations/artifacts/2000690a-6b06-4947-b10c-eed55adf75f4/file",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470172750432,
-			"name": "Retrieve bpmn configuration artifact",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
-		},
-		{
-			"id": "92dff282-53f0-e760-34f5-9a5d308a9388",
-			"headers": "Accept: application/json, application/x-www-form-urlencoded\nAuthorization: Basic {{uaa_authorization_id}}\n",
-			"url": "https://{{uaa_uri}}/oauth/token",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [
-				{
-					"key": "grant_type",
-					"value": "password",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "username",
-					"value": "{{userId}}",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "password",
-					"value": "{{userPassword}}",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "response_type",
-					"value": "token",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "client_id",
-					"value": "{{uaa_client_id}}",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470172876431,
-			"name": "Request user token",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
-		},
-		{
-			"id": "9762cf6c-a4da-46bd-f41a-5c1f24bca42a",
-			"headers": "Authorization: bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\nAccept: application/json\nContent-Type: application/json\n",
-			"url": "https://{{execution_uri}}/api/v2/execution",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470086939598,
-			"name": "Run Single Step Orchestration Using Tag Map",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": [],
-			"rawModeData": "{\n     \"orchestrationConfigurationId\": \"<orchestration entry id>\",\n     \"assetId\": null,\n     \"assetDataFieldsMap\": {\n         \"temperature sensor\": \"tag-A\",\n         \"vibration sensor\": \"tag-B\",\n         \"demo sum\": \"tag-C\"\n     },\n     \"assetGroup\": null\n }"
-		},
-		{
-			"id": "9bd87b92-fa75-a7cf-e1f0-fb09b0bf1ecc",
-			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations/artifacts/694059be-3700-41bf-b4e7-fd86627d4d94/file",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470172751728,
-			"name": "Retrieve port-to-field-map configuration artifact",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
-		},
-		{
-			"id": "a07c4e9a-cfa4-c75f-9675-27f76aca93d9",
-			"headers": "//Accept: application/octet-stream\nAuthorization: Bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\n",
-			"url": "https://{{config_uri}}/api/v2/config/orchestrations",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470172480536,
-			"name": "Retrieve All Orchestration Configurations",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
-		},
-		{
-			"id": "a0c4eace-057e-3013-90a4-39313b48c0b8",
-			"headers": "Authorization: bearer {{user_token}}\nPredix-Zone-Id: {{runtime_zone_id}}\nContent-Type: multipart/form-data\n",
-			"url": "https://{{execution_uri}}/api/v2/execution/validation",
-			"preRequestScript": null,
-			"pathVariables": {},
-			"method": "POST",
-			"data": [
-				{
-					"key": "file",
-					"value": "orchestration-workflow.xml",
-					"type": "file",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1470074127887,
 			"name": "Workflow Validation",
-			"description": "",
-			"collectionId": "0c9da1f1-de18-5117-bcf9-b22184cd47e7",
-			"responses": []
+			"request": {
+				"url": "{{execution_uri}}/api/v2/execution/validation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Predix-Zone-Id",
+						"value": "{{runtime_tenant}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Orchestration Configuration Entry",
+			"request": {
+				"url": "{{config_uri}}/api/v2/config/orchestrations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Predix-Zone-Id",
+						"value": "{{runtime_tenant}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"OrchestrationWithOneAnalytic\",\n\"author\": \"Predix Analytics team\",\n\"description\": \"This workflow demonstrates one orchestration step with timeseries adder analytic\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Orchestration Workflow File",
+			"request": {
+				"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Predix-Zone-Id",
+						"value": "{{runtime_tenant}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"enabled": true
+						},
+						{
+							"key": "orchestrationEntryId",
+							"value": "<orchestration entry id>",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "type",
+							"value": "bpmn",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "orchestration workflow file",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Upload port-to-field Map For Orchestration Step",
+			"request": {
+				"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Predix-Zone-Id",
+						"value": "{{runtime_tenant}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"enabled": true
+						},
+						{
+							"key": "orchestrationEntryId",
+							"value": "<orchestration entry id>",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "type",
+							"value": "portToFieldMap",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "demoTimeseriesAdder",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Run Single Step Orchestration Using Tag Map",
+			"request": {
+				"url": "{{execution_uri}}/api/v2/execution",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer {{token}}",
+						"description": ""
+					},
+					{
+						"key": "Predix-Zone-Id",
+						"value": "{{runtime_tenant}}",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"orchestrationConfigurationId\": \"<orchestration entry id>\",\n     \"assetId\": null,\n     \"assetDataFieldsMap\": {\n         \"temperature sensor\": \"tag-A\",\n         \"vibration sensor\": \"tag-B\",\n         \"demo sum\": \"tag-C\"\n     },\n     \"assetGroup\": null\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Request user token",
+			"request": {
+				"url": "{{uaa_uri}}/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic {{uaa_authorization_id}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "username",
+							"value": "{{userId}}",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "{{userPassword}}",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "response_type",
+							"value": "token",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "{{uaa_client_id}}",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
