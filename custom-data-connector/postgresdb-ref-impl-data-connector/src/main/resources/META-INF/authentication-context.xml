@@ -1,0 +1,62 @@
+<!--
+  ~ Copyright (c) 2015 - 2016 General Electric Company. All rights reserved.
+  ~
+  ~ The copyright to the computer software herein is the property of
+  ~ General Electric Company. The software may be used and/or copied only
+  ~ with the written permission of General Electric Company or in accordance
+  ~ with the terms and conditions stipulated in the agreement/contract
+  ~ under which the software has been supplied.
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sec="http://www.springframework.org/schema/security"
+       xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd
+       http://www.springframework.org/schema/security/oauth2 http://www.springframework.org/schema/security/spring-security-oauth2-2.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <context:annotation-config/>
+
+    <sec:authentication-manager/>
+
+    <oauth:resource-server id="oauth2ServiceFilter" token-services-ref="remoteTokenServices"/>
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" xmlns="http://www.springframework.org/schema/beans">
+        <property name="locations">
+            <list>
+                <value>classpath:custom-connector-application.properties</value>
+            </list>
+        </property>
+        <property name="ignoreResourceNotFound" value="true"></property>
+    </bean>
+
+    <bean id="remoteTokenServices" class="org.cloudfoundry.identity.uaa.oauth.RemoteTokenServices">
+        <property name="checkTokenEndpointUrl" value="${uaa_check_token_url}"/>
+        <property name="clientId" value="${uaa_client_id}"/>
+        <property name="clientSecret" value="${uaa_client_secret}"/>
+    </bean>
+
+
+    <bean id="preAuthenticationEntryPoint" class="org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint"/>
+
+    <bean id="csrfSecurityRequestMatcher" class="com.ge.predix.analytics.security.CsrfSecurityRequestMatcher"/>
+
+    <http pattern="/api.*" request-matcher="regex" xmlns="http://www.springframework.org/schema/security"
+          disable-url-rewriting="true"
+          use-expressions="true"
+          entry-point-ref="preAuthenticationEntryPoint"
+          create-session="stateless">
+
+        <intercept-url pattern="/api/v1/analytics/customdata/healthcheck" access="permitAll"/>
+        <intercept-url pattern="/api.*" access="isFullyAuthenticated()"/>
+
+        <custom-filter ref="oauth2ServiceFilter" position="PRE_AUTH_FILTER"/>
+
+        <csrf request-matcher-ref="csrfSecurityRequestMatcher"/>
+
+    </http>
+
+</beans>
