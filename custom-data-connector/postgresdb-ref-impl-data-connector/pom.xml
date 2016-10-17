@@ -32,19 +32,6 @@
         <uaa_check_token_url>https://your-uaa-host/check_token</uaa_check_token_url>
     </properties>
 
-    <distributionManagement>
-        <repository>
-            <id>artifactory.releases</id>
-            <name>artifactory.releases</name>
-            <url>https://devcloud.swcoe.ge.com/artifactory/PREDIX</url>
-        </repository>
-        <snapshotRepository>
-            <id>artifactory.snapshots</id>
-            <name>artifactory.snapshots</name>
-            <url>https://devcloud.swcoe.ge.com/artifactory/PREDIX-SNAPSHOT</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <profiles>
         <profile>
             <id>wadl2java</id>
