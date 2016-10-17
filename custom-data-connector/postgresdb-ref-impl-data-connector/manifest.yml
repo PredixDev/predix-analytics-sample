@@ -1,0 +1,16 @@
+---
+# yml for custom data connector
+applications:
+  - name: ${REF_POSTGRES_DATA_CONNECTOR_HOST}
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git#v3.7
+    path: ${REF_POSTGRES_DATA_CONNECTOR_JAR}
+    memory: 3G
+    timeout: 180
+    services:
+      - ${REF_POSTGRES_DATA_CONNECTOR_RDPG}
+    env:
+      uaa_client_id: ${UAA_CLIENT_ID}
+      uaa_client_secret: ${UAA_CLIENT_SECRET}
+      uaa_check_token_url: ${UAA_CHECK_TOKEN_URL}
+      SPRING_PROFILES_ACTIVE: cloud
+      MEMORY_LIMIT: 2G
