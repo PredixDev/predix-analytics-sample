@@ -1,0 +1,141 @@
+<!--
+  ~ Copyright (c) 2015 - 2016 General Electric Company. All rights reserved.
+  ~
+  ~ The copyright to the computer software herein is the property of
+  ~ General Electric Company. The software may be used and/or copied only
+  ~ with the written permission of General Electric Company or in accordance
+  ~ with the terms and conditions stipulated in the agreement/contract
+  ~ under which the software has been supplied.
+  -->
+
+<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <grammars>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://predix.ge.com/insight/dto/errorresponse" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://predix.ge.com/insight/dto/errorresponse">
+            <xs:element name="errorResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="code" type="xs:string"/>
+                        <xs:element minOccurs="0" name="severity" type="xs:string"/>
+                        <xs:element minOccurs="0" name="detail" type="xs:string"/>
+                        <xs:element minOccurs="0" name="message" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="parameters" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://predix.ge.com/insight/dto/errorresponse" xmlns:tns="http://predix.ge.com/insight/dto/customdataprovider" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://predix.ge.com/insight/dto/customdataprovider">
+            <xs:import namespace="http://predix.ge.com/insight/dto/errorresponse"/>
+            <xs:element name="analyticReadDataRequest">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="tns:DataRequest">
+                            <xs:sequence/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="analyticReadDataResponse">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="tns:DataResponse">
+                            <xs:sequence/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="analyticWriteDataRequest">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="tns:DataRequest">
+                            <xs:sequence/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="analyticWriteDataResponse">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="tns:DataResponse">
+                            <xs:sequence/>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="field">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="fieldId" type="xs:string"/>
+                        <xs:element name="fullyQualifiedPortName" type="xs:string"/>
+                        <xs:element minOccurs="0" name="dataType" type="xs:string"/>
+                        <xs:element minOccurs="0" name="engUnit" type="xs:string"/>
+                        <xs:element minOccurs="0" name="data" type="xs:anyType"/>
+                        <xs:element minOccurs="0" name="queryCriteria" type="xs:anyType"/>
+                        <xs:element minOccurs="0" ref="ns1:errorResponse"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="orchestrationExecutionContext">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="assetId" type="xs:string"/>
+                        <xs:element name="orchestrationConfigurationID" type="xs:string"/>
+                        <xs:element name="orchestrationExecutionRequestID" type="xs:string"/>
+                        <xs:element name="analyticId" type="xs:string"/>
+                        <xs:element name="analyticName" type="xs:string"/>
+                        <xs:element name="analyticVersion" type="xs:string"/>
+                        <xs:element name="analyticExecutionRequestID" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="DataRequest">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="tns:field"/>
+                    <xs:element minOccurs="0" name="customAttributes" type="xs:anyType"/>
+                    <xs:element minOccurs="0" name="systemAttributes" type="xs:anyType"/>
+                    <xs:element ref="tns:orchestrationExecutionContext"/>
+                    <xs:element minOccurs="0" name="dataSourceId" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="DataResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="tns:field"/>
+                    <xs:element ref="tns:orchestrationExecutionContext"/>
+                    <xs:element minOccurs="0" ref="ns1:errorResponse"/>
+                    <xs:element minOccurs="0" name="dataSourceId" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </grammars>
+    <resources base="http://localhost/cxf/">
+        <resource path="/api/v1/analytics/customdata">
+            <resource path="/healthcheck">
+                <method name="GET">
+                    <request></request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/read">
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="/write">
+                <method name="POST">
+                    <request>
+                        <representation mediaType="application/json"/>
+                    </request>
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>

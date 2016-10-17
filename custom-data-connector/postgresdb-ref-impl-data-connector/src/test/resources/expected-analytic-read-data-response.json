@@ -1,0 +1,187 @@
+{
+  "field": [
+    {
+      "fieldId": "vibration",
+      "fullyQualifiedPortName": "a.b.c.somefield",
+      "data": [
+        [
+          1398445998000,
+          1000.33
+        ],
+        [
+          1398445999000,
+          3000.33
+        ],
+        [
+          1398446000000,
+          2000.33
+        ],
+        [
+          1398446001000,
+          1400.33
+        ],
+        [
+          1398446002000,
+          1560.33
+        ],
+        [
+          1398446003000,
+          1043.33
+        ],
+        [
+          1398446004000,
+          4000.33
+        ],
+        [
+          1398446005000,
+          1100.33
+        ],
+        [
+          1398446006000,
+          1780.33
+        ],
+        [
+          1398446007000,
+          1330.33
+        ],
+        [
+          1398446008000,
+          1553.33
+        ],
+        [
+          1398446009000,
+          1387.33
+        ],
+        [
+          1398446010000,
+          2123.33
+        ],
+        [
+          1398446011000,
+          4211.33
+        ],
+        [
+          1398446012000,
+          2244.33
+        ]
+      ],
+      "queryCriteria": {
+        "columns": [
+          "recorded_at",
+          "vibration"
+        ],
+        "table": "turbine_compressor",
+        "conditions": [
+          {
+            "key": "asset_id",
+            "value": "ASSET1",
+            "valueType": "string",
+            "relation": " = "
+          },
+          {
+            "key": "recorded_at",
+            "value": "current_timestamp",
+            "valueType": "none",
+            "relation": " < "
+          }
+        ]
+      }
+    },
+    {
+      "fieldId": "exhaust_gas_temp",
+      "fullyQualifiedPortName": "a.b.c.somefield",
+      "data": [
+        [
+          1398445998000,
+          200.42
+        ],
+        [
+          1398445999000,
+          120.39
+        ],
+        [
+          1398446000000,
+          110.18
+        ],
+        [
+          1398446001000,
+          230.12
+        ],
+        [
+          1398446002000,
+          410.32
+        ],
+        [
+          1398446003000,
+          240.87
+        ],
+        [
+          1398446004000,
+          530.33
+        ],
+        [
+          1398446005000,
+          90.34
+        ],
+        [
+          1398446006000,
+          330.45
+        ],
+        [
+          1398446007000,
+          761.89
+        ],
+        [
+          1398446008000,
+          232.34
+        ],
+        [
+          1398446009000,
+          242.55
+        ],
+        [
+          1398446010000,
+          234.35
+        ],
+        [
+          1398446011000,
+          612.14
+        ],
+        [
+          1398446012000,
+          233.36
+        ]
+      ],
+      "queryCriteria": {
+        "columns": [
+          "recorded_at",
+          "exhaust_gas_temp"
+        ],
+        "table": "turbine_compressor",
+        "conditions": [
+          {
+            "key": "asset_id",
+            "value": "ASSET1",
+            "valueType": "string",
+            "relation": " = "
+          },
+          {
+            "key": "recorded_at",
+            "value": "current_timestamp",
+            "valueType": "none",
+            "relation": " < "
+          }
+        ]
+      }
+    }
+  ],
+  "orchestrationExecutionContext": {
+    "assetId": "/assets/1",
+    "orchestrationConfigurationID": "febf24f8-182f-4569-b195-75e4d59127bf",
+    "orchestrationExecutionRequestID": "cddb7e23-0bc3-445c-b7f9-e14bf65d499c",
+    "analyticId": "6c1ee0be-1691-46f8-b0ce-b9120fb1e316",
+    "analyticName": "Trend Anomaly Detector",
+    "analyticVersion": "1.0",
+    "analyticExecutionRequestID": "ae6ceb06-b922-4a8e-97a9-4c7d2f7a313d"
+  }
+}

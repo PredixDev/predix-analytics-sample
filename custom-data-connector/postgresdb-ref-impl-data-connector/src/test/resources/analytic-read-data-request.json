@@ -1,0 +1,72 @@
+{
+  "field": [
+    {
+      "fieldId": "vibration",
+      "fullyQualifiedPortName": "a.b.c.somefield",
+      "queryCriteria": {
+        "columns": [
+          "recorded_at",
+          "vibration"
+        ],
+        "table": "turbine_compressor",
+        "conditions": [
+          {
+            "key": "asset_id",
+            "value": "ASSET1",
+            "valueType": "string",
+            "relation": " = "
+          },
+          {
+            "key": "recorded_at",
+            "value": "current_timestamp",
+            "valueType": "none",
+            "relation": " < "
+          }
+        ]
+      }
+    },
+    {
+      "fieldId": "exhaust_gas_temp",
+      "fullyQualifiedPortName": "a.b.c.somefield",
+      "queryCriteria": {
+        "columns": [
+          "recorded_at",
+          "exhaust_gas_temp"
+        ],
+        "table": "turbine_compressor",
+        "conditions": [
+          {
+            "key": "asset_id",
+            "value": "ASSET1",
+            "valueType": "string",
+            "relation": " = "
+          },
+          {
+            "key": "recorded_at",
+            "value": "current_timestamp",
+            "valueType": "none",
+            "relation": " < "
+          }
+        ]
+      }
+    }
+  ],
+  "customAttributes": {
+    "key2": "value2",
+    "key1": "value1"
+  },
+  "systemAttributes": {
+    "syskey2": "sysvalue2",
+    "syskey1": "sysvalue1"
+  },
+  "orchestrationExecutionContext": {
+    "assetId": "/assets/1",
+    "orchestrationConfigurationID": "febf24f8-182f-4569-b195-75e4d59127bf",
+    "orchestrationExecutionRequestID": "cddb7e23-0bc3-445c-b7f9-e14bf65d499c",
+    "analyticId": "6c1ee0be-1691-46f8-b0ce-b9120fb1e316",
+    "analyticName": "Trend Anomaly Detector",
+    "analyticVersion": "1.0",
+    "analyticExecutionRequestID": "ae6ceb06-b922-4a8e-97a9-4c7d2f7a313d"
+  },
+  "dataSourceId": "postgresdb"
+}
