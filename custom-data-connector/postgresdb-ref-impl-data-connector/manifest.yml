@@ -1,31 +1,16 @@
+---
 # yml for custom data connector
 applications:
-  - name: custom-data-connector-CI-20160919-141254
-    path: target/postgresdb-ref-impl-data-connector-1.5.0-SNAPSHOT.jar
+  - name: ${REF_POSTGRES_DATA_CONNECTOR_HOST}
     buildpack: https://github.com/cloudfoundry/java-buildpack.git#v3.7
-    memory: 1G
-    instances: 1
+    path: ${REF_POSTGRES_DATA_CONNECTOR_JAR}
+    memory: 3G
     timeout: 180
     services:
-      - predix-analytics-integration-logstash
-      - custom-ds-ri-rdpg
+      - ${REF_POSTGRES_DATA_CONNECTOR_RDPG}
     env:
-      cf_system_login_domain_name: grc-apps.svc.ice.ge.com
-      cf_analytics_domain_name: grc-apps.svc.ice.ge.com
-      cf_analytics_org_name: predix-analytics
-      cf_analytics_space_name: integration
-      cf_analytics_user_name: analytics.functional@ge.com
-      cf_analytics_password: S0anYoVhVuFRawA=
-      cf_analytics_http_access_protocol: http
-      app_meta_version: v2.0.0_20160919-141254
-      zac_uaa_uri: https://predix-uaa-staging.grc-apps.svc.ice.ge.com/oauth/token
-      zac_uaa_client_id: zac-analytics-client
-      zac_uaa_client_secret: dmL1QoFsduVIdgmjRo3w/TUJ
-      zac_uri: https://zac-release-candidate.grc-apps.svc.ice.ge.com/v1/authorization
-      zac_service_id: analytics
-      zac_default_trusted_token_url: https://21c43255-9c31-4877-84b6-f568b1392e51.predix-uaa-staging.grc-apps.svc.ice.ge.com/oauth/token
+      uaa_client_id: ${UAA_CLIENT_ID}
+      uaa_client_secret: ${UAA_CLIENT_SECRET}
+      uaa_check_token_url: ${UAA_CHECK_TOKEN_URL}
       SPRING_PROFILES_ACTIVE: cloud
-      MEMORY_LIMIT: 1G
-      analytics_uaa_client_id: admin
-      analytics_uaa_client_secret: f2D+VIB6aOVOdh6kaYftuSEGdw==
-
+      MEMORY_LIMIT: 2G

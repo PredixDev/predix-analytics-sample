@@ -32,19 +32,6 @@
         <uaa_check_token_url>https://your-uaa-host/check_token</uaa_check_token_url>
     </properties>
 
-    <distributionManagement>
-        <repository>
-            <id>artifactory.releases</id>
-            <name>artifactory.releases</name>
-            <url>https://devcloud.swcoe.ge.com/artifactory/PREDIX</url>
-        </repository>
-        <snapshotRepository>
-            <id>artifactory.snapshots</id>
-            <name>artifactory.snapshots</name>
-            <url>https://devcloud.swcoe.ge.com/artifactory/PREDIX-SNAPSHOT</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <profiles>
         <profile>
             <id>wadl2java</id>
@@ -194,7 +181,7 @@
         <dependency>
             <groupId>org.cloudfoundry.identity</groupId>
             <artifactId>cloudfoundry-identity-common</artifactId>
-            <version>2.3.2-GE</version>
+            <version>2.3.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.hibernate</groupId>
@@ -293,6 +280,12 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-log4j12</artifactId>
                 </exclusion>
+                
+                 <exclusion>
+                    <groupId>org.mortbay.jetty</groupId>
+                    <artifactId>servlet-api</artifactId>
+                </exclusion>
+                
             </exclusions>
 
 
