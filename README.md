@@ -26,7 +26,7 @@ For more information on running orchestrations in Predix Analytics, see [Using t
 
 ## Custom Data Connector
 
-**[Sample Custom Data Connectors](custom-data-connector)
+**[Sample Custom Data Connectors](custom-data-connector)**
 
 These are sample custom data connector implementations to connect to various data sources
 
