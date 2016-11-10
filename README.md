@@ -24,10 +24,10 @@ For more information on running orchestrations in Predix Analytics, see [Using t
 
 **[Sample Postman Collections](postman)**
 
+Once you have created your instance of either the Analytics Catalog or Analytics Runtime service, you can use the sample Postman collections to customize your REST requests and test them out to aid in implementing your applications.
+
 ## Custom Data Connector
 
 **[Sample Custom Data Connectors](custom-data-connector)**
 
 These are sample custom data connector implementations to connect to various data sources
-
-Once you have created your instance of either the Analytics Catalog or Analytics Runtime service, you can use the sample Postman collections to customize your REST requests and test them out to aid in implementing your applications. 
