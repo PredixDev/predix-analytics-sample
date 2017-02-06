@@ -56,4 +56,7 @@ The JSON output format from the analytic is as follows:
 }
 ```
 
+## Model
+These analytics are written to accept a model with the key "threshold" that contains some numeric value. This is illustrated as the file [sampleModel.txt](sampleModel.txt).
+
 For more information on developing analytics for the Predix Analytics platform, see [Analytic Development](https://www.predix.io/docs#Qd2kPYb7) in the Predix Analytics Services documentation on Predix IO.
