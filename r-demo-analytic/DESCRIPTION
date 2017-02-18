@@ -1,0 +1,13 @@
+Package: RDemoPackage
+Type: Package
+Title: R Demo Package with Dependcies using packrat
+Version: 0.1.0
+Author: Johann Posch
+Maintainer: <posch@ge.com>
+Description: Simple R package to demonstrates building an R package with documentation, testing and packaging dependencies with packrat.
+License: What license is it under?
+LazyData: TRUE
+Imports: MASS (== 7.3.45)
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-08 19:57:22 UTC; 212325745
