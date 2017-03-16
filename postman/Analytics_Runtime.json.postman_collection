@@ -62,11 +62,12 @@
 			"description": "",
 			"order": [
 				"5a5bcb1c-735d-cbe1-4ca0-77507454de68",
+				"619982f0-2596-3d4a-ad59-5f90b07cd4f4",
 				"a33efc2c-1af5-6cfd-e597-6537dca5f6f8",
 				"5d522811-c5dd-3f91-f673-a5f3f12c3f33"
 			],
 			"owner": 0,
-			"collectionId": "ae11bfa5-7c12-37a2-3672-45eb1ed88c73"
+			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3"
 		},
 		{
 			"id": "174d690f-b2ac-f464-d699-9a84f458c811",
@@ -75,6 +76,7 @@
 			"order": [
 				"20e61d6b-8482-4dbb-122c-a19409cd12c9",
 				"efe694c8-0493-2f06-3b7a-8b466d17b33b",
+				"3ae9902e-87c4-c86b-9e61-17cb73b452f8",
 				"adcdbeeb-e053-71d4-2611-356a9ad1a7b0",
 				"f7cc2705-caff-37f9-1e60-7ac77d5137af",
 				"b62da512-c3b5-74e5-74a6-7c348c206032",
@@ -126,32 +128,11 @@
 	"timestamp": 1429047848333,
 	"owner": 0,
 	"public": false,
-	"published": false,
 	"requests": [
 		{
 			"id": "19052015-a8c8-6641-367d-e478d04db440",
-			"headers": "Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{config_uri}}/api/v2/config/orchestrations/models/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe/file",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": "{}",
-			"time": 1470689930578,
-			"name": "Retrieve Models",
-			"description": "",
-			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
-			"responses": [],
-			"folder": "6839dc72-2a61-1765-74ae-eba3cda141a9"
-		},
-		{
-			"id": "20e61d6b-8482-4dbb-122c-a19409cd12c9",
-			"headers": "//Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{config_uri}}/api/v2/config/orchestrations/2bc96dca-8dbc-4adb-9fa9-4b74cffe61eb/file?type=bpmn",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
+			"url": "{{config_uri}}/api/v2/config/orchestrations/models",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
@@ -161,12 +142,30 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1455929066183,
+			"time": 1473458203430,
+			"name": "Retrieve Models",
+			"description": "",
+			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
+			"responses": []
+		},
+		{
+			"id": "20e61d6b-8482-4dbb-122c-a19409cd12c9",
+			"headers": "//Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
+			"url": "{{config_uri}}/api/v2/config/orchestrations",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1472773880890,
 			"name": "Retrieve All Orchestration Configurations",
 			"description": "",
 			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
-			"responses": [],
-			"folder": "174d690f-b2ac-f464-d699-9a84f458c811"
+			"responses": []
 		},
 		{
 			"id": "298a7b02-c2e3-290b-a404-041cdb6e254b",
@@ -261,6 +260,26 @@
 			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
 			"responses": [],
 			"rawModeData": "{\n  \"orchestrationConfigurationId\": \"string\",\n  \"assetId\": \"string\",\n  \"assetDataFieldsMap\": {\n    \"<fieldId>\": \"<tagName>\"\n  },\n  \"assetGroup\": {\n      \"dataSourceId\": \"string\",\n      \"assetSelectionFilter\": \"string\"\n  },\n  \"modelGroupKey\": \"string\"\n}"
+		},
+		{
+			"id": "3ae9902e-87c4-c86b-9e61-17cb73b452f8",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
+			"url": "{{config_uri}}/api/v2/config/orchestrations/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1489622294592,
+			"name": "Update Orchestration Configuration",
+			"description": "",
+			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe\",\n    \"name\": \"my orchestration\",\n    \"author\": \"test\",\n    \"description\": \"test\"\n}"
 		},
 		{
 			"id": "3e352731-87ea-0f07-2ec3-311193581548",
@@ -436,6 +455,56 @@
 			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
 			"responses": [],
 			"folder": "97a06b14-12bd-4acb-af56-e9c1493bd56b"
+		},
+		{
+			"id": "619982f0-2596-3d4a-ad59-5f90b07cd4f4",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
+			"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "orchestrationEntryId",
+					"value": "2bc96dca-8dbc-4adb-9fa9-4b74cffe61eb",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "my orchestration bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "my orchestration bpmn file",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1489622100446,
+			"name": "Update Orchestration Artifact",
+			"description": "",
+			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
+			"responses": []
 		},
 		{
 			"id": "66a58f66-5870-02f5-dece-b46b3e851185",
