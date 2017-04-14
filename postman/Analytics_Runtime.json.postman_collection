@@ -244,7 +244,7 @@
 		{
 			"id": "393f03e0-88a5-48a4-380e-958880fb6e33",
 			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{runtime_tenant}}\n",
-			"url": "{{execution_uri}}/api/v2/execution",
+			"url": "{{execution_uri}}/api/v2/execution/async",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -254,7 +254,7 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1471986907735,
+			"time": 1492129747305,
 			"name": "Run Orchestration (Async) (v2)",
 			"description": "This asynchronous API should immediately return a status of \"PROCESSING\". In order to retrieve the status after some time, use the Monitoring API.",
 			"collectionId": "51981624-7fae-c993-716a-2e2e875f4ff3",
