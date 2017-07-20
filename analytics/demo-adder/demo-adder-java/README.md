@@ -50,4 +50,4 @@ Requests made to this generated URI will be passed to the entry point method.
 
 
 
-For more information, see [Java Analytic Development](https://www.predix.io/docs#S1Wl9PHG) in the Predix Analytics Services documentation on Predix IO.
+For more information, see [Java Analytic Development](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-development#concept_188c43af-058f-48fa-81f4-367885ecb07a) in the Predix Analytics Services documentation on Predix IO.

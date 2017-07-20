@@ -83,6 +83,6 @@ We are oversimplifying the problem of creating analytics that model instantaneou
 3. Create the JSON configuration file `src/main/resources/config.json` containing the className and MethodName definitions that instruct the generated wrapper code to call your designated entry point method with the request payload.
 4. Build and prepare the analytic jar file including `config.json` file and dependent jar files. See [sample pom.xml](pom.xml) for reference.
 
-For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://www.predix.io/docs#Qd2kPYb7)** section of the Predix Analytics Services documentation on predix.io.
+For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-development)** section of the Predix Analytics Services documentation on predix.io.
 
 

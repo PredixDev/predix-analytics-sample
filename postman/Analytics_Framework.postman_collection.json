@@ -1,0 +1,2710 @@
+{
+	"id": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+	"name": "Analytics Framework",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "2f1706d5-6806-3af0-197e-878c392e074c",
+			"name": "Analytic Artifacts",
+			"description": "",
+			"order": [
+				"1edc62b5-413d-db10-1264-a2be8b995d08",
+				"33b12f87-f523-b4b6-5a6c-75a7b4cb7154",
+				"085caf0a-28cd-94e9-7803-b6085dcd04d1",
+				"2c7af3e4-ad8e-6dcd-5445-05e7a9a08708",
+				"481a94d9-4ca9-91c0-8138-3f0823e9335f"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "c61ea415-4d35-f426-99b7-d81f7e7b9add",
+			"name": "Analytic Taxonomy",
+			"description": "",
+			"order": [
+				"44a07d34-4b7d-59c0-5c7a-fb216e70c3bf",
+				"4542c9bb-bc5d-7af6-1c34-ab34899f05ac"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "d12cfb78-f719-8b08-1525-a8506e36bc65",
+			"name": "Analytic Validation/Deployment/Execution",
+			"description": "",
+			"order": [
+				"15c2b863-d02f-1562-09b8-0eb345c437ce",
+				"863a478f-8b8f-ad4f-4b59-77da1f3fa698",
+				"181f1e24-d04e-8991-4659-7c3effa22a34",
+				"b8fcb3f0-913d-a4a4-5716-29a733c10d36",
+				"7195f829-bd3f-e86f-e693-b79c2a5569f9",
+				"afa4891f-b096-8d90-16cf-882c33af4a2f"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "bea5bac0-d7ab-5633-2ca9-ea9dbff6ebfa",
+			"name": "Analytics",
+			"description": "",
+			"order": [
+				"9038f6ee-79ea-c97f-b77f-7e98c37e2670",
+				"35b03599-0a54-df83-6afc-5e6756a8d406",
+				"692a652e-11c2-ba71-ee44-5e3339995ad4",
+				"8b1a4307-fc3f-f8f0-c22f-1b932ce7a5a8",
+				"0090fc57-8402-5103-3beb-063c5d15c365",
+				"52107658-c49a-7a4a-8c30-e3ece3ebbb1a",
+				"df7ca3a8-1165-3e6a-5bdd-b083c103c799",
+				"c7d33b5d-6a37-d1fa-8284-0e6793d2e90b"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "93e01edb-765f-f277-6fc7-c2d82be11fbb",
+			"name": "Direct Analytic Execution",
+			"description": "",
+			"order": [
+				"204a8237-99f5-f570-8113-0bc55a461c7f",
+				"dc93dd1c-4cc3-0ac8-95b9-6b24f2fa2949",
+				"bf8ef2d1-3646-7182-15ba-4ede4c71ba52",
+				"6faea0a0-f8ca-7648-3381-b55635812024"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "b47085f1-16bf-dcb9-fe9b-c85c09a765f1",
+			"name": "Models (v2)",
+			"description": "",
+			"order": [
+				"2fc7f5ab-c793-a74a-bddc-b69f556df4f7",
+				"38979ab9-1eba-94bf-1465-aa8e48cc0d76",
+				"eda9771d-c8cb-b91c-4b16-b82868198c8a",
+				"8b4919fb-f04e-5dc4-6d9c-4559f0913c06",
+				"7614dcb8-43a8-97fd-fdd5-f269b129eed5"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "41a3f18e-0ccc-7abd-5875-8d3c3a05c78a",
+			"name": "Orchestration Artifacts (v2)",
+			"description": "",
+			"order": [
+				"a59579f9-ba7d-4ed3-9b07-51feabf136b2",
+				"f2c3d576-26cb-da5f-6215-b3b5ea94c85f",
+				"3de1b0a9-cc9f-a2fa-9cd2-dcb218640bcc",
+				"ef4f155c-f1bd-29d9-75ec-b537211ec2ca"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "c0d5320f-ce28-da60-f3fd-53f797a55bc2",
+			"name": "Orchestration Configuration (v2)",
+			"description": "",
+			"order": [
+				"ac5631a1-f5d2-bd26-e75a-726000cd07c3",
+				"ae211847-a215-2777-3aa4-80e6c13f4584",
+				"27a947c7-9d7e-bad6-b61c-206778076b8e",
+				"7ad4a910-5d83-2cc0-dc77-9fc030f6683c",
+				"d7dc3ea0-b68c-02cc-c978-915c9de02d67",
+				"623f99d1-d138-6ebb-ff04-148b233607ef",
+				"d45909fe-b20a-4477-cdb3-250522da98fb",
+				"e5707ee2-b678-b45f-8c80-5cbbcda028b1",
+				"d8fb0c80-8066-f6c6-12e0-9f5c9df6ecaa",
+				"31219d23-ef98-58f3-4506-9acba74358f8",
+				"817894e2-a510-3fbe-248d-4400ca7f0c4f"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "b2628e8b-b859-edbc-da51-9585186ab1cb",
+			"name": "Orchestration Execution (v2)",
+			"description": "",
+			"order": [
+				"d0112d73-26ca-9ba6-d7a2-0cb2d72964ba",
+				"c9847b42-39ef-a502-ea63-b203eb0678c0",
+				"07a9767c-71e9-7c48-7069-968d96173c79"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "b341c93b-1718-afba-e429-f542dc84042d",
+			"name": "Orchestration Monitoring",
+			"description": "",
+			"order": [
+				"e1abd6a5-e715-5e75-0a56-0bf407c77c44"
+			],
+			"owner": 0,
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "5e3cebec-afe2-06cb-5e34-a36b123c6c44",
+			"name": "Scheduler Service",
+			"description": "",
+			"order": [
+				"6cd5513e-aa9e-8769-e3c2-cf974ec849b9",
+				"b6d67303-b54e-a90c-0a95-a89fa06d82e3",
+				"ffc28d30-583e-f849-527d-2cbf90be41e0",
+				"528d3342-4bf1-8261-83de-03b1c8e1116d",
+				"c5684d55-c0c3-41ad-edcb-6a35ad0d4c8b",
+				"350c2508-07f6-05f1-7fee-bb1a7f4654b6"
+			],
+			"owner": 0
+		}
+	],
+	"timestamp": 1500508645828,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0090fc57-8402-5103-3beb-063c5d15c365",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/cd8d8676-65a7-4cb8-9c06-675e255af628",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509043202,
+			"name": "Update Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n    \"id\": \"c42d0d32-e845-40e2-bb67-751d059e4f0a\",\n    \"name\": \"aaa analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Python\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"test\",\n    \"description\": \"test\",\n    \"customMetadata\": \"{\\\"assetid\\\":\\\"abc\\\"}\"\n}"
+		},
+		{
+			"id": "07a9767c-71e9-7c48-7069-968d96173c79",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{execution_uri}}/api/v2/execution/validation",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509176729,
+			"name": "Validate Orchestration (v2)",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "085caf0a-28cd-94e9-7803-b6085dcd04d1",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "description",
+					"value": "demo adder python updated desc",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508937110,
+			"name": "Update Artifact",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "15c2b863-d02f-1562-09b8-0eb345c437ce",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508969700,
+			"name": "Validate Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\"number1\":1,\"number2\":2}"
+		},
+		{
+			"id": "181f1e24-d04e-8991-4659-7c3effa22a34",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/869dc385-5d88-49be-9b96-86edab395bc3/validation",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508979220,
+			"name": "Undeploy Test Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "1edc62b5-413d-db10-1264-a2be8b995d08",
+			"headers": "Content-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nAccept: application/json\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/artifacts",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508926399,
+			"name": "Create Artifact",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "204a8237-99f5-f570-8113-0bc55a461c7f",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "<analytic_uri>/api/v1/analytic/execution",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509062876,
+			"name": "Synchronous Execution",
+			"description": "Execute the analytic synchronously. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\"number1\":2,\"number2\":4}"
+		},
+		{
+			"id": "27a947c7-9d7e-bad6-b61c-206778076b8e",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509131228,
+			"name": "Update Orchestration Configuration",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe\",\n    \"name\": \"my orchestration\",\n    \"author\": \"test\",\n    \"description\": \"test\"\n}"
+		},
+		{
+			"id": "2c7af3e4-ad8e-6dcd-5445-05e7a9a08708",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/artifacts/8a979364-151a-4601-a7f2-26830e94de59",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508941463,
+			"name": "Delete Artifact",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "2fc7f5ab-c793-a74a-bddc-b69f556df4f7",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/models",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509078343,
+			"name": "Retrieve Models",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "31219d23-ef98-58f3-4506-9acba74358f8",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/defaulttagquery",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509160279,
+			"name": "Update Default Tag Query",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n  \"id\": \"d8b2e001-839d-4d26-8149-7163b79657ba\",\n  \"defaultTagNameQuery\": \"string\",\n  \"fieldNameSpecifier\": \"string\",\n  \"tagNameSpecifier\": \"string\",\n  \"author\": \"string\",\n  \"description\": \"string\"\n}"
+		},
+		{
+			"id": "33b12f87-f523-b4b6-5a6c-75a7b4cb7154",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/8834da45-7800-4984-b9a9-cde7947a7af4/artifacts",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "catalogEntryId",
+					"value": "8834da45-7800-4984-b9a9-cde7947a7af4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Executable",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "demo adder python",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508932790,
+			"name": "Retrieve Artifacts for Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "350c2508-07f6-05f1-7fee-bb1a7f4654b6",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{scheduler_uri}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7/history",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509210253,
+			"name": "Get Job History By Job ID",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "35b03599-0a54-df83-6afc-5e6756a8d406",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509032960,
+			"name": "Create Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"aaa analytic\",\n    \"version\": \"v1\",\n    \"supportedLanguage\": \"Python\",\n    \"taxonomyLocation\": \"\",\n    \"author\": \"test\",\n    \"description\": \"test\",\n    \"customMetadata\": \"{\\\"assetid\\\":\\\"abc\\\"}\"\n}"
+		},
+		{
+			"id": "38979ab9-1eba-94bf-1465-aa8e48cc0d76",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/models",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "modelKey",
+					"value": "x123",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelName",
+					"value": "GE90x-1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelVersion",
+					"value": "v1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "my orchestration bpmn file",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509082077,
+			"name": "Create Model",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "3de1b0a9-cc9f-a2fa-9cd2-dcb218640bcc",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts/1a82f46b-5481-47f9-8744-3f3bc04491a2",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509114986,
+			"name": "Delete Orchestration Artifact",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "44a07d34-4b7d-59c0-5c7a-fb216e70c3bf",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/taxonomy",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508960417,
+			"name": "Get Taxonomy",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "4542c9bb-bc5d-7af6-1c34-ab34899f05ac",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/taxonomy",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508964427,
+			"name": "Load Taxonomy",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n    \"node_name\": \"reference-app\",\n    \"child_nodes\": []\n}"
+		},
+		{
+			"id": "481a94d9-4ca9-91c0-8138-3f0823e9335f",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/artifacts/cbed02df-68d9-451e-92b0-4c7949b69519/file",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508945791,
+			"name": "Download Artifact File",
+			"description": "**POSTMAN DOES NOT CURRENTLY SUPPORT THIS REQUEST.** This is just for reference. In order to actually download the file, you will need to enter the full URL in your browser and make sure you send all of the headers in this request using a plugin such as ModHeaders for Chrome.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "52107658-c49a-7a4a-8c30-e3ece3ebbb1a",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/6627be64-ab13-4e69-9b06-8c403dfbfcb3",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509047628,
+			"name": "Delete Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"rawModeData": ""
+		},
+		{
+			"id": "528d3342-4bf1-8261-83de-03b1c8e1116d",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\nRefresh-Token-For-Job-Execution: {{refresh_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Refresh-Token-For-Job-Execution",
+					"value": "{{refresh_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{scheduler_uri}}/api/v1/scheduler/jobs/4c397ed2-21f7-47ec-b68f-888aa2144fa1",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509324256,
+			"name": "Update Job",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n  \"name\": \"test1\",\n  \"description\": \"test description\",\n  \"state\": \"Active\",\n  \"cron\": {\n    \"seconds\": \"0\",\n    \"minutes\": \"0/1\",\n    \"hours\": \"*\",\n    \"dayOfMonth\": \"*\",\n    \"months\": \"*\",\n    \"dayOfWeek\": \"?\",\n    \"years\": \"*\",\n    \"timeZoneId\": \"UTC\"\n  },\n  \"executionRequest\": {\n    \"url\": \"http://www.google.com\",\n    \"httpMethod\": \"GET\",\n    \"httpHeaders\": [\n      {\n        \"name\": \"Content-Type\",\n        \"value\": \"application/json\"\n      },\n      {\n          \"name\": \"Predix-Zone-Id\",\n          \"value\": \"{{tenant_id}}\"\n      }\n    ],\n    \"inputData\": \"{\\\"number1\\\":1,\\\"number2\\\":2}\"\n  }\n}"
+		},
+		{
+			"id": "623f99d1-d138-6ebb-ff04-148b233607ef",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/2bc96dca-8dbc-4adb-9fa9-4b74cffe61eb/artifacts",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509142781,
+			"name": "Get Artifact Metadata for an Orchestration Configuration",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "692a652e-11c2-ba71-ee44-5e3339995ad4",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/versions?name=java-demo-adder",
+			"queryParams": [
+				{
+					"key": "name",
+					"value": "java-demo-adder",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509004766,
+			"name": "Retrieve Analytic(s) By Name",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "6cd5513e-aa9e-8769-e3c2-cf974ec849b9",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{scheduler_uri}}/api/v1/scheduler/jobs",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509187945,
+			"name": "Retrieve All Jobs",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "6faea0a0-f8ca-7648-3381-b55635812024",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "<analytic_uri>/api/v1/analytic/execution/async/<requestId>/result",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509073630,
+			"name": "Retrieve Async Execution Result",
+			"description": "Retrieve the result of the requested asynchronous analytic execution. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "7195f829-bd3f-e86f-e693-b79c2a5569f9",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508986989,
+			"name": "Retrieve Deployment Status",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "7614dcb8-43a8-97fd-fdd5-f269b129eed5",
+			"headers": "Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/models/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe/file",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509095072,
+			"name": "Download Model",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "7ad4a910-5d83-2cc0-dc77-9fc030f6683c",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/68b10665-c72a-4db7-93e2-7ca2f6dfd7ff",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509135013,
+			"name": "Get Orchestration Configuration",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "817894e2-a510-3fbe-248d-4400ca7f0c4f",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/defaulttagquery",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509164135,
+			"name": "Delete Default Tag Query",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "863a478f-8b8f-ad4f-4b59-77da1f3fa698",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/validation/b64e58f2-8ed8-44d9-b378-6e7edef2441d",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508975042,
+			"name": "Retrieve Validation Status",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "8b1a4307-fc3f-f8f0-c22f-1b932ce7a5a8",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/63fec285-8a85-494f-8232-54ea116fdf52",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509039099,
+			"name": "Retrieve Analytic By ID",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "8b4919fb-f04e-5dc4-6d9c-4559f0913c06",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/models/5ccec4d3-0d2b-4e58-af29-077ba6b9c103",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509091056,
+			"name": "Delete Model",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "9038f6ee-79ea-c97f-b77f-7e98c37e2670",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508997901,
+			"name": "Retrieve All Analytics",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695"
+		},
+		{
+			"id": "a59579f9-ba7d-4ed3-9b07-51feabf136b2",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "orchestrationEntryId",
+					"value": "2bc96dca-8dbc-4adb-9fa9-4b74cffe61eb",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "my orchestration bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "my orchestration bpmn file",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509107344,
+			"name": "Create Orchestration Artifact",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "ac5631a1-f5d2-bd26-e75a-726000cd07c3",
+			"headers": "//Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509123571,
+			"name": "Retrieve All Orchestration Configurations",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "ae211847-a215-2777-3aa4-80e6c13f4584",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509127411,
+			"name": "Create Orchestration Configuration",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"my orchestration\",\n    \"author\": \"test\",\n    \"description\": \"test\"\n}"
+		},
+		{
+			"id": "afa4891f-b096-8d90-16cf-882c33af4a2f",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/0b61626b-8da5-4ae8-ac46-f2d978ad461f/execution",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508990987,
+			"name": "Execute Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\"number1\":2,\"number2\":4}"
+		},
+		{
+			"id": "b6d67303-b54e-a90c-0a95-a89fa06d82e3",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\nRefresh-Token-For-Job-Execution: {{refresh_token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Refresh-Token-For-Job-Execution",
+					"value": "{{refresh_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{scheduler_uri}}/api/v1/scheduler/jobs",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509353483,
+			"name": "Create Job",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n  \"name\": \"test1\",\n  \"description\": \"test description\",\n  \"state\": \"Active\",\n  \"cron\": {\n    \"seconds\": \"0\",\n    \"minutes\": \"0/5\",\n    \"hours\": \"*\",\n    \"dayOfMonth\": \"*\",\n    \"months\": \"*\",\n    \"dayOfWeek\": \"?\",\n    \"years\": \"*\",\n    \"timeZoneId\": \"UTC\"\n  },\n  \"executionRequest\": {\n    \"url\": \"http://www.google.com\",\n    \"httpMethod\": \"GET\",\n    \"httpHeaders\": [\n      {\n        \"name\": \"Content-Type\",\n        \"value\": \"application/json\"\n      },\n      {\n          \"name\": \"Predix-Zone-Id\",\n          \"value\": \"{{tenant_id}}\"\n      }\n    ],\n    \"inputData\": \"{\\\"number1\\\":1,\\\"number2\\\":2}\"\n  }\n}"
+		},
+		{
+			"id": "b8fcb3f0-913d-a4a4-5716-29a733c10d36",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/f5ca3ad6-7bd7-4502-8ced-292e5e08bd16/deployment",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500508982733,
+			"name": "Deploy Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n    \"memory\":512,\n    \"diskQuota\":1024,\n    \"instances\":1\n}"
+		},
+		{
+			"id": "bf8ef2d1-3646-7182-15ba-4ede4c71ba52",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "<analytic_uri>/api/v1/analytic/execution/async/<requestId>/status",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509070076,
+			"name": "Retrieve Async Execution Status",
+			"description": "Retrieve the status of the requested asynchronous analytic execution. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "c5684d55-c0c3-41ad-edcb-6a35ad0d4c8b",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{scheduler_uri}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509206388,
+			"name": "Delete Job",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "c7d33b5d-6a37-d1fa-8284-0e6793d2e90b",
+			"headers": "Content-Type: text/plain\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/180bd1de-9e24-4e4a-8406-7f956d4e9373/logs",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509055932,
+			"name": "Retrieve Analytic Logs",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "c9847b42-39ef-a502-ea63-b203eb0678c0",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{execution_uri}}/api/v2/execution/testrun",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "bpmn",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "input",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509172952,
+			"name": "Run Orchestration with files (v2)",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "d0112d73-26ca-9ba6-d7a2-0cb2d72964ba",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{execution_uri}}/api/v2/execution/async",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509169520,
+			"name": "Run Orchestration (Async) (v2)",
+			"description": "This asynchronous API should immediately return a status of \"PROCESSING\". In order to retrieve the status after some time, use the Monitoring API.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n    \"orchestrationConfigurationId\": \"232e71ca-25ab-4765-8273-f2241b74b484\",\n    \"assetId\": \"554992ac-b900-452a-8f14-9fb0ee48783a\",\n    \"assetDataFieldsMap\": null,\n    \"assetGroup\": null,\n    \"modelGroupKey\": null,\n    \"dataSource\": [\n        {\n            \"dataSourceId\": \"Postgres Reference External Data Connector\",\n            \"apiVersion\": \"v1\",\n            \"baseUri\": \"https://predix-analytics-ref-postgres-data-connector-zone1-rc.run.aws-usw02-dev.ice.predix.io\"\n        }\n    ],\n    \"customAttributes\": {\n        \"IS_GENERIC_SCHEMA\": \"TRUE\"\n    }\n}"
+		},
+		{
+			"id": "d45909fe-b20a-4477-cdb3-250522da98fb",
+			"headers": "Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/2bc96dca-8dbc-4adb-9fa9-4b74cffe61eb/file?type=bpmn",
+			"queryParams": [
+				{
+					"key": "type",
+					"value": "bpmn",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509147308,
+			"name": "Download Orchestration Artifact File by Orchestration Entry ID",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "d7dc3ea0-b68c-02cc-c978-915c9de02d67",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/68b10665-c72a-4db7-93e2-7ca2f6dfd7ff",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509138826,
+			"name": "Delete Orchestration Configuration",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "d8fb0c80-8066-f6c6-12e0-9f5c9df6ecaa",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/defaulttagquery",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509156159,
+			"name": "Create Default Tag Query",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\n  \"defaultTagNameQuery\": \"string\",\n  \"fieldNameSpecifier\": \"string\",\n  \"tagNameSpecifier\": \"string\",\n  \"author\": \"string\",\n  \"description\": \"string\"\n}"
+		},
+		{
+			"id": "dc93dd1c-4cc3-0ac8-95b9-6b24f2fa2949",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "<analytic_uri>/api/v1/analytic/execution/async",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509066188,
+			"name": "Trigger Asynchronous Execution",
+			"description": "Trigger the analytic to execute asynchronously. The analytic_uri is the analytic catalog entry id followed by your Predix Platform domain name.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": "{\"number1\":2,\"number2\":4}"
+		},
+		{
+			"id": "df7ca3a8-1165-3e6a-5bdd-b083c103c799",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{catalog_uri}}/api/v1/catalog/analytics/ANALYTIC_NAME/versions",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509051748,
+			"name": "Delete All Versions of an Analytic",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "e1abd6a5-e715-5e75-0a56-0bf407c77c44",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{monitoring_uri}}/api/v1/monitoring/orchestrations/38fd58e2-9ef9-48bd-b47d-2f1665f8a3e7",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509181848,
+			"name": "Retrieve Orchestration Execution Result",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "e5707ee2-b678-b45f-8c80-5cbbcda028b1",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/defaulttagquery",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509151837,
+			"name": "Get Default Tag Query",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "eda9771d-c8cb-b91c-4b16-b82868198c8a",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/models/1fdf55c2-839b-43ea-b7ad-0d221d7f1bea",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "modelKey",
+					"value": "x123",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelName",
+					"value": "GE90x-0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelVersion",
+					"value": "v2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "modified orchestration bpmn file",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509086663,
+			"name": "Update Model",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "ef4f155c-f1bd-29d9-75ec-b537211ec2ca",
+			"headers": "Accept: application/octet-stream\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe/file",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509118698,
+			"name": "Download Orchestration Artifact File",
+			"description": "Postman will correctly display the contents of JSON (I/O maps) and XML (BPMN) files. For any other file types (or if you want the file directly, and not just its contents), please call this directly in Chrome using ModHeaders, just like the Analytic Artifacts API.",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "f2c3d576-26cb-da5f-6215-b3b5ea94c85f",
+			"headers": "Accept: application/json\nContent-Type: multipart/form-data\nAuthorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{config_uri}}/api/v2/config/orchestrations/artifacts/9c60ef3f-f8f4-4fc1-b9c4-e98183946bfe",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "file",
+					"value": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "orchestrationEntryId",
+					"value": "2bc96dca-8dbc-4adb-9fa9-4b74cffe61eb",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "my orchestration bpmn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "my orchestration bpmn file",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509110938,
+			"name": "Update Orchestration Artifact",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		},
+		{
+			"id": "ffc28d30-583e-f849-527d-2cbf90be41e0",
+			"headers": "Authorization: Bearer {{token}}\nPredix-Zone-Id: {{tenant_id}}\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer {{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Predix-Zone-Id",
+					"value": "{{tenant_id}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{scheduler_uri}}/api/v1/scheduler/jobs/01f72c90-3915-4c30-97ae-cb11a9ea58e7",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1500509197291,
+			"name": "Get Job By ID",
+			"description": "",
+			"collectionId": "5565a667-c83d-fa08-6b9a-2f1521d18695",
+			"responses": []
+		}
+	]
+}

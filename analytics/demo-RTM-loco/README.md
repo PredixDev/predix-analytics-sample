@@ -59,6 +59,6 @@ See **[sampleOutput.json](sampleOutput.json)** for an example output file.
 ### Additional Information
 We are oversimplifying the problem of creating analytics that model instantaneous operational efficiency of a diesel locomotive. The purpose of this sample analytic is to get you started on building and deploying your analytic in Predix Analytics Services.  
 
-For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://www.predix.io/docs#Qd2kPYb7)** section of the Predix Analytics Services documentation on predix.io. 
+For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-development)** section of the Predix Analytics Services documentation on predix.io. 
 
 

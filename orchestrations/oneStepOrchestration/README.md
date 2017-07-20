@@ -22,13 +22,11 @@ Configuration files for the sample orchestration
 Follow the instructions below to set up the orchestration and trigger its execution in your Predix Analytics environment. 
 ### Task Roadmap Prerequisites
 * Create subscriptions to: 
-    * Predix Analytics Catalog, 
-    * Predix Analytics Runtime,
-    * Predix Analytics UI, 
+    * Predix Analytics Framework, 
     * Predix Timeseries and 
     * Predix UAA
 
-    (see the Getting Started instructions for each service in https://www.predix.io/docs#OqtMIsCd)
+    (see the Getting Started instructions for each service in https://docs.predix.io/en-US/service)
     
 * Use the websocket connection in the Predix Tool Kit (for basic:https://predix-starter.run.aws-usw02-pr.ice.predix.io/#!/wsClient, for select: ????) to load the sample data into your Predix Timeseries instance.
     1. log in as a user from your UAA

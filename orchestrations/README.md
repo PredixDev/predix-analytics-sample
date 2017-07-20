@@ -17,4 +17,4 @@ Sample orchestrations that include all supporting files, such as orchestration w
 3. **[Multi step orchestration with Miner's Rule Analytic](multiStepOrchestration):** An orchestration that runs a Miner's rule operation on pre-processed output from a timeseries demo adder analytic
 
 
-For more information on running orchestrations in Predix Analytics, see [Using the Analytics Runtime Service](https://www.predix.io/docs/#pM5fe0l) on Predix IO. 
+You can find more information on [configuring](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/orchestration-configuration) and [running](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/orchestration-execution) orchestrations on Predix IO.

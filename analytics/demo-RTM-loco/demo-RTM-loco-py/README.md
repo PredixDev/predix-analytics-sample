@@ -83,6 +83,6 @@ We are oversimplifying the problem of creating analytics that model instantaneou
 3. Create a config.json file in the top level of the project directory. Specify the entry method in the format of `<subdirectory>.<className>.<methodName>`, conda-libs, and non-conda-libs.
 4. Package all the analytic files and the config.json file into a ZIP file.
 
-For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://www.predix.io/docs#Qd2kPYb7)** section of the Predix Analytics Services documentation on predix.io. 
+For more information on developing analytics for use with the Predix Analytics platform, please visit the **[Analytic Development](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-development)** section of the Predix Analytics Services documentation on predix.io. 
 
 

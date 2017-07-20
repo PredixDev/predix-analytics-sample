@@ -5,7 +5,7 @@ proper credentials to your UAA to allow them to use your new Analytics UI instan
 script that can be used on all Unix flavors as well as cygwin or GitBash if you're on Windows.
 
 ##Prerequisites
-1. You must first follow the instructions to set up Analytics UI and its dependent services as per [these instructions](https://www.predix.io/docs#ODbwpgV)
+1. You must first follow the instructions to set up Analytics UI and its dependent services as per [these instructions](https://docs.predix.io/en-US/content/service/analytics_services/analytic_user_interface/get-started)
 2. You must have a UAAC client installed as this script uses it.  [This one](https://github.com/cloudfoundry-community/traveling-cf-admin) is an easy one to install.
 3. You must be first logged in to your Cloud Foundry org and space on the commandline by `cf login`.
 

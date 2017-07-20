@@ -39,4 +39,4 @@ When you upload the jar file **(7)** as an 'Executable' artifact the platform wr
 Requests made to this generated URI will be passed to the entry point method.
 
 
-For more information, see [Matlab Analytic Development](https://www.predix.io/docs#zwCROx4n) in the Predix Analytics Services documentation on Predix IO.
+For more information, see [Matlab Analytic Development](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-development#concept_6ffa1ff9-cbe1-447d-912d-1437d829311e) in the Predix Analytics Services documentation on Predix IO.

@@ -39,4 +39,4 @@ The JSON output format from the analytic is as follows:
 3. Create a config.json file in the top level of the project directory. Specify the entry method in the format of `<subdirectory>.<className>.<methodName>`, conda-libs, and non-conda-libs.
 4. Package all the analytic files and the config.json file into a ZIP file.
 
-For more information, see [Python Analytic Development](https://www.predix.io/docs#alaepr9P) in the Predix Analytics Services documentation on Predix IO.
+For more information, see [Python Analytic Development](https://docs.predix.io/en-US/content/service/analytics_services/analytics_framework/analytic-development#concept_9cbf93d9-d4f2-4b42-8695-4c3195f04a79) in the Predix Analytics Services documentation on Predix IO.
