@@ -1,4 +1,4 @@
-#Reference Data Connector for PostgreSQL
+# Reference Data Connector for PostgreSQL
 
 Custom Data Connectors allow the Predix Analytics service to read and write the analytic data from the external data sources.
 This implementation is a reference implementation for reading or writing data to a Postgres data source.
@@ -37,7 +37,7 @@ and “vibration”.
 The selection of which schema is to be used can be done through the custom attributes in orchestration
 execution request as specified in the section below.
 
-##Generic Schema (sensor_data)
+## Generic Schema (sensor_data)
 
 
 Schema for sensor_data table:
@@ -287,7 +287,7 @@ Write Response:
 }
 ```
 
-##Normalized Schema (turbine_compressor)
+## Normalized Schema (turbine_compressor)
 
 Schema for turbine_compressor table:
 ```
@@ -534,7 +534,7 @@ Write Response:
   }
 }
 ```
-##Port-to-Field Map
+## Port-to-Field Map
 When this data connector service is integrated with Predix Analytics service, the port-to-field maps of the orchestrations should be configured to point to this datasource.  The port-to-field map for the orchestration which needs to use a custom data connector would be specified
 as follows:
 
@@ -640,7 +640,7 @@ as follows:
 }
 ```
 
-##Orchestration Execution Request
+## Orchestration Execution Request
 The payload for the orchestration Execution Request would be as follows:  
 [Note the use of custom attributes to pass to the external data connector implementation. This would let the 
 orchestration engine know whether to use the generic or the normalized schema]
@@ -667,7 +667,7 @@ orchestration engine know whether to use the generic or the normalized schema]
 }
 ```
 
-##Generating skeleton implementation
+## Generating skeleton implementation
 
 This reference implementation is based on the source code generated from the CustomDataProviderServiceImpl.wadl file located under /src/main/resources/wadl.  To generate the source code from the wadl file, please use ‘mvn clean install -P wadl2java’ command.  NOTE: Running this command would overwrite the existing add-on implementation with the generated code.  Please use with care.
 
