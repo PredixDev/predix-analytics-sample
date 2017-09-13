@@ -5,9 +5,9 @@ This implementation is a reference implementation for reading or writing data to
 
 The service must implement the following three Analytics Runtime APIs.
 
-1. HEALTHCHECK (/api/v1/analytics/customdata/healthcheck) — used to check to the health of your Custom Data Connector service before executing an orchestration.
-2. READ (/api/v1/analytics/customdata/read) — used to read data passed to the analytic (input data) from the external data source.
-3. WRITE (/api/v1/analytics/customdata/write) — used to write the data produced by an analytic (output data) to the external data source.
+1. HEALTHCHECK (/api/v1/analytics/customdata/healthcheck) — used to check to the health of your Custom Data Connector service before executing an orchestration. Successful execution of the API must return a Status 200 response.
+2. READ (/api/v1/analytics/customdata/read) — used to read data passed to the analytic (input data) from the external data source. Successful execution of the API must return a Status 200 response.
+3. WRITE (/api/v1/analytics/customdata/write) — used to write the data produced by an analytic (output data) to the external data source. Successful execution of the API must return a Status 201 response.
 
 The reference implementation includes support for the read, write and healthcheck APIs.
 
