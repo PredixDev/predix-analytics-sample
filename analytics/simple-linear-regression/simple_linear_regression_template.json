@@ -1,0 +1,57 @@
+{
+  "analyticName": "SimpleLinearRegression",
+  "analyticVersion": "V1.0",
+  "inputPortDefinitions": [
+    {
+      "portType": "FIELD",
+      "portName": "x",
+      "variable": false,
+      "dataType": "DOUBLE_ARRAY",
+      "required": true
+    },
+    {
+      "portType": "FIELD",
+      "portName": "y",
+      "variable": false,
+      "dataType": "INTEGER_ARRAY",
+      "required": true
+    }
+  ],
+  "outputPortDefinitions": [
+    {
+      "portType": "FIELD",
+      "portName": "slope",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    },
+    {
+      "portType": "FIELD",
+      "portName": "intercept",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    },
+    {
+      "portType": "FIELD",
+      "portName": "r_value",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    },
+    {
+      "portType": "FIELD",
+      "portName": "p_value",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    },
+    {
+      "portType": "FIELD",
+      "portName": "std_err",
+      "variable": false,
+      "dataType": "DOUBLE",
+      "required": true
+    }
+  ]
+}

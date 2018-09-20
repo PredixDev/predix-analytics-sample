@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2015 - 2016 General Electric Company. All rights reserved.
+  ~
+  ~ The copyright to the computer software herein is the property of
+  ~ General Electric Company. The software may be used and/or copied only
+  ~ with the written permission of General Electric Company or in accordance
+  ~ with the terms and conditions stipulated in the agreement/contract
+  ~ under which the software has been supplied.
+  -->
+
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/2.5.5">
+    <id>bin</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}</directory>
+            <excludes>
+                <exclude>pom.xml</exclude>
+                <exclude>assembly.xml</exclude>
+                <exclude>target/</exclude>
+                <exclude>.idea/</exclude>
+                <exclude>*.iml</exclude>
+                <exclude>**/**.pyc</exclude>
+                <exclude>**/**/test_*.py</exclude>
+                <exclude>**/**/*_pycache_*</exclude>
+                <exclude>README.MD</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>
