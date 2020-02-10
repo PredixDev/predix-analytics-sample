@@ -1,6 +1,5 @@
 
-
-#Simple Linear Regression
+# Simple Linear Regression
 
 
 A Python3-based sample analytic performing simple linear regression computation which can be deployed to Predix Analytics platform.
