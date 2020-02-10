@@ -1,7 +1,7 @@
 import json
 from unittest import TestCase
 
-from simple_linear_regression import SimpleLinearRegression
+from analytics import SimpleLinearRegression
 
 
 class SimpleLinearRegressionTest(TestCase):
