@@ -9,6 +9,7 @@ To run this analytic locally, you will need to have the following:
 
 - Python 3.6+
 - scipy 0.19.1
+- Maven 3 or later
 
 ## Running unit tests
 
