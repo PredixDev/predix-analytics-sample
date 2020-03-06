@@ -2,7 +2,7 @@ import json
 
 class demoTimeSeriesAdder:
     def __init__(self):
-        print "Create python time series demo adder"
+        print("Create python time series demo adder")
 
     def add2NumberArrays(self, data, modelmap = {}):
         threshold = float(modelmap['threshold']) if len(modelmap) > 0 else None

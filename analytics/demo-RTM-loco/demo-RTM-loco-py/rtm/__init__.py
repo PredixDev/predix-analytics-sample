@@ -1,1 +1,1 @@
-from RTMLocomotiveRegression import LocomotiveRegression
+from rtm.RTMLocomotiveRegression import LocomotiveRegression

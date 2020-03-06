@@ -3,7 +3,7 @@ import json
 
 class demoAdder:
     def __init__(self):
-        print "Create pyadder"
+        print("Create pyadder")
 
     def add(self, data):
         data_json = json.loads(data)

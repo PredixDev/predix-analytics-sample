@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 
 class LocomotiveRegression:
     def __init__(self):
-        print "Locomotive Linear Regression"
+        print("Locomotive Linear Regression")
 
     def driver(self, data):
         data_json = json.loads(data)
